@@ -1,6 +1,6 @@
 require 'settingslogic'
 class ErrorResponse < Settingslogic
-  source "lib/error_code.yml"
+  source "lib/error_response.yml"
 
   def call(key, message=nil)
     error_data = send(key)
