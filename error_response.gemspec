@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'error_response'
-  s.version     = '0.1.1'
+  s.version     = '0.1.3'
   s.date        = '2019-08-12'
   s.summary     = "A tool for API error response"
   s.description = "use for error_response"

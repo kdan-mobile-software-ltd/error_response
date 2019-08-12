@@ -4,8 +4,7 @@ class ErrorResponse
   YAML_PATH = 'lib/error_response.yml'
 
   def self.to_api(key, message=nil)
-    string_hash = YAML.load_file(File.join(GEM_ROOT,YAML_PATH))
-    err_json = string_hash[key.to_s] || {'error_code' => 500000, 'error_message' => message}
+    err_json = yaml_hash[key.to_s] || {'error_code' => 500000, 'error_message' => message}
 
     status = err_json['error_code'] / 1000
     {
@@ -15,7 +14,15 @@ class ErrorResponse
   end
 
   def self.to_hash(key)
-    string_hash = YAML.load_file(File.join(GEM_ROOT,YAML_PATH))
-    string_hash[key.to_s]
+    yaml_hash[key.to_s]
+  end
+
+  def self.all
+    yaml_hash
+  end
+
+  private
+  def self.yaml_hash
+    yaml ||= YAML.load_file(File.join(GEM_ROOT,YAML_PATH))
   end
 end
