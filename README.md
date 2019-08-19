@@ -35,6 +35,23 @@ the response will look like this
 }
 ```
 
+### Extensions
+
+If you want more error_response locally, you can write your own error_response under /lib/error_response/*.yml
+
+example:  `/lib/error_response/extension.yml`
+
+the yml must follow the same style otherwise error may happend.
+
+```
+// lib/error_response/extension.yml
+
+my_own_error:
+  error_code: 418_005
+  error_message: this is my own error
+
+```
+
 ### Others
 
 See all avaliable error_code & error_message

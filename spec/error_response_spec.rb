@@ -42,4 +42,15 @@ RSpec.describe ErrorResponse do
       expect(result).to eq nil
     end
   end
+
+  describe 'extend from extension.yml' do
+    it 'should return wait_for_extend error' do
+      hash = {
+        'error_code' => 418_002,
+        'error_message' => 'wait for extend'
+      }
+      result = ErrorResponse.to_hash(:wait_for_extend)
+      expect(result).to eq hash
+    end
+  end
 end
