@@ -19,32 +19,30 @@ end
 simeply use it where you want
 
 ```
-return error_reponse(:wrong_email) if @user.nil
+return error_reponse(:happy_tree_friend) if @user.nil
 ```
 
 the response will look like this
 
 ```
 {
-  status: 403,
+  status: 418,
   json:
     {
-      error_code: 403004,
-      error_message: 'third-party provider is not allow'
+      error_code: 418003,
+      error_message: 'happy tree friend'
     }
 }
 ```
 
-### Extensions
+### Prepare
 
-If you want more error_response locally, you can write your own error_response under /lib/error_response/*.yml
-
-example:  `/lib/error_response/extension.yml`
+Before you start it, you should create `config/error_response.yml` and put the errors into it.
 
 the yml must follow the same style otherwise error may happend.
 
 ```
-// lib/error_response/extension.yml
+// config/error_response.yml
 
 my_own_error:
   error_code: 418_005
@@ -70,9 +68,3 @@ gives you
   error_message: 'reset password failed'
 }
 ```
-
-### Update
-
-Update the error_code.yml if you want new error_code
-
-Send Pull Request after update

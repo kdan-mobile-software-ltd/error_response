@@ -4,13 +4,13 @@ RSpec.describe ErrorResponse do
   describe '#to_api' do
     it "should return correspond hash when key existed" do
       hash = {
-        'status' => 400,
+        'status' => 418,
         'json' => {
-          'error_code' => 400002,
-          'error_message' => 'user password not correct'
+          'error_code' => 418003,
+          'error_message' => 'happy tree friend'
         }
       }
-      result = ErrorResponse.to_api(:wrong_password)
+      result = ErrorResponse.to_api(:happy_tree_friend)
       expect(result).to eq hash
     end
 
@@ -30,27 +30,16 @@ RSpec.describe ErrorResponse do
   describe '#to_hash' do
     it "should return hash when key existed" do
       hash = {
-        'error_code' => 400002,
-        'error_message' => 'user password not correct'
+        'error_code' => 418003,
+        'error_message' => 'happy tree friend'
       }
-      result = ErrorResponse.to_hash(:wrong_password)
+      result = ErrorResponse.to_hash(:happy_tree_friend)
       expect(result).to eq hash
     end
 
     it "should return nil when key not existed" do
       result = ErrorResponse.to_hash(:some_error)
       expect(result).to eq nil
-    end
-  end
-
-  describe 'extend from extension.yml' do
-    it 'should return wait_for_extend error' do
-      hash = {
-        'error_code' => 418_002,
-        'error_message' => 'wait for extend'
-      }
-      result = ErrorResponse.to_hash(:wait_for_extend)
-      expect(result).to eq hash
     end
   end
 end
