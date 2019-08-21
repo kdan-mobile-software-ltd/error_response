@@ -11,9 +11,9 @@ gem 'error_response'
 define a error_response method in Api::ApplicationController
 
 ```
-def error_response(key)
-  render ErrorResponse.to_api(key)
-end
+  def error_response(error_key, error_message=nil)
+    render ErrorResponse.to_api(error_key, error_message)
+  end
 ```
 
 simeply use it where you want
