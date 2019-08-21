@@ -4,8 +4,8 @@ RSpec.describe ErrorResponse do
   describe '#to_api' do
     it "should return correspond hash when key existed" do
       hash = {
-        'status' => 418,
-        'json' => {
+        status: 418,
+        json: {
           'error_code' => 418003,
           'error_message' => 'happy tree friend'
         }
@@ -16,8 +16,8 @@ RSpec.describe ErrorResponse do
 
     it "should return personalized hash when key not existed" do
       hash = {
-        'status' => 500,
-        'json' => {
+        status: 500,
+        json: {
           'error_code' => 500000,
           'error_message' => 'something went wrong'
         }

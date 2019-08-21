@@ -7,8 +7,8 @@ class ErrorResponse
 
     status = err_json['error_code'] / 1000
     {
-      'status' => status,
-      'json' => err_json
+      status: status,
+      json: err_json
     }
   end
 
