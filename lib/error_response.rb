@@ -13,7 +13,7 @@ class ErrorResponse
   end
 
   def self.to_hash(key)
-    yaml_hash[key.to_s]
+    yaml_hash[key.to_s] || {}
   end
 
   def self.all
