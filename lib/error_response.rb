@@ -3,7 +3,12 @@ class ErrorResponse
   YAML_PATH = 'config/error_response.yml'
 
   def self.to_api(key, message=nil)
-    err_json = yaml_hash[key.to_s] || {'error_code' => 500000, 'error_message' => message}
+    err_json = yaml_hash[key.to_s]
+    if err_json.nil?
+      err_json = {'error_code' => 500000, 'error_message' => message}
+    elsif !message.nil?
+      err_json['error_message'] += ": #{message}"
+    end
 
     status = err_json['error_code'] / 1000
     {
