@@ -7,10 +7,11 @@ RSpec.describe ErrorResponse do
         status: 418,
         json: {
           'error_code' => 418003,
-          'error_message' => 'happy tree friend'
+          'error_message' => 'happy tree friend',
+          'error_key' => 'happy_tree_friend_key'
         }
       }
-      result = ErrorResponse.to_api(:happy_tree_friend)
+      result = ErrorResponse.to_api(:happy_tree_friend_key)
       expect(result).to eq hash
     end
 
@@ -31,9 +32,10 @@ RSpec.describe ErrorResponse do
     it "should return hash when key existed" do
       hash = {
         'error_code' => 418003,
-        'error_message' => 'happy tree friend'
+        'error_message' => 'happy tree friend',
+        'error_key' => 'happy_tree_friend_key'
       }
-      result = ErrorResponse.to_hash(:happy_tree_friend)
+      result = ErrorResponse.to_hash(:happy_tree_friend_key)
       expect(result).to eq hash
     end
 
