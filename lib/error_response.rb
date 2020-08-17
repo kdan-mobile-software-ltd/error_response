@@ -4,6 +4,7 @@ class ErrorResponse
 
   def self.to_api(key, message=nil)
     err_json = yaml_hash[key.to_s]&.dup
+    err_json['error_key'] = key.to_s if !err_json.nil? && !key.nil? && yaml_hash.key?(key.to_s)
     if err_json.nil?
       err_json = {'error_code' => 500000, 'error_message' => message}
     elsif !message.nil?
@@ -18,7 +19,13 @@ class ErrorResponse
   end
 
   def self.to_hash(key)
-    yaml_hash[key.to_s] || {}
+    if yaml_hash.key?(key.to_s)
+      result = yaml_hash[key.to_s]
+      result['error_key'] = key.to_s
+    else
+      result = nil
+    end
+    result
   end
 
   def self.all

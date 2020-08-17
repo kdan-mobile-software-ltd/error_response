@@ -19,7 +19,7 @@ define a error_response method in Api::ApplicationController
 simeply use it where you want
 
 ```
-return error_reponse(:happy_tree_friend) if @user.nil
+return error_reponse(:happy_tree_friend_key) if @user.nil
 ```
 
 the response will look like this
@@ -30,7 +30,8 @@ the response will look like this
   json:
     {
       error_code: 418003,
-      error_message: 'happy tree friend'
+      error_message: 'happy tree friend',
+      error_key: 'happy_tree_friend_key'
     }
 }
 ```
@@ -65,6 +66,7 @@ gives you
 ```
 {
   error_code: 400005,
-  error_message: 'reset password failed'
+  error_message: 'reset password failed',
+  error_key: 'reset_password_failed'
 }
 ```
