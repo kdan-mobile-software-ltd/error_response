@@ -1,11 +1,17 @@
 stages:
+  - rspec
   - publish
 
-before_script:
-  - RELEASE_VERSION=$(cat VERSION.md)
-  - GEM_NAME=error_response-$RELEASE_VERSION.gem
+rspec:
+  stage: rspec
+  image: ruby:2.6
+  script:
+    - bundle install
+    - rspec spec
+  only:
+    - master
 
-push:
+to_gem:
   stage: publish
   image: ruby:2.6
   script:
@@ -13,6 +19,8 @@ push:
     - touch ~/.gem/credentials
     - chmod 0600 ~/.gem/credentials
     - 'printf -- "---\n:rubygems_api_key: $GEM_HOST_API_KEY\n" > ~/.gem/credentials'
+    - RELEASE_VERSION=$(cat VERSION.md)
+    - GEM_NAME=error_response-$RELEASE_VERSION.gem
     - gem build error_response.gemspec
     - gem push $GEM_NAME
   only:

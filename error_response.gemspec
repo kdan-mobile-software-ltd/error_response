@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'error_response'
-  s.version     = ENV['RELEASE_VERSION']
-  s.date        = '2020-08-14'
+  s.version     = File.read("./VERSION.md")
+  s.date        = Time.now.strftime('%F')
   s.summary     = "A tool for API error response"
   s.description = "use for error_response"
   s.authors     = ["Kdan Mobile Software Developer"]
