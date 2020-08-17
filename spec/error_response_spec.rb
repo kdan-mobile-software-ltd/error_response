@@ -6,7 +6,7 @@ RSpec.describe ErrorResponse do
       hash = {
         status: 418,
         json: {
-          'error_code' => 418003,
+          'error_code' => 418_003,
           'error_message' => 'happy tree friend',
           'error_key' => 'happy_tree_friend_key'
         }
@@ -19,7 +19,7 @@ RSpec.describe ErrorResponse do
       hash = {
         status: 500,
         json: {
-          'error_code' => 500000,
+          'error_code' => 500_000,
           'error_message' => 'something went wrong'
         }
       }
@@ -31,7 +31,7 @@ RSpec.describe ErrorResponse do
   describe '#to_hash' do
     it "should return hash when key existed" do
       hash = {
-        'error_code' => 418003,
+        'error_code' => 418_003,
         'error_message' => 'happy tree friend',
         'error_key' => 'happy_tree_friend_key'
       }
