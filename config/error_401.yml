@@ -1,0 +1,19 @@
+invalid_grant:
+  error_code: 401_001
+  error_message: invalid grant
+member_auth_failed:
+  app_code: 401
+  error_code: 401_202
+  error_message: member auth failed
+token_invalid:
+  error_code: 401_203
+  error_message: token is invalid
+password_not_match:
+  error_code: 401_204
+  error_message: password not match
+password_invalid:
+  error_code: 401_205
+  error_message: password is invalid
+login_required:
+  error_code: 401_030
+  error_message: member need login first

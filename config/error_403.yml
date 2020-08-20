@@ -1,0 +1,71 @@
+message_not_found:
+  error_code: 403_001
+  error_message: message not found
+invalid_action:
+  error_code: 403_002
+  error_message: not allow for this action
+task_owner_is_not_you:
+  app_code: 4007
+  error_code: 403_030
+  error_message: task owner is not you
+need_to_check_security:
+  app_code: 4009
+  error_code: 403_031
+  error_message: security check process not finished
+over_monthly_task_usage:
+  app_code: 4013
+  error_code: 403_032
+  error_message: over monthly task usage
+task_not_owned:
+  app_code: 4030
+  error_code: 403_033
+  error_message: current member not own this task
+stage_need_verify:
+  app_code: 4032
+  error_code: 403_034
+  error_message: require verify before sign
+code_expire:
+  error_code: 403_035
+  error_message: code is already expired
+task_not_accessible:
+  error_code: 403_036
+  error_message: task is not accessible
+quick_sign_not_accepted:
+  error_code: 403_037
+  error_message: task is not accepted to quick sign
+forward_not_allowed:
+  error_code: 403_038
+  error_message: member not allowed to forward this stage
+need_to_setup_inperson:
+  error_code: 403_039
+  error_message: need to setup inperson first
+task_was_forwarded:
+  error_code: 403_040
+  error_message: task has forwarded to others
+group_task_not_accessible:
+  error_code: 403_041
+  error_message: tasks of group not accessible to member
+over_template_usage:
+  error_code: 403_042
+  error_message: over template usage
+not_allow_to_gdpr:
+  error_code: 403_043
+  error_message: not allow to gdpr remove
+voucher_not_belongs:
+  error_code: 403_100
+  error_message: voucher not belongs to member
+subscription_not_belongs:
+  error_code: 403_101
+  error_message: subscription not belongs to member
+invoice_not_belongs:
+  error_code: 403_102
+  error_message: invoice not belongs to member
+zendesk_login_need_confirm:
+  error_code: 403_200
+  error_message: need to confirm email before login to zendesk
+account_suspended:
+  error_code: 403_201
+  error_message: user account is suspended
+message_not_found:
+  error_code: 403_501
+  error_message: message not found

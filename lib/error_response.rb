@@ -28,14 +28,22 @@ class ErrorResponse
     }
   end
 
-  def self.load_remote(remote_file)
-    content = open(remote_file){|f| f.read}
-    @hash = YAML.load(content)
+  def self.load_remote(urls)
+    if urls.is_a? Array
+      @hash = urls.map { |url| build_yaml(url) }.inject(&:merge)
+    else
+      @hash = build_yaml(urls)
+    end
   end
 
   private
 
   def self.yaml_hash
     @hash ||= YAML.load_file(YAML_PATH)
+  end
+
+  def self.build_yaml(url)
+    content = open(urls){|f| f.read}
+    YAML.load(content)
   end
 end

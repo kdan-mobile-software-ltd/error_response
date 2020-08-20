@@ -1,0 +1,104 @@
+group_already_bind:
+  error_code: 406_201
+  error_message: provided members already belongs to other groups
+email_need_password:
+  app_code: 4028
+  error_code: 406_202
+  error_message: email already taken, need password
+third_party_no_email:
+  app_code: 4025
+  error_code: 406_203
+  error_message: no email from third party service
+already_bind:
+  app_code: 4006
+  error_code: 406_204
+  error_message: already bind with other email
+need_action_type:
+  app_code: 403_035
+  error_code: 406_205
+  error_message: Need action_type, [new] or [bind] with bind_email
+bind_email_not_exist:
+  app_code: 403_036
+  error_code: 406_207
+  error_message: Member with bind_email not exist
+need_otp_code:
+  app_code: 403_037
+  error_code: 406_208
+  error_message: Need otp code
+invalid_otp_code:
+  app_code: 403_038
+  error_code: 406_209
+  error_message: otp_code invalid
+setup_permission_failed:
+  error_code: 406_210
+  error_message: setup group permission failed
+mail_failed:
+  app_code: 4015
+  error_code: 406_030
+  error_message: send mail failed
+verify_failed:
+  app_code: 4033
+  error_code: 406_031
+  error_message: stage verify failed
+deliver_otp_failed:
+  app_code: 4036
+  error_code: 406_032
+  error_message: otp deliver failed
+tag_move_failed:
+  error_code: 406_033
+  error_message: tag move failed
+upchain_failed:
+  error_code: 406_034
+  error_message: upchain failed
+confirm_callback_failed:
+  error_code: 406_200
+  error_message: confirm success but callback failed
+invite_accept_failed:
+  error_code: 406_201
+  error_message: invite accept failed
+invite_callback_failed:
+  error_code: 406_202
+  error_message: invite accept success but callback failed
+third_party_login_failed:
+  error_code: 406_203
+  error_message: login from third party failed
+create_voucher_failed:
+  error_code: 406_100
+  error_message: create voucher failed
+record_info_failed:
+  error_code: 406_102
+  error_message: record info failed
+gdpr_kill_failed:
+  error_code: 406_103
+  error_message: gdpr kill failed
+payment_change_failed:
+  error_code: 406_104
+  error_message: failed to update payment status
+mail_not_valid:
+  # error_code: 406_301
+  error_code: 406_033
+  error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
+assign_failed:
+  error_code: 406_302
+  error_message: Already up to max assignment, please check the assignments of this project.
+create_receipt_failed:
+  error_code: 406_303
+  error_message: create receipt failed
+cancel_receipt_failed:
+  error_code: 406_304
+  error_message: cancel receipt failed
+refund_receipt_failed:
+  error_code: 406_304
+  error_message: refund receipt failed
+subscription_expired:
+  error_code: 410_301
+  error_message: Your subscription has expired. Please re-subscribe at Kdan Creative Store to continue assigning licenses
+deliver_fcm_failed:
+  error_code: 406_501
+  error_message: push message to firebase failed
+klaviyo_register_failed:
+  error_code: 406_800
+  error_message: register to klaviyo failed
+klaviyo_track_failed:
+  error_code: 406_801
+  error_message: track event to klaviyo failed

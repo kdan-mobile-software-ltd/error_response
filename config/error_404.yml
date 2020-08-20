@@ -1,0 +1,93 @@
+member_not_found:
+  error_code: 404_201
+  error_message: member not found
+contact_not_exist:
+  error_code: 404_202
+  error_message: contact not exist
+provider_not_exist:
+  error_code: 404_203
+  error_message: provider not exist
+register_not_found:
+  error_code: 404_204
+  error_message: register not found
+group_not_found:
+  error_code: 404_205
+  error_message: group not found
+profile_not_found:
+  error_code: 404_206
+  error_message: no such member profiles
+org_detail_not_found:
+  error_code: 404_207
+  error_message: org detail not found
+client_not_found:
+  error_code: 404_208
+  error_message: client not found
+signature_not_found:
+  app_code: 4002
+  error_code: 404_030
+  error_message: signature not found
+task_not_found:
+  app_code: 4004
+  error_code: 404_031
+  error_message: task not found
+stage_not_found:
+  app_code: 4006
+  error_code: 404_032
+  error_message: stage not found
+verify_source_not_set:
+  error_code: 404_033
+  error_message: verify source not set
+signer_not_found:
+  error_code: 404_034
+  error_message: signer not found
+template_not_found:
+  error_code: 404_035
+  error_message: template not found
+attachment_setting_not_found:
+  error_code: 404_036
+  error_message: attachment setting not found
+tag_not_found:
+  error_code: 404_037
+  error_message: tag not found
+file_not_found:
+  error_code: 404_038
+  error_message: file not found
+coupon_not_found:
+  error_code: 404_100
+  error_message: coupon not found
+voucher_not_found:
+  error_code: 404_101
+  error_message: voucher not found
+member_not_found:
+  error_code: 404_102
+  error_message: member not found
+subscription_not_found:
+  error_code: 404_103
+  error_message: subscription not found
+plan_not_found:
+  error_code: 404_104
+  error_message: plan not found
+event_not_found:
+  error_code: 404_105
+  error_message: event not found
+card_token_not_found:
+  error_code: 404_106
+  error_message: card token not found
+invoice_not_found:
+  error_code: 404_107
+  error_message: invoice not found
+payment_not_found:
+  error_code: 404_108
+  error_message: payment not found
+info_not_found:
+  error_code: 404_201
+  error_message: info not found
+product_not_found:
+  error_code: 404_301
+  error_message: product not found
+bundle_id_not_found:
+  error_code: 404_501
+  error_message: app bundle_id is not found or not accessible
+default_message_not_found:
+  error_code: 404_502
+  error_message: default message is not found or not accessible
