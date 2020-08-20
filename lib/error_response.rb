@@ -1,4 +1,6 @@
 require 'yaml'
+require 'open-uri'
+
 class ErrorResponse
   YAML_PATH = 'config/error_response.yml'
 
@@ -24,6 +26,11 @@ class ErrorResponse
       status: json['error_code'] / 1_000,
       json: json
     }
+  end
+
+  def self.load_remote(remote_file)
+    content = open(remote_file){|f| f.read}
+    @hash = YAML.load(content)
   end
 
   private
