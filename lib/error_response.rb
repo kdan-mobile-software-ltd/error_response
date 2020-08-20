@@ -43,7 +43,7 @@ class ErrorResponse
   end
 
   def self.build_yaml(url)
-    content = open(urls){|f| f.read}
+    content = open(url){|f| f.read}
     YAML.load(content)
   end
 end
