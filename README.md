@@ -51,6 +51,12 @@ my_own_error:
 
 ```
 
+Or import it from url
+
+```
+ErrorResponse.load_remote(url_path)
+```
+
 ### Others
 
 See all avaliable error_code & error_message
