@@ -2,7 +2,7 @@ require 'yaml'
 require 'open-uri'
 
 class ErrorResponse
-  YAML_PATH = 'config/error_response.yml'
+  YAML_PATHS = 'config/error_*.yml'
 
   def self.all
     yaml_hash
@@ -39,7 +39,10 @@ class ErrorResponse
   private
 
   def self.yaml_hash
-    @hash ||= YAML.load_file(YAML_PATH)
+    return @hash unless @hash.nil?
+
+    files = Dir[YAML_PATHS]
+    @hash = files.map { |file| YAML.load_file(file) }.inject(&:merge)
   end
 
   def self.build_yaml(url)
