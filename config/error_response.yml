@@ -1,3 +1,642 @@
 happy_tree_friend_key:
   error_code: 418_003
   error_message: happy tree friend
+rescue_error:
+  error_code: 400_000
+  error_message: customize
+need_more_infomation:
+  app_code: 4008
+  error_code: 400_001
+  error_message: some columns should not be null
+invalid_token:
+  app_code: 4000
+  error_code: 400_002
+  error_message: invalid token
+invalid_member:
+  app_code: 4001
+  error_code: 400_003
+  error_message: invalid member
+invalid_request:
+  error_code: 400_004
+  error_message: invalid request
+invalid_client:
+  error_code: 400_005
+  error_message: invalid client
+invalid_scope:
+  error_code: 400_006
+  error_message: invalid scope
+invalid_security_check_token:
+  error_code: 400_007
+  error_message: invalid security check token
+task_is_not_draft:
+  app_code: 4005
+  error_code: 400_030
+  error_message: task is not draft
+file_processing:
+  app_code: 4010
+  error_code: 400_031
+  error_message: the file is processing, please wait
+task_is_not_completed:
+  app_code: 4011
+  error_code: 400_032
+  error_message: task is not completed
+task_deleted:
+  app_code: 4012
+  error_code: 400_033
+  error_message: task has deleted
+invalid_category:
+  app_code: 4014
+  error_code: 400_034
+  error_message: invalid category
+task_not_waiting:
+  app_code: 4026
+  error_code: 400_035
+  error_message: task is not waiting
+category_not_allow:
+  app_code: 4027
+  error_code: 400_036
+  error_message: provided category is not allowed
+task_not_deletable:
+  app_code: 4028
+  error_code: 400_037
+  error_message: only sign and send completed task can be deleted
+task_not_signable:
+  app_code: 4029
+  error_code: 400_038
+  error_message: only waiting task can be signed
+verify_step_not_found:
+  app_code: 4031
+  error_code: 400_039
+  error_message: not valid verify uuid
+file_not_ready:
+  app_code: 4034
+  error_code: 400_040
+  error_message: file not ready yet, please try later
+request_too_frequently:
+  app_code: 4035
+  error_code: 400_041
+  error_message: request too frequently
+filter_not_allow:
+  error_code: 400_042
+  error_message: filter is not allowed
+no_ongoind_stage:
+  error_code: 400_043
+  error_message: no stage is ongoing
+not_signer_turn:
+  error_code: 400_044
+  error_message: task is not signer turn
+code_not_match:
+  error_code: 400_045
+  error_message: code not match to params
+stage_already_done:
+  error_code: 400_046
+  error_message: stage has already signed
+execute_type_not_allow:
+  error_code: 400_047
+  error_message: execute type not allow
+other_has_accepted_to_quick_sign:
+  error_code: 400_049
+  error_message: other has accepted to do quick sign
+forward_mail_already_in_flow:
+  error_code: 400_050
+  error_message: forward mail has already included in the same sequence of sign flow
+attachment_not_ready:
+  error_code: 400_051
+  error_message: attachment not ready
+not_allow_context:
+  error_code: 400_052
+  error_message: tag context not allow
+tag_already_exist:
+  error_code: 400_054
+  error_message: tag already exist
+template_deleted:
+  error_code: 400_053
+  error_message: template has deleted
+field_content_invalid:
+  error_code: 400_054
+  error_message: field content invalid
+empty_tag_not_allowed:
+  error_code: 400_055
+  error_message: tag should not be empty
+member_already_secured:
+  error_code: 400_056
+  error_message: member has finished security check
+coupon_is_used:
+  error_code: 400_100
+  error_message: coupon is used
+coupon_is_expired:
+  error_code: 400_101
+  error_message: coupon is expired
+coupon_not_available_for_plan:
+  error_code: 400_102
+  error_message: coupon not available for that plan
+voucher_not_publish:
+  error_code: 400_103
+  error_message: voucher is not publish
+voucher_is_expired:
+  error_code: 400_104
+  error_message: voucher is expired
+voucher_over_limit:
+  error_code: 400_105
+  error_message: voucher is over limit
+card_error:
+  error_code: 400_106
+  error_message: card has some problems
+invalid_interval:
+  error_code: 400_107
+  error_message: plan interval is invalid
+invalid_target:
+  error_code: 400_108
+  error_message: target is invalid
+member_already_trial:
+  error_code: 400_109
+  error_message: member trial before
+voucher_already_redeem:
+  error_code: 400_110
+  error_message: voucher has already redeemed by member
+payment_status_cannot_change:
+  error_code: 400_111
+  error_message: payment status can not be change to provide status
+payment_already_paid:
+  error_code: 400_112
+  error_message: payment has already been paid
+invalid_payment_status:
+  error_code: 400_113
+  error_message: payment status is invalid
+invalid_domain:
+  error_code: 400_201
+  error_message: invalid domain
+already_confirmed:
+  error_code: 400_202
+  error_message: member is already confirmed
+invalid_icon_id:
+  error_code: 400_203
+  error_message: not allow icon id
+invalid_verify_request:
+  error_code: 400_204
+  error_message: not verify request
+register_not_used:
+  error_code: 400_205
+  error_message: register not yet used
+group_setup_failed:
+  error_code: 400_206
+  error_message: member can not setup group
+group_not_belong:
+  error_code: 400_207
+  error_message: member not belongs to group
+email_empty:
+  error_code: 400_208
+  error_message: Email should not be null
+password_empty:
+  error_code: 400_209
+  error_message: Password should not be null
+member_confirm_failed:
+  error_code: 400_210
+  error_message: Member confirm failed
+remove_gdpr_failed:
+  error_code: 400_211
+  error_message: remove gdpr failed
+user_never_login:
+  error_code: 400_212
+  error_message: user never login
+already_employee:
+  error_code: 400_213
+  error_message: member is already employee
+not_employee:
+  error_code: 400_214
+  error_message: member is not an employee
+not_allow_period:
+  error_code: 400_215
+  error_message: not allow period
+not_allow_action:
+  error_code: 400_216
+  error_message: not allow action
+default_domain_rejected:
+  error_code: 400_217
+  error_message: default domain can not be rejected
+domain_error:
+  error_code: 400_218
+  error_message: domain error
+request_failed:
+  error_code: 400_219
+  error_message: request failed
+email_format_invalid:
+  error_code: 400_220
+  error_message: email format invalid
+invalid_mailer_action:
+  error_code: 400_221
+  error_message: invalid mailer action
+api_failed:
+  error_code: 400_222
+  error_message: api failed
+invalid_file_type:
+  error_code: 400_223
+  error_message: signature file type is invalid
+not_allow_provider:
+  error_code: 400_224
+  error_message: not allow provider
+all_invite_failed:
+  error_code: 400_225
+  error_message: all invite failed
+some_invite_failed:
+  error_code: 400_226
+  error_message: some invite failed
+invalid_format:
+  error_code: 400_227
+  error_message: not allow format
+invalid_short_name:
+  error_code: 400_228
+  error_message: invalid short name
+standard_api_failed:
+  error_code: 400_228
+  error_message: create standard api app failed
+not_allow_org_type:
+  error_code: 400_229
+  error_message: not allow org type, only allow education or business
+register_already_cancel:
+  error_code: 400_230
+  error_message: register invite already been canceled
+email_not_match:
+  error_code: 400_231
+  error_message: email not match logined email
+mail_error:
+  error_code: 400_301
+  error_message: An error occurred while processing your email address.
+batch_ids_empty:
+  # error_code: 400_302
+  error_code: 400_043
+  error_message: batch_ids should not be empty
+confirmation_id_faild:
+  error_code: 400_303
+  error_message: confirmation_id can not be used
+mass_assignment_ids_not_available:
+  # error_code: 400_304
+  error_code: 400_045
+  error_message: mass assignment ids are not available
+mass_purchasing_id_not_available:
+  # error_code: 400_305
+  error_code: 400_046
+  error_message: mass purchasing id is not available
+kdan_id_empty:
+  error_code: 400_306
+  error_message: kdan_id should not be empty
+token_empty:
+  error_code: 400_307
+  error_message: token should not be empty
+csv_file_unupload:
+  # error_code: 400_308
+  error_code: 400_049
+  error_message: csv file is not upload
+csv_file_name_empty:
+  # error_code: 400_309
+  error_code: 400_050
+  error_message: csv file name should not be empty
+txt_file_empty:
+  error_code: 400_310
+  error_message: email string should not be empty
+receipt_not_found:
+  # error_code: 400_311
+  error_code: 400_052
+  error_message: receipt not found
+no_purchasing_product:
+  # error_code: 400_312
+  error_code: 400_003
+  error_message: You don't have any mass purchasing product.
+product_has_been_trial_before:
+  error_code: 400_313
+  error_message: This product has been trial by member before
+receipt_not_cancelable:
+  error_code: 400_314
+  error_message: receipt can not be canceled
+get_user_receipt_faild:
+  error_code: 400_315
+  error_message: obtain user receipt info failed
+redeem_unavailable:
+  error_code: 400_316
+  error_message: user is unavailable to redeeem
+receipt_not_refundable:
+  error_code: 400_317
+  error_message: receipt can not be refunded
+send_to_fcm_failed:
+  error_code: 400_501
+  error_message: send to fcm server failed
+invalid_iid_token:
+  error_code: 400_502
+  error_message: invalid instance id token
+topic_over_limit:
+  error_code: 400_503
+  error_message: topic over limit
+need_at_least_one_lang:
+  error_code: 400_504
+  error_message: need at least one lang
+invalid_grant:
+  error_code: 401_001
+  error_message: invalid grant
+member_auth_failed:
+  app_code: 401
+  error_code: 401_202
+  error_message: member auth failed
+token_invalid:
+  error_code: 401_203
+  error_message: token is invalid
+password_not_match:
+  error_code: 401_204
+  error_message: password not match
+password_invalid:
+  error_code: 401_205
+  error_message: password is invalid
+login_required:
+  error_code: 401_030
+  error_message: member need login first
+email_already_taken:
+  error_code: 402_001
+  error_message: email already be taken
+card_error:
+  error_code: 402_100
+  error_message: card error
+message_not_found:
+  error_code: 403_001
+  error_message: message not found
+invalid_action:
+  error_code: 403_002
+  error_message: not allow for this action
+task_owner_is_not_you:
+  app_code: 4007
+  error_code: 403_030
+  error_message: task owner is not you
+need_to_check_security:
+  app_code: 4009
+  error_code: 403_031
+  error_message: security check process not finished
+over_monthly_task_usage:
+  app_code: 4013
+  error_code: 403_032
+  error_message: over monthly task usage
+task_not_owned:
+  app_code: 4030
+  error_code: 403_033
+  error_message: current member not own this task
+stage_need_verify:
+  app_code: 4032
+  error_code: 403_034
+  error_message: require verify before sign
+code_expire:
+  error_code: 403_035
+  error_message: code is already expired
+task_not_accessible:
+  error_code: 403_036
+  error_message: task is not accessible
+quick_sign_not_accepted:
+  error_code: 403_037
+  error_message: task is not accepted to quick sign
+forward_not_allowed:
+  error_code: 403_038
+  error_message: member not allowed to forward this stage
+need_to_setup_inperson:
+  error_code: 403_039
+  error_message: need to setup inperson first
+task_was_forwarded:
+  error_code: 403_040
+  error_message: task has forwarded to others
+group_task_not_accessible:
+  error_code: 403_041
+  error_message: tasks of group not accessible to member
+over_template_usage:
+  error_code: 403_042
+  error_message: over template usage
+not_allow_to_gdpr:
+  error_code: 403_043
+  error_message: not allow to gdpr remove
+voucher_not_belongs:
+  error_code: 403_100
+  error_message: voucher not belongs to member
+subscription_not_belongs:
+  error_code: 403_101
+  error_message: subscription not belongs to member
+invoice_not_belongs:
+  error_code: 403_102
+  error_message: invoice not belongs to member
+zendesk_login_need_confirm:
+  error_code: 403_200
+  error_message: need to confirm email before login to zendesk
+account_suspended:
+  error_code: 403_201
+  error_message: user account is suspended
+message_not_found:
+  error_code: 403_501
+  error_message: message not found
+member_not_found:
+  error_code: 404_201
+  error_message: member not found
+contact_not_exist:
+  error_code: 404_202
+  error_message: contact not exist
+provider_not_exist:
+  error_code: 404_203
+  error_message: provider not exist
+register_not_found:
+  error_code: 404_204
+  error_message: register not found
+group_not_found:
+  error_code: 404_205
+  error_message: group not found
+profile_not_found:
+  error_code: 404_206
+  error_message: no such member profiles
+org_detail_not_found:
+  error_code: 404_207
+  error_message: org detail not found
+client_not_found:
+  error_code: 404_208
+  error_message: client not found
+signature_not_found:
+  app_code: 4002
+  error_code: 404_030
+  error_message: signature not found
+task_not_found:
+  app_code: 4004
+  error_code: 404_031
+  error_message: task not found
+stage_not_found:
+  app_code: 4006
+  error_code: 404_032
+  error_message: stage not found
+verify_source_not_set:
+  error_code: 404_033
+  error_message: verify source not set
+signer_not_found:
+  error_code: 404_034
+  error_message: signer not found
+template_not_found:
+  error_code: 404_035
+  error_message: template not found
+attachment_setting_not_found:
+  error_code: 404_036
+  error_message: attachment setting not found
+tag_not_found:
+  error_code: 404_037
+  error_message: tag not found
+file_not_found:
+  error_code: 404_038
+  error_message: file not found
+coupon_not_found:
+  error_code: 404_100
+  error_message: coupon not found
+voucher_not_found:
+  error_code: 404_101
+  error_message: voucher not found
+member_not_found:
+  error_code: 404_102
+  error_message: member not found
+subscription_not_found:
+  error_code: 404_103
+  error_message: subscription not found
+plan_not_found:
+  error_code: 404_104
+  error_message: plan not found
+event_not_found:
+  error_code: 404_105
+  error_message: event not found
+card_token_not_found:
+  error_code: 404_106
+  error_message: card token not found
+invoice_not_found:
+  error_code: 404_107
+  error_message: invoice not found
+payment_not_found:
+  error_code: 404_108
+  error_message: payment not found
+info_not_found:
+  error_code: 404_201
+  error_message: info not found
+product_not_found:
+  error_code: 404_301
+  error_message: product not found
+bundle_id_not_found:
+  error_code: 404_501
+  error_message: app bundle_id is not found or not accessible
+default_message_not_found:
+  error_code: 404_502
+  error_message: default message is not found or not accessible
+group_already_bind:
+  error_code: 406_201
+  error_message: provided members already belongs to other groups
+email_need_password:
+  app_code: 4028
+  error_code: 406_202
+  error_message: email already taken, need password
+third_party_no_email:
+  app_code: 4025
+  error_code: 406_203
+  error_message: no email from third party service
+already_bind:
+  app_code: 4006
+  error_code: 406_204
+  error_message: already bind with other email
+need_action_type:
+  app_code: 403_035
+  error_code: 406_205
+  error_message: Need action_type, [new] or [bind] with bind_email
+bind_email_not_exist:
+  app_code: 403_036
+  error_code: 406_207
+  error_message: Member with bind_email not exist
+need_otp_code:
+  app_code: 403_037
+  error_code: 406_208
+  error_message: Need otp code
+invalid_otp_code:
+  app_code: 403_038
+  error_code: 406_209
+  error_message: otp_code invalid
+setup_permission_failed:
+  error_code: 406_210
+  error_message: setup group permission failed
+mail_failed:
+  app_code: 4015
+  error_code: 406_030
+  error_message: send mail failed
+verify_failed:
+  app_code: 4033
+  error_code: 406_031
+  error_message: stage verify failed
+deliver_otp_failed:
+  app_code: 4036
+  error_code: 406_032
+  error_message: otp deliver failed
+tag_move_failed:
+  error_code: 406_033
+  error_message: tag move failed
+upchain_failed:
+  error_code: 406_034
+  error_message: upchain failed
+confirm_callback_failed:
+  error_code: 406_200
+  error_message: confirm success but callback failed
+invite_accept_failed:
+  error_code: 406_201
+  error_message: invite accept failed
+invite_callback_failed:
+  error_code: 406_202
+  error_message: invite accept success but callback failed
+third_party_login_failed:
+  error_code: 406_203
+  error_message: login from third party failed
+create_voucher_failed:
+  error_code: 406_100
+  error_message: create voucher failed
+record_info_failed:
+  error_code: 406_102
+  error_message: record info failed
+gdpr_kill_failed:
+  error_code: 406_103
+  error_message: gdpr kill failed
+payment_change_failed:
+  error_code: 406_104
+  error_message: failed to update payment status
+mail_not_valid:
+  # error_code: 406_301
+  error_code: 406_033
+  error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
+assign_failed:
+  error_code: 406_302
+  error_message: Already up to max assignment, please check the assignments of this project.
+create_receipt_failed:
+  error_code: 406_303
+  error_message: create receipt failed
+cancel_receipt_failed:
+  error_code: 406_304
+  error_message: cancel receipt failed
+refund_receipt_failed:
+  error_code: 406_304
+  error_message: refund receipt failed
+subscription_expired:
+  error_code: 410_301
+  error_message: Your subscription has expired. Please re-subscribe at Kdan Creative Store to continue assigning licenses
+deliver_fcm_failed:
+  error_code: 406_501
+  error_message: push message to firebase failed
+klaviyo_register_failed:
+  error_code: 406_800
+  error_message: register to klaviyo failed
+klaviyo_track_failed:
+  error_code: 406_801
+  error_message: track event to klaviyo failed
+subscription_expired:
+  error_code: 410_301
+  error_message: Your subscription has expired. Please re-subscribe at Kdan Creative Store to continue assigning licenses
+incorrect_info:
+  error_code: 422_001
+  error_message: Incorrect email or password
+incorrect_info_and_unconfirm:
+  error_code: 422_002
+  error_message: Incorrect email or password; Email not confirm yes
+domain_rejected:
+  error_code: 431_001
+  error_message: This domain is rejected
+domain_not_verified:
+  error_code: 433_001
+  error_message: This domain has not been verified
+user_already_subscribed:
+  error_code: 434_001
+  error_message: This domain is verified but user already subscribed
