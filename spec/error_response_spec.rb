@@ -8,10 +8,10 @@ RSpec.describe ErrorResponse do
         json: {
           'error_code' => 418_003,
           'error_message' => 'happy tree friend',
-          'error_key' => 'happy_tree_friend_key'
+          'error_key' => 'happy_tree_friend'
         }
       }
-      result = ErrorResponse.to_api(:happy_tree_friend_key)
+      result = ErrorResponse.to_api(:happy_tree_friend)
       expect(result).to eq hash
     end
 
@@ -33,9 +33,9 @@ RSpec.describe ErrorResponse do
       hash = {
         'error_code' => 418_003,
         'error_message' => 'happy tree friend',
-        'error_key' => 'happy_tree_friend_key'
+        'error_key' => 'happy_tree_friend'
       }
-      result = ErrorResponse.to_hash(:happy_tree_friend_key)
+      result = ErrorResponse.to_hash(:happy_tree_friend)
       expect(result).to eq hash
     end
 

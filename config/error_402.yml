@@ -1,6 +1,0 @@
-email_already_taken:
-  error_code: 402_001
-  error_message: email already be taken
-card_error:
-  error_code: 402_100
-  error_message: card error
