@@ -2,7 +2,7 @@ require 'yaml'
 require 'open-uri'
 
 class ErrorResponse
-  YAML_PATH = 'config/error_response.yml'
+  SETTING_PATH = 'config/error_response.yml'
 
   def self.all
     yaml_hash
@@ -28,14 +28,20 @@ class ErrorResponse
     }
   end
 
-  def self.load_remote(remote_file)
-    content = open(remote_file){|f| f.read}
-    @hash = YAML.load(content)
-  end
-
   private
 
   def self.yaml_hash
-    @hash ||= YAML.load_file(YAML_PATH)
+    return @hash unless @hash.nil?
+
+    settings = YAML.load(File.read(SETTING_PATH))
+    local_hash = settings['source']['local'].map { |path| YAML.load_file(path) }.inject(&:merge)
+    remote_hash = settings['source']['remote'].map { |url| build_yaml(url) }.inject(&:merge)
+    
+    @hash = local_hash.merge(remote_hash)
+  end
+
+  def self.build_yaml(url)
+    content = open(url){|f| f.read}
+    YAML.load(content)
   end
 end
