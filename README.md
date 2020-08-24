@@ -1,21 +1,39 @@
 # Error Response
 
-### Installation
+### Getting started
 
 ```
 gem 'error_response'
 ```
 
-### Use it perfectly with error_response
+Run `bundle install`
+
+create  `config/error_response.yml`
+
+```
+# config/error_response.yml
+
+source:
+  local:
+    - ENV['YOUR_LOCAL_FILE_PATH']
+  remote:
+    - https://your_remote_file.yml
+```
 
 define a error_response method in Api::ApplicationController
 
 ```
+  #  app/controller/api/v1/application_controller.rb
+
   def error_response(error_key, error_message=nil)
-    render ErrorResponse.to_api(error_key, error_message)
+    render_content = ErrorResponse.to_api(error_key, error_message).deep_dup
+    render_content[:json].delete('app_code')
+    render(render_content)
   end
 ```
 
+
+### Ready to Go
 simeply use it where you want
 
 ```
@@ -34,21 +52,6 @@ the response will look like this
       error_key: 'happy_tree_friend_key'
     }
 }
-```
-
-### Prepare
-
-Before you start it, you should create `config/error_response.yml` and put the errors into it.
-
-the yml must follow the same style otherwise error may happend.
-
-```
-// config/error_response.yml
-
-my_own_error:
-  error_code: 418_005
-  error_message: this is my own error
-
 ```
 
 ### Others

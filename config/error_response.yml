@@ -1,3 +1,5 @@
-happy_tree_friend_key:
-  error_code: 418_003
-  error_message: happy tree friend
+source:
+  local:
+    - config/error_4xx.yml
+  remote:
+    - https://raw.githubusercontent.com/kdan-mobile-software-ltd/error_response/yaml/config/error_404.yml
