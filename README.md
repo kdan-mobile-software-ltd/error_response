@@ -6,25 +6,18 @@
 gem 'error_response'
 ```
 
-Then run `bundle install`
+Run `bundle install`
 
-Next, choose the place you want to store your error_response.
-
-1. Save locally. Create `config/error_response.yml` and put the errors into it.
+create  `config/error_response.yml`
 
 ```
-// config/error_response.yml
+# config/error_response.yml
 
-my_own_error:
-  error_code: 418_005
-  error_message: this is my own error
-
-```
-2. Use remote url. Create `config/initializers/error_response.rb` and load the errors there.
-
-```
-url_path = ENV['YOUR_PATH']
-ErrorResponse.load_remote(url_path)
+source:
+  local:
+    - ENV['YOUR_LOCAL_FILE_PATH']
+  remote:
+    - https://your_remote_file.yml
 ```
 
 define a error_response method in Api::ApplicationController

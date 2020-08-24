@@ -1,6 +1,18 @@
 require './lib/error_response'
 
 RSpec.describe ErrorResponse do
+  describe '#yaml_hash' do
+    it 'should fetch data from local' do
+      result = ErrorResponse.to_api(:happy_tree_friend)
+      expect(result[:json]['error_message']).to eq 'happy tree friend'
+    end
+
+    it 'should fetch data from remote' do
+      result = ErrorResponse.to_api(:member_not_found)
+      expect(result[:json]['error_message']).to eq 'member not found'
+    end
+  end
+
   describe '#to_api' do
     it "should return correspond hash when key existed" do
       hash = {
