@@ -34,8 +34,11 @@ class ErrorResponse
     return @hash unless @hash.nil?
 
     settings = YAML.load(File.read(SETTING_PATH))
-    local_hash = settings['source']['local'].map { |path| YAML.load_file(path) }.inject(&:merge)
-    remote_hash = settings['source']['remote'].map { |url| build_yaml(url) }.inject(&:merge)
+    local_array = settings['source']['local']
+    local_hash = local_array.nil? ? {} : local_array.map { |path| YAML.load_file(path) }.inject(&:merge)
+
+    remote_array = settings['source']['remote']
+    remote_hash = remote_array.nil? ? {} : remote_array.map { |url| build_yaml(url) }.inject(&:merge)
     
     @hash = local_hash.merge(remote_hash)
   end
