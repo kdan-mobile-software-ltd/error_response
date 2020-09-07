@@ -61,7 +61,7 @@ ErrorResponse.load_remote(url_path)
 
 See all avaliable error_code & error_message
 
-`ErorrResponse.all`
+`ErrorResponse.all`
 
 Return to hash only
 
