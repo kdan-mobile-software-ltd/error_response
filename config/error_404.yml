@@ -94,9 +94,6 @@ default_message_not_found:
 video_not_found:
   error_code: 404_601
   error_message: video not found
-event_not_found:
-  error_code: 404_602
-  error_message: event not found
 user_not_found:
   error_code: 404_603
   error_message: user not found
