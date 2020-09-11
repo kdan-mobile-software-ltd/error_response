@@ -326,3 +326,6 @@ topic_over_limit:
 need_at_least_one_lang:
   error_code: 400_504
   error_message: need at least one lang
+duplicate_video_id:
+  error_code: 400_601
+  error_message: video_id exists
