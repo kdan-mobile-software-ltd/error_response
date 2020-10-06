@@ -100,3 +100,21 @@ user_not_found:
 report_not_found:
   error_code: 404_604
   error_message: report not found
+request_link_not_found:
+  error_code: 404_401
+  error_message: Request link not found or expired
+file_or_folder_not_found:
+  error_code: 404_402
+  error_message: Target file or folder not found
+team_not_found:
+  error_code: 404_403
+  error_message: Target team not found
+share_link_not_found:
+  error_code: 404_404
+  error_message: Share link not found
+scope_object_not_found:
+  error_code: 404_405
+  error_message: Scope object not found
+target_user_not_found:
+  error_code: 404_406
+  error_message: Target user not found

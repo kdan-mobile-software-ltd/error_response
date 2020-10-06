@@ -329,3 +329,57 @@ need_at_least_one_lang:
 duplicate_video_id:
   error_code: 400_601
   error_message: video_id exists
+request_link_upload_initiate_failed:
+  error_code: 400_401
+  error_message: Initiate uploading via request link failed
+request_link_update_failed:
+  error_code: 400_402
+  error_message: Update request link setting failed
+team_change_name_failed:
+  error_code: 400_403
+  error_message: Change team name failed
+share_link_create_or_update_failed:
+  error_code: 400_404
+  error_message: Create share link or update share link setting failed
+share_link_set_status_failed:
+  error_code: 400_405
+  error_message: Set share link status failed
+share_link_delete_failed:
+  error_code: 400_406
+  error_message: Delete share link failed
+share_link_not_folder_link:
+  error_code: 400_407
+  error_message: Share Link is not a folder link
+share_link_no_email_or_name:
+  error_code: 400_408
+  error_message: Empty email or name
+deprecated_api:
+  error_code: 400_409
+  error_message: Deprecated API
+preview_token_invalid:
+  error_code: 400_410
+  error_message: Invalid preview token
+folder_create_failed:
+  error_code: 400_411
+  error_message: Create folder failed
+folder_update_failed:
+  error_code: 400_412
+  error_message: Update folder infomation failed
+folder_download_empty_email:
+  error_code: 400_413
+  error_message: Empty email
+file_update_failed:
+  error_code: 400_414
+  error_message: Update file failed
+team_create_failed:
+  error_code: 400_415
+  error_message: Create team failed
+request_link_upload_failed:
+  error_code: 400_416
+  error_message: Create upload mission of request link failed
+invalid_params:
+  error_code: 400_417
+  error_message: Input parameters are invalid
+grant_change_setting_failed:
+  error_code: 400_418
+  error_message: Change share folder setting failed

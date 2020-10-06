@@ -17,3 +17,6 @@ password_invalid:
 login_required:
   error_code: 401_030
   error_message: member need login first
+authorize_failed:
+  error_code: 401_401
+  error_message: Authorize failed
