@@ -383,3 +383,6 @@ invalid_params:
 grant_change_setting_failed:
   error_code: 400_418
   error_message: Change share folder setting failed
+request_link_delete_failed:
+  error_code: 400_419
+  error_message: Delete share link failed
