@@ -386,3 +386,6 @@ grant_change_setting_failed:
 request_link_delete_failed:
   error_code: 400_419
   error_message: Delete share link failed
+no_avaliable_email:
+  error_code: 400_800
+  error_message: No available mail
