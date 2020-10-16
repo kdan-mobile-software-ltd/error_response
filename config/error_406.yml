@@ -1,14 +1,69 @@
+mail_failed:
+  app_code: 4015
+  error_code: 406_030
+  error_message: send mail failed
+verify_failed:
+  app_code: 4033
+  error_code: 406_031
+  error_message: stage verify failed
+deliver_otp_failed:
+  app_code: 4036
+  error_code: 406_032
+  error_message: otp deliver failed
+tag_move_failed:
+  error_code: 406_033
+  error_message: tag move failed
+mail_not_valid:
+  # error_code: 406_301
+  error_code: 406_033
+  error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
+upchain_failed:
+  error_code: 406_034
+  error_message: upchain failed
+get_trial_pdf_failed:
+  error_code: 406_035
+  error_message: get trail pdf failed
+download_task_file_failed:
+  error_code: 406_036
+  error_message: download task associate pdf failed
+share_template_failed:
+  error_code: 406_037
+  error_message: share template to group others failed
+create_voucher_failed:
+  error_code: 406_100
+  error_message: create voucher failed
+record_info_failed:
+  error_code: 406_102
+  error_message: record info failed
+gdpr_kill_failed:
+  error_code: 406_103
+  error_message: gdpr kill failed
+payment_change_failed:
+  error_code: 406_104
+  error_message: failed to update payment status
+confirm_callback_failed:
+  error_code: 406_200
+  error_message: confirm success but callback failed
 group_already_bind:
   error_code: 406_201
   error_message: provided members already belongs to other groups
+invite_accept_failed:
+  error_code: 406_201
+  error_message: invite accept failed
 email_need_password:
   app_code: 4028
   error_code: 406_202
   error_message: email already taken, need password
+invite_callback_failed:
+  error_code: 406_202
+  error_message: invite accept success but callback failed
 third_party_no_email:
   app_code: 4025
   error_code: 406_203
   error_message: no email from third party service
+third_party_login_failed:
+  error_code: 406_203
+  error_message: login from third party failed
 already_bind:
   app_code: 4006
   error_code: 406_204
@@ -32,52 +87,6 @@ invalid_otp_code:
 setup_permission_failed:
   error_code: 406_210
   error_message: setup group permission failed
-mail_failed:
-  app_code: 4015
-  error_code: 406_030
-  error_message: send mail failed
-verify_failed:
-  app_code: 4033
-  error_code: 406_031
-  error_message: stage verify failed
-deliver_otp_failed:
-  app_code: 4036
-  error_code: 406_032
-  error_message: otp deliver failed
-tag_move_failed:
-  error_code: 406_033
-  error_message: tag move failed
-upchain_failed:
-  error_code: 406_034
-  error_message: upchain failed
-confirm_callback_failed:
-  error_code: 406_200
-  error_message: confirm success but callback failed
-invite_accept_failed:
-  error_code: 406_201
-  error_message: invite accept failed
-invite_callback_failed:
-  error_code: 406_202
-  error_message: invite accept success but callback failed
-third_party_login_failed:
-  error_code: 406_203
-  error_message: login from third party failed
-create_voucher_failed:
-  error_code: 406_100
-  error_message: create voucher failed
-record_info_failed:
-  error_code: 406_102
-  error_message: record info failed
-gdpr_kill_failed:
-  error_code: 406_103
-  error_message: gdpr kill failed
-payment_change_failed:
-  error_code: 406_104
-  error_message: failed to update payment status
-mail_not_valid:
-  # error_code: 406_301
-  error_code: 406_033
-  error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
 assign_failed:
   error_code: 406_302
   error_message: Already up to max assignment, please check the assignments of this project.
@@ -90,9 +99,6 @@ cancel_receipt_failed:
 refund_receipt_failed:
   error_code: 406_304
   error_message: refund receipt failed
-subscription_expired:
-  error_code: 410_301
-  error_message: Your subscription has expired. Please re-subscribe at Kdan Creative Store to continue assigning licenses
 deliver_fcm_failed:
   error_code: 406_501
   error_message: push message to firebase failed

@@ -16,15 +16,24 @@ invalid_member:
 invalid_request:
   error_code: 400_004
   error_message: invalid request
+invalid_security_check_token:  # signature_center only , 400_007 before
+  error_code: 400_004
+  error_message: invalid security check token
 invalid_client:
   error_code: 400_005
   error_message: invalid client
+invalid_preview_code:  # signature_center only
+  error_code: 400_005
+  error_message: invalid preview code  
 invalid_scope:
   error_code: 400_006
   error_message: invalid scope
-invalid_security_check_token:
+invalid_preview_token:
+  error_code: 400_006
+  error_message: invalid preview token
+invalid_download_code:
   error_code: 400_007
-  error_message: invalid security check token
+  error_message: invalid download code
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
@@ -76,7 +85,7 @@ request_too_frequently:
 filter_not_allow:
   error_code: 400_042
   error_message: filter is not allowed
-no_ongoind_stage:
+no_ongoing_stage:
   error_code: 400_043
   error_message: no stage is ongoing
 not_signer_turn:
@@ -91,6 +100,9 @@ stage_already_done:
 execute_type_not_allow:
   error_code: 400_047
   error_message: execute type not allow
+sign_invalid_client:
+  error_code: 400_048
+  error_message: client is invalid
 other_has_accepted_to_quick_sign:
   error_code: 400_049
   error_message: other has accepted to do quick sign
@@ -118,6 +130,9 @@ empty_tag_not_allowed:
 member_already_secured:
   error_code: 400_056
   error_message: member has finished security check
+invalid_file_type:
+  error_code: 400_057
+  error_message: signature file type is invalid
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used

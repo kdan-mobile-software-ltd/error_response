@@ -51,6 +51,12 @@ over_template_usage:
 not_allow_to_gdpr:
   error_code: 403_043
   error_message: not allow to gdpr remove
+template_not_accessible:
+  error_code: 403_044
+  error_message: template not accessible to member
+template_not_sharable:
+  error_code: 403_045
+  error_message: template not sharable
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
