@@ -325,21 +325,6 @@ redeem_unavailable:
 receipt_not_refundable:
   error_code: 400_317
   error_message: receipt can not be refunded
-send_to_fcm_failed:
-  error_code: 400_501
-  error_message: send to fcm server failed
-invalid_iid_token:
-  error_code: 400_502
-  error_message: invalid instance id token
-topic_over_limit:
-  error_code: 400_503
-  error_message: topic over limit
-need_at_least_one_lang:
-  error_code: 400_504
-  error_message: need at least one lang
-duplicate_video_id:
-  error_code: 400_601
-  error_message: video_id exists
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
@@ -397,6 +382,21 @@ grant_change_setting_failed:
 request_link_delete_failed:
   error_code: 400_419
   error_message: Delete share link failed
+send_to_fcm_failed:
+  error_code: 400_501
+  error_message: send to fcm server failed
+invalid_iid_token:
+  error_code: 400_502
+  error_message: invalid instance id token
+topic_over_limit:
+  error_code: 400_503
+  error_message: topic over limit
+need_at_least_one_lang:
+  error_code: 400_504
+  error_message: need at least one lang
+duplicate_video_id:
+  error_code: 400_601
+  error_message: video_id exists  
 no_avaliable_email:
   error_code: 400_800
   error_message: No available mail
