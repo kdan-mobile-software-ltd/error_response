@@ -13,10 +13,6 @@ deliver_otp_failed:
 tag_move_failed:
   error_code: 406_033
   error_message: tag move failed
-mail_not_valid:
-  # error_code: 406_301
-  error_code: 406_033
-  error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
 upchain_failed:
   error_code: 406_034
   error_message: upchain failed
@@ -47,23 +43,14 @@ confirm_callback_failed:
 group_already_bind:
   error_code: 406_201
   error_message: provided members already belongs to other groups
-invite_accept_failed:
-  error_code: 406_201
-  error_message: invite accept failed
 email_need_password:
   app_code: 4028
   error_code: 406_202
   error_message: email already taken, need password
-invite_callback_failed:
-  error_code: 406_202
-  error_message: invite accept success but callback failed
 third_party_no_email:
   app_code: 4025
   error_code: 406_203
   error_message: no email from third party service
-third_party_login_failed:
-  error_code: 406_203
-  error_message: login from third party failed
 already_bind:
   app_code: 4006
   error_code: 406_204
@@ -87,18 +74,30 @@ invalid_otp_code:
 setup_permission_failed:
   error_code: 406_210
   error_message: setup group permission failed
+invite_accept_failed:
+  error_code: 406_211
+  error_message: invite accept failed
+invite_callback_failed:
+  error_code: 406_212
+  error_message: invite accept success but callback failed
+mail_not_valid:
+  error_code: 406_301
+  error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
 assign_failed:
   error_code: 406_302
   error_message: Already up to max assignment, please check the assignments of this project.
 create_receipt_failed:
   error_code: 406_303
   error_message: create receipt failed
-cancel_receipt_failed:
+revoke_receipt_failed:
   error_code: 406_304
-  error_message: cancel receipt failed
+  error_message: revoke receipt failed  
 refund_receipt_failed:
-  error_code: 406_304
+  error_code: 406_305
   error_message: refund receipt failed
+cancel_receipt_failed:
+  error_code: 406_306
+  error_message: cancel receipt autorenew failed
 deliver_fcm_failed:
   error_code: 406_501
   error_message: push message to firebase failed

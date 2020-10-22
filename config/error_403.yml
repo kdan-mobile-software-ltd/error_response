@@ -57,6 +57,9 @@ template_not_accessible:
 template_not_sharable:
   error_code: 403_045
   error_message: template not sharable
+no_bulk_send_permission:
+  error_code: 403_046
+  error_message: no bulk send permission
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member

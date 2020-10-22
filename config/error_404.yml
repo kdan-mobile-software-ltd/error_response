@@ -31,15 +31,15 @@ file_not_found:
 page_not_found:
   error_code: 404_039
   error_message: page not found
+mission_not_found:
+  error_code: 404_040
+  error_message: mission not found  
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
 voucher_not_found:
   error_code: 404_101
   error_message: voucher not found
-member_not_found:
-  error_code: 404_102
-  error_message: member not found
 subscription_not_found:
   error_code: 404_103
   error_message: subscription not found
@@ -58,9 +58,6 @@ invoice_not_found:
 payment_not_found:
   error_code: 404_108
   error_message: payment not found
-info_not_found:
-  error_code: 404_201
-  error_message: info not found  
 member_not_found:
   error_code: 404_201
   error_message: member not found
@@ -85,6 +82,9 @@ org_detail_not_found:
 client_not_found:
   error_code: 404_208
   error_message: client not found
+info_not_found:
+  error_code: 404_209
+  error_message: info not found  
 product_not_found:
   error_code: 404_301
   error_message: product not found

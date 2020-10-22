@@ -16,24 +16,18 @@ invalid_member:
 invalid_request:
   error_code: 400_004
   error_message: invalid request
-invalid_security_check_token:  # signature_center only , 400_007 before
-  error_code: 400_004
-  error_message: invalid security check token
 invalid_client:
   error_code: 400_005
   error_message: invalid client
-invalid_preview_code:  # signature_center only
-  error_code: 400_005
-  error_message: invalid preview code  
-invalid_scope:
-  error_code: 400_006
-  error_message: invalid scope
 invalid_preview_token:
   error_code: 400_006
   error_message: invalid preview token
 invalid_download_code:
   error_code: 400_007
   error_message: invalid download code
+invalid_scope:
+  error_code: 400_008
+  error_message: invalid scope
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
@@ -115,12 +109,12 @@ attachment_not_ready:
 not_allow_context:
   error_code: 400_052
   error_message: tag context not allow
-tag_already_exist:
-  error_code: 400_054
-  error_message: tag already exist
 template_deleted:
   error_code: 400_053
   error_message: template has deleted
+tag_already_exist:
+  error_code: 400_054
+  error_message: tag already exist  
 field_content_invalid:
   error_code: 400_054
   error_message: field content invalid
@@ -133,6 +127,18 @@ member_already_secured:
 invalid_file_type:
   error_code: 400_057
   error_message: signature file type is invalid
+no_task_info:
+  error_code: 400_058
+  error_message: no task info for mission
+mission_not_ready:
+  error_code: 400_059
+  error_message: mission not ready
+invalid_security_check_token:
+  error_code: 400_060
+  error_message: invalid security check token
+invalid_preview_code:
+  error_code: 400_061
+  error_message: invalid preview code
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
@@ -259,9 +265,6 @@ invalid_format:
 invalid_short_name:
   error_code: 400_228
   error_message: invalid short name
-standard_api_failed:
-  error_code: 400_228
-  error_message: create standard api app failed
 not_allow_org_type:
   error_code: 400_229
   error_message: not allow org type, only allow education or business
@@ -275,19 +278,16 @@ mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
 batch_ids_empty:
-  # error_code: 400_302
-  error_code: 400_043
+  error_code: 400_302
   error_message: batch_ids should not be empty
 confirmation_id_faild:
   error_code: 400_303
   error_message: confirmation_id can not be used
 mass_assignment_ids_not_available:
-  # error_code: 400_304
-  error_code: 400_045
+  error_code: 400_304
   error_message: mass assignment ids are not available
 mass_purchasing_id_not_available:
-  # error_code: 400_305
-  error_code: 400_046
+  error_code: 400_305
   error_message: mass purchasing id is not available
 kdan_id_empty:
   error_code: 400_306
@@ -296,23 +296,19 @@ token_empty:
   error_code: 400_307
   error_message: token should not be empty
 csv_file_unupload:
-  # error_code: 400_308
-  error_code: 400_049
+  error_code: 400_308
   error_message: csv file is not upload
 csv_file_name_empty:
-  # error_code: 400_309
-  error_code: 400_050
+  error_code: 400_309
   error_message: csv file name should not be empty
 txt_file_empty:
   error_code: 400_310
   error_message: email string should not be empty
 receipt_not_found:
-  # error_code: 400_311
-  error_code: 400_052
+  error_code: 400_311
   error_message: receipt not found
 no_purchasing_product:
-  # error_code: 400_312
-  error_code: 400_003
+  error_code: 400_312
   error_message: You don't have any mass purchasing product.
 product_has_been_trial_before:
   error_code: 400_313
