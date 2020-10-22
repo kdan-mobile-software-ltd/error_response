@@ -115,9 +115,6 @@ template_deleted:
 tag_already_exist:
   error_code: 400_054
   error_message: tag already exist  
-field_content_invalid:
-  error_code: 400_054
-  error_message: field content invalid
 empty_tag_not_allowed:
   error_code: 400_055
   error_message: tag should not be empty
@@ -139,6 +136,9 @@ invalid_security_check_token:
 invalid_preview_code:
   error_code: 400_061
   error_message: invalid preview code
+field_content_invalid:
+  error_code: 400_062
+  error_message: field content invalid  
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
