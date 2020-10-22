@@ -1,6 +1,9 @@
 invalid_grant:
   error_code: 401_001
   error_message: invalid grant
+login_required:
+  error_code: 401_030
+  error_message: member need login first  
 member_auth_failed:
   app_code: 401
   error_code: 401_202
@@ -14,9 +17,6 @@ password_not_match:
 password_invalid:
   error_code: 401_205
   error_message: password is invalid
-login_required:
-  error_code: 401_030
-  error_message: member need login first
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
