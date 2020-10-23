@@ -19,12 +19,15 @@ invalid_request:
 invalid_client:
   error_code: 400_005
   error_message: invalid client
-invalid_scope:
+invalid_preview_token:
   error_code: 400_006
-  error_message: invalid scope
-invalid_security_check_token:
+  error_message: invalid preview token
+invalid_download_code:
   error_code: 400_007
-  error_message: invalid security check token
+  error_message: invalid download code
+invalid_scope:
+  error_code: 400_008
+  error_message: invalid scope
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
@@ -76,7 +79,7 @@ request_too_frequently:
 filter_not_allow:
   error_code: 400_042
   error_message: filter is not allowed
-no_ongoind_stage:
+no_ongoing_stage:
   error_code: 400_043
   error_message: no stage is ongoing
 not_signer_turn:
@@ -91,6 +94,9 @@ stage_already_done:
 execute_type_not_allow:
   error_code: 400_047
   error_message: execute type not allow
+sign_invalid_client:
+  error_code: 400_048
+  error_message: client is invalid
 other_has_accepted_to_quick_sign:
   error_code: 400_049
   error_message: other has accepted to do quick sign
@@ -103,21 +109,36 @@ attachment_not_ready:
 not_allow_context:
   error_code: 400_052
   error_message: tag context not allow
-tag_already_exist:
-  error_code: 400_054
-  error_message: tag already exist
 template_deleted:
   error_code: 400_053
   error_message: template has deleted
-field_content_invalid:
+tag_already_exist:
   error_code: 400_054
-  error_message: field content invalid
+  error_message: tag already exist
 empty_tag_not_allowed:
   error_code: 400_055
   error_message: tag should not be empty
 member_already_secured:
   error_code: 400_056
   error_message: member has finished security check
+invalid_file_type:
+  error_code: 400_057
+  error_message: signature file type is invalid
+no_task_info:
+  error_code: 400_058
+  error_message: no task info for mission
+mission_not_ready:
+  error_code: 400_059
+  error_message: mission not ready
+invalid_security_check_token:
+  error_code: 400_060
+  error_message: invalid security check token
+invalid_preview_code:
+  error_code: 400_061
+  error_message: invalid preview code
+field_content_invalid:
+  error_code: 400_062
+  error_message: field content invalid
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
@@ -244,9 +265,6 @@ invalid_format:
 invalid_short_name:
   error_code: 400_228
   error_message: invalid short name
-standard_api_failed:
-  error_code: 400_228
-  error_message: create standard api app failed
 not_allow_org_type:
   error_code: 400_229
   error_message: not allow org type, only allow education or business
@@ -260,19 +278,16 @@ mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
 batch_ids_empty:
-  # error_code: 400_302
-  error_code: 400_043
+  error_code: 400_302
   error_message: batch_ids should not be empty
 confirmation_id_faild:
   error_code: 400_303
   error_message: confirmation_id can not be used
 mass_assignment_ids_not_available:
-  # error_code: 400_304
-  error_code: 400_045
+  error_code: 400_304
   error_message: mass assignment ids are not available
 mass_purchasing_id_not_available:
-  # error_code: 400_305
-  error_code: 400_046
+  error_code: 400_305
   error_message: mass purchasing id is not available
 kdan_id_empty:
   error_code: 400_306
@@ -281,23 +296,19 @@ token_empty:
   error_code: 400_307
   error_message: token should not be empty
 csv_file_unupload:
-  # error_code: 400_308
-  error_code: 400_049
+  error_code: 400_308
   error_message: csv file is not upload
 csv_file_name_empty:
-  # error_code: 400_309
-  error_code: 400_050
+  error_code: 400_309
   error_message: csv file name should not be empty
 txt_file_empty:
   error_code: 400_310
   error_message: email string should not be empty
 receipt_not_found:
-  # error_code: 400_311
-  error_code: 400_052
+  error_code: 400_311
   error_message: receipt not found
 no_purchasing_product:
-  # error_code: 400_312
-  error_code: 400_003
+  error_code: 400_312
   error_message: You don't have any mass purchasing product.
 product_has_been_trial_before:
   error_code: 400_313
@@ -314,6 +325,75 @@ redeem_unavailable:
 receipt_not_refundable:
   error_code: 400_317
   error_message: receipt can not be refunded
+request_link_upload_initiate_failed:
+  error_code: 400_401
+  error_message: Initiate uploading via request link failed
+request_link_update_failed:
+  error_code: 400_402
+  error_message: Update request link setting failed
+team_change_name_failed:
+  error_code: 400_403
+  error_message: Change team name failed
+share_link_create_or_update_failed:
+  error_code: 400_404
+  error_message: Create share link or update share link setting failed
+share_link_set_status_failed:
+  error_code: 400_405
+  error_message: Set share link status failed
+share_link_delete_failed:
+  error_code: 400_406
+  error_message: Delete share link failed
+share_link_not_folder_link:
+  error_code: 400_407
+  error_message: Share Link is not a folder link
+share_link_no_email_or_name:
+  error_code: 400_408
+  error_message: Empty email or name
+deprecated_api:
+  error_code: 400_409
+  error_message: Deprecated API
+preview_token_invalid:
+  error_code: 400_410
+  error_message: Invalid preview token
+folder_create_failed:
+  error_code: 400_411
+  error_message: Create folder failed
+folder_update_failed:
+  error_code: 400_412
+  error_message: Update folder infomation failed
+folder_download_empty_email:
+  error_code: 400_413
+  error_message: Empty email
+file_update_failed:
+  error_code: 400_414
+  error_message: Update file failed
+team_create_failed:
+  error_code: 400_415
+  error_message: Create team failed
+request_link_upload_failed:
+  error_code: 400_416
+  error_message: Create upload mission of request link failed
+invalid_params:
+  error_code: 400_417
+  error_message: Input parameters are invalid
+grant_change_setting_failed:
+  error_code: 400_418
+  error_message: Change share folder setting failed
+request_link_delete_failed:
+  error_code: 400_419
+  error_message: Delete share link failed
+indirect_upload_failed:
+  error_code: 400_420
+  error_message: Indirect upload file failed
+change_owner_failed:
+  error_code: 400_421
+  error_message: Change share folder owner failed
+upload_start_failed:
+  error_code: 400_422
+  error_message: Start uploading file failed
+upload_callback_failed:
+  error_code: 400_423
+  error_message: Process upload callback failed
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
@@ -326,3 +406,9 @@ topic_over_limit:
 need_at_least_one_lang:
   error_code: 400_504
   error_message: need at least one lang
+duplicate_video_id:
+  error_code: 400_601
+  error_message: video_id exists
+no_avaliable_email:
+  error_code: 400_800
+  error_message: No available mail

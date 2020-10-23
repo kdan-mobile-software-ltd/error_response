@@ -51,6 +51,15 @@ over_template_usage:
 not_allow_to_gdpr:
   error_code: 403_043
   error_message: not allow to gdpr remove
+template_not_accessible:
+  error_code: 403_044
+  error_message: template not accessible to member
+template_not_sharable:
+  error_code: 403_045
+  error_message: template not sharable
+no_bulk_send_permission:
+  error_code: 403_046
+  error_message: no bulk send permission
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
@@ -66,6 +75,12 @@ zendesk_login_need_confirm:
 account_suspended:
   error_code: 403_201
   error_message: user account is suspended
+no_permission:
+  error_code: 403_401
+  error_message: User has no permission to do this operation
+share_link_file_only:
+  error_code: 403_402
+  error_message: Available only on file share link
 message_not_found:
   error_code: 403_501
   error_message: message not found

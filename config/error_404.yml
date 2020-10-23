@@ -1,27 +1,3 @@
-member_not_found:
-  error_code: 404_201
-  error_message: member not found
-contact_not_exist:
-  error_code: 404_202
-  error_message: contact not exist
-provider_not_exist:
-  error_code: 404_203
-  error_message: provider not exist
-register_not_found:
-  error_code: 404_204
-  error_message: register not found
-group_not_found:
-  error_code: 404_205
-  error_message: group not found
-profile_not_found:
-  error_code: 404_206
-  error_message: no such member profiles
-org_detail_not_found:
-  error_code: 404_207
-  error_message: org detail not found
-client_not_found:
-  error_code: 404_208
-  error_message: client not found
 signature_not_found:
   app_code: 4002
   error_code: 404_030
@@ -52,15 +28,18 @@ tag_not_found:
 file_not_found:
   error_code: 404_038
   error_message: file not found
+page_not_found:
+  error_code: 404_039
+  error_message: page not found
+mission_not_found:
+  error_code: 404_040
+  error_message: mission not found  
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
 voucher_not_found:
   error_code: 404_101
   error_message: voucher not found
-member_not_found:
-  error_code: 404_102
-  error_message: member not found
 subscription_not_found:
   error_code: 404_103
   error_message: subscription not found
@@ -79,15 +58,66 @@ invoice_not_found:
 payment_not_found:
   error_code: 404_108
   error_message: payment not found
-info_not_found:
+member_not_found:
   error_code: 404_201
-  error_message: info not found
+  error_message: member not found
+contact_not_exist:
+  error_code: 404_202
+  error_message: contact not exist
+provider_not_exist:
+  error_code: 404_203
+  error_message: provider not exist
+register_not_found:
+  error_code: 404_204
+  error_message: register not found
+group_not_found:
+  error_code: 404_205
+  error_message: group not found
+profile_not_found:
+  error_code: 404_206
+  error_message: no such member profiles
+org_detail_not_found:
+  error_code: 404_207
+  error_message: org detail not found
+client_not_found:
+  error_code: 404_208
+  error_message: client not found
+info_not_found:
+  error_code: 404_209
+  error_message: info not found  
 product_not_found:
   error_code: 404_301
   error_message: product not found
+request_link_not_found:
+  error_code: 404_401
+  error_message: Request link not found or expired
+file_or_folder_not_found:
+  error_code: 404_402
+  error_message: Target file or folder not found
+team_not_found:
+  error_code: 404_403
+  error_message: Target team not found
+share_link_not_found:
+  error_code: 404_404
+  error_message: Share link not found
+scope_object_not_found:
+  error_code: 404_405
+  error_message: Scope object not found
+target_user_not_found:
+  error_code: 404_406
+  error_message: Target user not found  
 bundle_id_not_found:
   error_code: 404_501
   error_message: app bundle_id is not found or not accessible
 default_message_not_found:
   error_code: 404_502
   error_message: default message is not found or not accessible
+video_not_found:
+  error_code: 404_601
+  error_message: video not found
+user_not_found:
+  error_code: 404_603
+  error_message: user not found
+report_not_found:
+  error_code: 404_604
+  error_message: report not found

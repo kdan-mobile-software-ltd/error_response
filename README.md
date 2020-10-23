@@ -65,7 +65,7 @@ the response will look like this
 
 See all avaliable error_code & error_message
 
-`ErorrResponse.all`
+`ErrorResponse.all`
 
 Return to hash only
 

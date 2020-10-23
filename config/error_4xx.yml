@@ -19,3 +19,6 @@ domain_not_verified:
 user_already_subscribed:
   error_code: 434_001
   error_message: This domain is verified but user already subscribed
+internal_server_error:
+  error_code: 500_000
+  error_message: internal server error
