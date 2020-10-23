@@ -274,6 +274,9 @@ register_already_cancel:
 email_not_match:
   error_code: 400_231
   error_message: email not match logined email
+third_party_failed:
+  error_code: 400_232
+  error_message: third party login fail
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
