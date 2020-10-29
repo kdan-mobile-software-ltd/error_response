@@ -4,9 +4,6 @@ invalid_grant:
 doorkeeper_access_token_expired:
   error_code: 401_002
   error_message: doorkeeper access token expired
-doorkeeper_access_token_unauthorization:
-  error_code: 401_003
-  error_message: doorkeeper access token is unauthorization
 login_required:
   error_code: 401_030
   error_message: member need login first  
