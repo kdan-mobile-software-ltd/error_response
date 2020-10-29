@@ -114,7 +114,7 @@ template_deleted:
   error_message: template has deleted
 tag_already_exist:
   error_code: 400_054
-  error_message: tag already exist  
+  error_message: tag already exist
 empty_tag_not_allowed:
   error_code: 400_055
   error_message: tag should not be empty
@@ -138,7 +138,7 @@ invalid_preview_code:
   error_message: invalid preview code
 field_content_invalid:
   error_code: 400_062
-  error_message: field content invalid  
+  error_message: field content invalid
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
@@ -274,6 +274,9 @@ register_already_cancel:
 email_not_match:
   error_code: 400_231
   error_message: email not match logined email
+third_party_failed:
+  error_code: 400_232
+  error_message: third party login fail
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
@@ -382,6 +385,18 @@ grant_change_setting_failed:
 request_link_delete_failed:
   error_code: 400_419
   error_message: Delete share link failed
+indirect_upload_failed:
+  error_code: 400_420
+  error_message: Indirect upload file failed
+change_owner_failed:
+  error_code: 400_421
+  error_message: Change share folder owner failed
+upload_start_failed:
+  error_code: 400_422
+  error_message: Start uploading file failed
+upload_callback_failed:
+  error_code: 400_423
+  error_message: Process upload callback failed
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
@@ -396,7 +411,7 @@ need_at_least_one_lang:
   error_message: need at least one lang
 duplicate_video_id:
   error_code: 400_601
-  error_message: video_id exists  
+  error_message: video_id exists
 no_avaliable_email:
   error_code: 400_800
   error_message: No available mail
