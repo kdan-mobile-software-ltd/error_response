@@ -1,6 +1,9 @@
-doorkeeper_invalid_grant:
+doorkeeper_access_token_expired:
   error_code: 401_001
-  error_message: doorkeeper invalid grant
+  error_message: doorkeeper access token expired
+doorkeeper_access_token_invalid:
+  error_code: 401_002
+  error_message: doorkeeper access token is invalid
 login_required:
   error_code: 401_030
   error_message: member need login first  
