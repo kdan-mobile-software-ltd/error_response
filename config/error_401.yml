@@ -1,6 +1,6 @@
-invalid_grant:
+doorkeeper_invalid_grant:
   error_code: 401_001
-  error_message: invalid grant
+  error_message: doorkeeper invalid grant
 login_required:
   error_code: 401_030
   error_message: member need login first  

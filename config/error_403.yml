@@ -1,6 +1,6 @@
-message_not_found:
+doorkeeper_forbidden:
   error_code: 403_001
-  error_message: message not found
+  error_message: doorkeeper_forbidden
 invalid_action:
   error_code: 403_002
   error_message: not allow for this action
