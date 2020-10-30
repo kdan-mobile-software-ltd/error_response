@@ -409,9 +409,15 @@ topic_over_limit:
 need_at_least_one_lang:
   error_code: 400_504
   error_message: need at least one lang
+code_already_used:
+  error_code: 400_505
+  error_message: code is already used
 duplicate_video_id:
   error_code: 400_601
   error_message: video_id exists
 no_avaliable_email:
   error_code: 400_800
   error_message: No available mail
+flow_is_pending:
+  error_code: 400_900
+  error_message: some groups of flow related members are expire or inactive
