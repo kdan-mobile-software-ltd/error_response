@@ -1,6 +1,6 @@
 invalid_grant:
   error_code: 401_001
-  error_message: invalid grant, such as token and refresh token set was revoked.
+  error_message: invalid grant
 doorkeeper_access_token_expired:
   error_code: 401_002
   error_message: doorkeeper access token expired
