@@ -51,9 +51,10 @@ RSpec.describe ErrorResponse do
       expect(result).to eq hash
     end
 
-    it "should return nil when key not existed" do
+    it "should return {} when key not existed" do
       result = ErrorResponse.to_hash(:some_error)
-      expect(result).to eq nil
+      empty_hash = {}
+      expect(result).to eq empty_hash
     end
   end
 end
