@@ -9,7 +9,7 @@ class ErrorResponse
   end
 
   def self.to_hash(key)
-    return unless yaml_hash.key?(key.to_s)
+    return {} unless yaml_hash.key?(key.to_s)
     yaml_hash[key.to_s].merge({ 'error_key' => key.to_s })
   end
 
