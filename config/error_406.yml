@@ -101,6 +101,9 @@ cancel_receipt_failed:
 deliver_fcm_failed:
   error_code: 406_501
   error_message: push message to firebase failed
+create_list_failed:
+  error_code: 406_701
+  error_message: create list to sendy failed
 klaviyo_register_failed:
   error_code: 406_800
   error_message: register to klaviyo failed
