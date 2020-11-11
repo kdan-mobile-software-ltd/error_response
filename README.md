@@ -80,3 +80,16 @@ gives you
   error_key: 'reset_password_failed'
 }
 ```
+### Error Code Map
+
+|      Server      | Error Code |
+|:----------------:|:----------:|
+| signature_center |   xxx_0xx  |
+|   store_center   |   xxx_1xx  |
+|   member_center  |   xxx_2xx  |
+|     iap_center   |   xxx_3xx  |
+|    data_center   |   xxx_4xx  |
+|       apns       |   xxx_5xx  |
+|     anizone      |   xxx_6xx  |
+|    cr_system     |   xxx_7xx  |
+|   mail_center    |   xxx_8xx  |

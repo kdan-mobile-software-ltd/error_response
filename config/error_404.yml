@@ -84,7 +84,7 @@ client_not_found:
   error_message: client not found
 info_not_found:
   error_code: 404_209
-  error_message: info not found  
+  error_message: info not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
