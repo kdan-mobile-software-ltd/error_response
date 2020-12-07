@@ -108,7 +108,7 @@ scope_object_not_found:
   error_message: Scope object not found
 target_user_not_found:
   error_code: 404_406
-  error_message: Target user not found  
+  error_message: Target user not found
 bundle_id_not_found:
   error_code: 404_501
   error_message: app bundle_id is not found or not accessible

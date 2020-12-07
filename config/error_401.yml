@@ -3,7 +3,7 @@ invalid_grant:
   error_message: invalid grant
 login_required:
   error_code: 401_030
-  error_message: member need login first  
+  error_message: member need login first
 member_auth_failed:
   app_code: 401
   error_code: 401_202

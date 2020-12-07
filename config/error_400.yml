@@ -324,7 +324,7 @@ get_user_receipt_faild:
   error_message: obtain user receipt info failed
 redeem_unavailable:
   error_code: 400_316
-  error_message: user is unavailable to redeeem
+  error_message: user is unavailable to redeem
 receipt_not_refundable:
   error_code: 400_317
   error_message: receipt can not be refunded
@@ -366,7 +366,7 @@ folder_create_failed:
   error_message: Create folder failed
 folder_update_failed:
   error_code: 400_412
-  error_message: Update folder infomation failed
+  error_message: Update folder information failed
 folder_download_empty_email:
   error_code: 400_413
   error_message: Empty email
