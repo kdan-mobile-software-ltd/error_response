@@ -340,9 +340,9 @@ request_link_update_failed:
 team_change_name_failed:
   error_code: 400_403
   error_message: Change team name failed
-share_link_create_or_update_failed:
+share_link_update_failed:
   error_code: 400_404
-  error_message: Create share link or update share link setting failed
+  error_message: Update share link setting failed
 share_link_set_status_failed:
   error_code: 400_405
   error_message: Set share link status failed
