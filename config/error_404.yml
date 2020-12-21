@@ -33,7 +33,7 @@ page_not_found:
   error_message: page not found
 mission_not_found:
   error_code: 404_040
-  error_message: mission not found  
+  error_message: mission not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
@@ -124,3 +124,9 @@ user_not_found:
 report_not_found:
   error_code: 404_604
   error_message: report not found
+note_not_found:
+  error_code: 404_901
+  error_message: note not found
+card_not_found:
+  error_code: 404_902
+  error_message: card not found
