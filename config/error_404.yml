@@ -33,7 +33,7 @@ page_not_found:
   error_message: page not found
 mission_not_found:
   error_code: 404_040
-  error_message: mission not found  
+  error_message: mission not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
@@ -88,6 +88,9 @@ info_not_found:
 product_not_found:
   error_code: 404_301
   error_message: product not found
+credit_record_not_found:
+  error_code: 404_302
+  error_message: credit record not found
 request_link_not_found:
   error_code: 404_401
   error_message: Request link not found or expired
@@ -105,7 +108,7 @@ scope_object_not_found:
   error_message: Scope object not found
 target_user_not_found:
   error_code: 404_406
-  error_message: Target user not found  
+  error_message: Target user not found
 bundle_id_not_found:
   error_code: 404_501
   error_message: app bundle_id is not found or not accessible
@@ -121,3 +124,9 @@ user_not_found:
 report_not_found:
   error_code: 404_604
   error_message: report not found
+note_not_found:
+  error_code: 404_901
+  error_message: note not found
+card_not_found:
+  error_code: 404_902
+  error_message: card not found

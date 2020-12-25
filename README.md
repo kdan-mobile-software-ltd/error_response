@@ -87,7 +87,7 @@ gives you
 | signature_center |   xxx_0xx  |
 |   store_center   |   xxx_1xx  |
 |   member_center  |   xxx_2xx  |
-|     iap_center   |   xxx_3xx  |
+|  receipt_center  |   xxx_3xx  |
 |    data_center   |   xxx_4xx  |
 |       apns       |   xxx_5xx  |
 |     anizone      |   xxx_6xx  |
