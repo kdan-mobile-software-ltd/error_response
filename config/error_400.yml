@@ -277,6 +277,9 @@ email_not_match:
 third_party_failed:
   error_code: 400_232
   error_message: third party login fail
+group_not_expired:
+  error_code: 400_233
+  error_message: group is not expired
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
