@@ -93,3 +93,5 @@ gives you
 |     anizone      |   xxx_6xx  |
 |    cr_system     |   xxx_7xx  |
 |   mail_center    |   xxx_8xx  |
+| signature_center |   xxx_9xx  |
+|    note_center   |   xxx_10xx |

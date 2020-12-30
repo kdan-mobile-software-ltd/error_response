@@ -125,8 +125,8 @@ report_not_found:
   error_code: 404_604
   error_message: report not found
 note_not_found:
-  error_code: 404_901
+  error_code: 404_1001
   error_message: note not found
 card_not_found:
-  error_code: 404_902
+  error_code: 404_1002
   error_message: card not found
