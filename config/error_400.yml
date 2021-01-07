@@ -403,6 +403,9 @@ upload_start_failed:
 upload_callback_failed:
   error_code: 400_423
   error_message: Process upload callback failed
+file_or_folder_toggle_star_failed:
+  error_code: 400_424
+  error_message: Toggle star failed
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
