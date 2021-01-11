@@ -130,3 +130,6 @@ note_not_found:
 card_not_found:
   error_code: 404_1002
   error_message: card not found
+favorite_not_found:
+  error_code: 404_1003
+  error_message: favorite not found

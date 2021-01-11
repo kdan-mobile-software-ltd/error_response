@@ -433,3 +433,6 @@ flow_is_pending:
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
+add_favorite_failed:
+  error_code: 400_1002
+  error_message: add note to favorite failed
