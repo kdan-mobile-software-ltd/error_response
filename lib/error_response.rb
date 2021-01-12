@@ -23,7 +23,7 @@ class ErrorResponse
     json = yaml_hash[key.to_s].merge({ 'error_key' => key.to_s })
     json['error_message'] += ": #{message}" unless message.nil?
     {
-      status: json['error_code'] / 1_000,
+      status: parse_status(json['error_code']),
       json: json
     }
   end
@@ -46,5 +46,9 @@ class ErrorResponse
   def self.build_yaml(url)
     content = URI.open(url){|f| f.read}
     YAML.load(content)
+  end
+
+  def parse_status(error_code)
+    error_code.to_s[0..2].to_i
   end
 end
