@@ -133,3 +133,6 @@ card_not_found:
 favorite_not_found:
   error_code: 404_1003
   error_message: favorite not found
+credit_mission_not_found:
+  error_code: 404_1101
+  error_message: credit mission not found

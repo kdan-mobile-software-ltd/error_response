@@ -4,3 +4,6 @@ email_already_taken:
 card_error:
   error_code: 402_100
   error_message: card error
+credit_withhold_error:
+  error_code: 402_1100
+  error_message: credit withhold error
