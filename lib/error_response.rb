@@ -39,7 +39,7 @@ class ErrorResponse
 
     remote_array = settings['source']['remote']
     remote_hash = remote_array.nil? ? {} : remote_array.map { |url| build_yaml(url) }.inject(&:merge)
-    
+
     @hash = local_hash.merge(remote_hash)
   end
 
@@ -48,7 +48,7 @@ class ErrorResponse
     YAML.load(content)
   end
 
-  def parse_status(error_code)
+  def self.parse_status(error_code)
     error_code.to_s[0..2].to_i
   end
 end
