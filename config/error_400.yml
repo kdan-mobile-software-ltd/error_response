@@ -433,11 +433,14 @@ flow_is_pending:
 signer_info_not_ready:
   error_code: 400_901
   error_message: signer info not ready yet
-kiosk_repeat_access:
+template_need_order:
   error_code: 400_902
+  error_message: kiosk template should has order
+kiosk_repeat_access:
+  error_code: 400_903
   error_message: kiosk can not access same stage over 1 time
 kiosk_delay_sign:
-  error_code: 400_903
+  error_code: 400_904
   error_message: kiosk can not delay so long to sign
 get_credential_failed:
   error_code: 400_1001
