@@ -430,6 +430,9 @@ no_avaliable_email:
 flow_is_pending:
   error_code: 400_900
   error_message: some groups of flow related members are expire or inactive
+signer_info_not_ready:
+  error_code: 400_901
+  error_message: signer info not ready yet
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
