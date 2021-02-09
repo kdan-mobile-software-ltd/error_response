@@ -440,7 +440,7 @@ kiosk_delay_sign:
   error_code: 400_904
   error_message: kiosk can not delay so long to sign
 kiosk_not_read:
-  error_code: 400_906
+  error_code: 400_905
   error_message: kiosk sign without read
 get_credential_failed:
   error_code: 400_1001
