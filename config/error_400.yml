@@ -445,4 +445,3 @@ get_credential_failed:
 add_favorite_failed:
   error_code: 400_1002
   error_message: add note to favorite failed
-
