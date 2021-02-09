@@ -247,9 +247,6 @@ invalid_mailer_action:
 api_failed:
   error_code: 400_222
   error_message: api failed
-invalid_file_type:
-  error_code: 400_223
-  error_message: signature file type is invalid
 not_allow_provider:
   error_code: 400_224
   error_message: not allow provider
