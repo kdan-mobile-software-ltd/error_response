@@ -84,3 +84,6 @@ share_link_file_only:
 message_not_found:
   error_code: 403_501
   error_message: message not found
+kiosk_not_allowed:
+  error_code: 403_900
+  error_message: not allowed to use kiosk feature
