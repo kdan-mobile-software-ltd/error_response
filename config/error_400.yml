@@ -442,6 +442,9 @@ kiosk_delay_sign:
 kiosk_not_read:
   error_code: 400_905
   error_message: kiosk sign without read
+invalid_phone:
+  error_code: 400_906
+  error_message: invalid phone number
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
