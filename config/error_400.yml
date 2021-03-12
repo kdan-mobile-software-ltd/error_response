@@ -181,7 +181,7 @@ payment_already_paid:
 invalid_payment_status:
   error_code: 400_113
   error_message: payment status is invalid
-invalid_code_value:
+invalid_type_value:
   error_code: 400_114
   error_message: only allow redeem or coupon.
 invalid_domain:
