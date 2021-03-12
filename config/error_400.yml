@@ -181,6 +181,12 @@ payment_already_paid:
 invalid_payment_status:
   error_code: 400_113
   error_message: payment status is invalid
+remind_redeem_letter_missing_value:
+  error_code: 400_114
+  error_message: missing reedem_code or redeem_path
+remind_checkout_letter_missing_value:
+  error_code: 400_115
+  error_message: missing coupon or checkout_path
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
