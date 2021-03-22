@@ -69,6 +69,9 @@ subscription_not_belongs:
 invoice_not_belongs:
   error_code: 403_102
   error_message: invoice not belongs to member
+campaign_mail_template_not_allow:
+  error_code: 403_103
+  error_message: campaign mail template type is not allowed
 zendesk_login_need_confirm:
   error_code: 403_200
   error_message: need to confirm email before login to zendesk
