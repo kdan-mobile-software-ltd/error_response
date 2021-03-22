@@ -75,6 +75,9 @@ zendesk_login_need_confirm:
 account_suspended:
   error_code: 403_201
   error_message: user account is suspended
+require_api_key:
+  error_code: 403_202
+  error_message: you are not add the header api-key at your request, please check it.
 no_permission:
   error_code: 403_401
   error_message: User has no permission to do this operation

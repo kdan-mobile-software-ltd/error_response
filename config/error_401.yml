@@ -22,7 +22,7 @@ callback_url_invalid:
   error_message: callback url is invalid
 api_key_invalid:
   error_code: 401_207
-  error_message: unrecognized api_key
+  error_message: unrecognized api_key, please make sure your plan is enterprise and your subscription hasn't expired
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
