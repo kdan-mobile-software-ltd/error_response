@@ -448,6 +448,9 @@ kiosk_not_read:
 invalid_phone:
   error_code: 400_906
   error_message: invalid phone number
+invalid_origin:
+  error_code: 400_907
+  error_message: invalid origin
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
