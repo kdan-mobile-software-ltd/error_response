@@ -23,6 +23,9 @@ callback_url_invalid:
 api_key_invalid:
   error_code: 401_207
   error_message: unrecognized api_key, please make sure your plan is enterprise and your subscription hasn't expired
+invalid_member_use_standard_api:
+  error_code: 401_208
+  error_message: member token is not accessable for using standard api, please check your token and make sure token is obtain by login api
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
