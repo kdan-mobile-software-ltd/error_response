@@ -63,6 +63,9 @@ no_bulk_send_permission:
 file_already_uploaded:
   error_code: 403_047
   error_message: the file is already uploaded before
+task_was_declined:
+  error_code: 403_048
+  error_message: the task has been declined.
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
