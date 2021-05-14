@@ -66,6 +66,9 @@ file_already_uploaded:
 task_was_declined:
   error_code: 403_048
   error_message: the task has been declined.
+decline_not_allowed:
+  error_code: 403_049
+  error_message: member is not allowed to decline this stage
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
