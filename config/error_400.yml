@@ -140,7 +140,7 @@ field_content_invalid:
   error_code: 400_062
   error_message: field content invalid
 task_is_not_finished:
-  error_code: 400_067
+  error_code: 400_063
   error_message: task is not completed or declined
 coupon_is_used:
   error_code: 400_100
