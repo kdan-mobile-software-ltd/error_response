@@ -96,3 +96,4 @@ gives you
 | signature_center |   xxx_9xx  |
 |    note_center   |   xxx_10xx |
 |  convert_center  |   xxx_11xx |
+|  control_center  |   xxx_12xx |

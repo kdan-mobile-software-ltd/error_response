@@ -102,3 +102,6 @@ message_not_found:
 kiosk_not_allowed:
   error_code: 403_900
   error_message: not allowed to use kiosk feature
+forbidden_license:
+  error_code: 403_1201
+  error_message: provided licence forbidden to call this api

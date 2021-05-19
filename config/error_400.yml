@@ -463,3 +463,6 @@ add_favorite_failed:
 api_usage_over_limit:
   error_code: 400_1003
   error_message: your api usage already suppress threshold
+invalid_license:
+  error_code: 400_1201
+  error_message: provided licence invalid
