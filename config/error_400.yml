@@ -283,6 +283,9 @@ third_party_failed:
 group_not_expired:
   error_code: 400_233
   error_message: group is not expired
+enterprise_app_forbidden:
+  error_code: 400_234
+  error_message: enterprise app forbidden
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
@@ -466,3 +469,6 @@ add_favorite_failed:
 api_usage_over_limit:
   error_code: 400_1003
   error_message: your api usage already suppress threshold
+invalid_license:
+  error_code: 400_1201
+  error_message: provided licence invalid
