@@ -409,6 +409,9 @@ upload_callback_failed:
 file_or_folder_toggle_star_failed:
   error_code: 400_424
   error_message: Toggle star failed
+file_copy_failed:
+  error_code: 400_425
+  error_message: File copy failed
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
