@@ -142,6 +142,9 @@ field_content_invalid:
 task_is_not_finished:
   error_code: 400_063
   error_message: task is not completed or declined
+tag_name_is_too_long:
+  error_code: 400_064
+  error_message: tag name is too long
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
