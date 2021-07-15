@@ -147,7 +147,7 @@ tag_name_is_too_long:
   error_message: tag name is too long
 task_is_completed:
   error_code: 400_065
-  error_message: task is completed.
+  error_message: task is completed
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
