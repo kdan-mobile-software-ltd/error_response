@@ -148,8 +148,11 @@ tag_name_is_too_long:
 task_is_completed:
   error_code: 400_065
   error_message: task is completed
-compress_failed:
+no_compressible_files:
   error_code: 400_066
+  error_message: no compressible files
+compress_failed:
+  error_code: 400_067
   error_message: compress failed
 coupon_is_used:
   error_code: 400_100
