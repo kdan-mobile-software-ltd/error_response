@@ -154,6 +154,9 @@ no_compressible_files:
 compress_failed:
   error_code: 400_067
   error_message: compress failed
+invalid_review_info:
+  error_code: 400_068
+  error_message: review info invalid
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
