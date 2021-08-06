@@ -475,6 +475,9 @@ invalid_phone:
 invalid_origin:
   error_code: 400_907
   error_message: invalid origin
+duplicate_display_name:
+  error_code: 400_908
+  error_message: duplicate_display_name
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
