@@ -69,6 +69,9 @@ task_was_declined:
 decline_not_allowed:
   error_code: 403_049
   error_message: member is not allowed to decline this stage
+file_not_viewable:
+  error_code: 403_050
+  error_message: file can not be viewed
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
