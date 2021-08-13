@@ -157,6 +157,9 @@ compress_failed:
 invalid_review_info:
   error_code: 400_068
   error_message: review info invalid
+sort_type_not_allow:
+  error_code: 400_069
+  error_message: the sort type is not allowed
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
