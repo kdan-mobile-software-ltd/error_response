@@ -157,6 +157,9 @@ compress_failed:
 invalid_review_info:
   error_code: 400_068
   error_message: review info invalid
+tasks_too_much:
+  error_code: 400_069
+  error_message: tasks result over threshold
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
