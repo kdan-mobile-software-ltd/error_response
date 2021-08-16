@@ -157,8 +157,11 @@ compress_failed:
 invalid_review_info:
   error_code: 400_068
   error_message: review info invalid
-tasks_too_much:
+sort_type_not_allow:
   error_code: 400_069
+  error_message: the sort type is not allowed
+tasks_too_much:
+  error_code: 400_070
   error_message: tasks result over threshold
 coupon_is_used:
   error_code: 400_100
