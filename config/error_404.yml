@@ -34,6 +34,9 @@ page_not_found:
 mission_not_found:
   error_code: 404_040
   error_message: mission not found
+taggable_not_found:
+  error_code: 404_041
+  error_message: taggable type not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
