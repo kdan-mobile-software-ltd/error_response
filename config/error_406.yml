@@ -25,6 +25,9 @@ download_task_file_failed:
 share_template_failed:
   error_code: 406_037
   error_message: share template to group others failed
+app_not_support:
+  error_code: 406_038
+  error_message: app not support
 create_voucher_failed:
   error_code: 406_100
   error_message: create voucher failed
