@@ -484,7 +484,7 @@ invalid_origin:
 duplicate_display_name:
   error_code: 400_908
   error_message: duplicate_display_name
-template_display_name_to_long:
+template_display_name_too_long:
   error_code: 400_909
   error_message: template_display_name_to_long
 get_credential_failed:
