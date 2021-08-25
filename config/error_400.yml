@@ -484,6 +484,9 @@ invalid_origin:
 duplicate_display_name:
   error_code: 400_908
   error_message: duplicate_display_name
+template_display_name_to_long:
+  error_code: 400_909
+  error_message: template_display_name_to_long
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
@@ -496,3 +499,6 @@ api_usage_over_limit:
 invalid_license:
   error_code: 400_1201
   error_message: provided licence invalid
+
+
+
