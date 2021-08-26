@@ -72,6 +72,9 @@ decline_not_allowed:
 file_not_viewable:
   error_code: 403_050
   error_message: file can not be viewed
+tag_not_accessible:
+  error_code: 403_051
+  error_message: tag can not be accessed
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
