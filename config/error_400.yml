@@ -114,10 +114,10 @@ template_deleted:
   error_message: template has deleted
 tag_already_exist:
   error_code: 400_054
-  error_message: tag already exist
+  error_message: invalid tag name (tag already exist)
 empty_tag_not_allowed:
   error_code: 400_055
-  error_message: tag should not be empty
+  error_message: invalid tag name (tag should not be empty)
 member_already_secured:
   error_code: 400_056
   error_message: member has finished security check
@@ -166,9 +166,6 @@ tasks_too_much:
 tag_name_used_default_value:
   error_code: 400_071
   error_message: invalid tag name (tag name can not use default value)
-tag_name_is_empty:
-  error_code: 400_072
-  error_message: invalid tag name (tag name can not empty)
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
