@@ -144,7 +144,7 @@ task_is_not_finished:
   error_message: task is not completed or declined
 tag_name_is_too_long:
   error_code: 400_064
-  error_message: tag name is too long
+  error_message: invalid tag name (tag name exceed the maximum length)
 task_is_completed:
   error_code: 400_065
   error_message: task is completed
@@ -163,6 +163,12 @@ sort_type_not_allow:
 tasks_too_much:
   error_code: 400_070
   error_message: tasks result over threshold
+tag_name_used_default_value:
+  error_code: 400_071
+  error_message: invalid tag name (tag name can not use default value)
+tag_name_is_empty:
+  error_code: 400_072
+  error_message: invalid tag name (tag name can not empty)
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
