@@ -75,6 +75,9 @@ file_not_viewable:
 tag_not_accessible:
   error_code: 403_051
   error_message: tag can not be accessed
+template_not_allow_to_modify:
+  error_code: 403_052
+  error_message: the template is temporarily unavailable for modifying, retry the action later.
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
