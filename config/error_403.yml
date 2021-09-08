@@ -80,7 +80,7 @@ template_not_allow_to_modify:
   error_message: the template is temporarily unavailable for modifying, retry the action later.
 template_not_owned:
   error_code: 403_053
-  error_code: the template is not owned by the member
+  error_message: the template is not owned by the member
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
