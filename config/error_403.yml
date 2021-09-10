@@ -81,6 +81,9 @@ template_not_allow_to_modify:
 template_not_owned:
   error_code: 403_053
   error_message: the template is not owned by the member
+member_no_group:
+  error_code: 403_054
+  error_message: member no belongs to group
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
