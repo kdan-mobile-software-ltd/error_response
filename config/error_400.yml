@@ -460,7 +460,7 @@ code_already_used:
 duplicate_video_id:
   error_code: 400_601
   error_message: video_id exists
-no_avaliable_email:
+no_available_email:
   error_code: 400_800
   error_message: No available mail
 flow_is_pending:
