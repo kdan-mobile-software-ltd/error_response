@@ -169,6 +169,9 @@ tag_name_used_default_value:
 template_read_only:
   error_code: 400_072
   error_message: invalid modify of task from read only template
+stages_too_much:
+  error_code: 400_073
+  error_message: stages count overlimit
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
