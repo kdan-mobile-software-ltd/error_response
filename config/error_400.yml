@@ -172,6 +172,9 @@ template_read_only:
 stages_too_much:
   error_code: 400_073
   error_message: stages count overlimit
+invalid_encoding:
+  error_code: 400_078
+  error_message: invalid encoding
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
