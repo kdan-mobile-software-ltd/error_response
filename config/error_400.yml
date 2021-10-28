@@ -495,10 +495,13 @@ invalid_origin:
   error_message: invalid origin
 duplicate_display_name:
   error_code: 400_908
-  error_message: duplicate_display_name
+  error_message: duplicate display name
 template_display_name_too_long:
   error_code: 400_909
-  error_message: template_display_name_to_long
+  error_message: template display name is too long
+not_match_stages_length:
+  error_code: 400_910
+  error_message: input stages length not match template's stages
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
