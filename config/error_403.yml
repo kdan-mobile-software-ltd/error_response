@@ -124,5 +124,5 @@ not_group_member:
   error_code: 403_1202
   error_message: member not belongs to group
 not_allow_action:
-  error_code: 403_1202
+  error_code: 403_1203
   error_message: member not allowed to do action
