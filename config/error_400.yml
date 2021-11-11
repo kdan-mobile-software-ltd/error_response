@@ -520,5 +520,8 @@ license_not_active:
 already_assigned:
   error_code: 400_1203
   error_message: license already assigned to member
+license_reach_limit:
+  error_code: 400_1204
+  error_message: license already reach assign limit
 
 
