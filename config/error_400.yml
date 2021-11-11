@@ -515,10 +515,10 @@ invalid_license:
   error_code: 400_1201
   error_message: provided licence invalid
 license_not_active:
-  error_code: 404_1202
+  error_code: 400_1202
   error_message: license not active
 already_assigned:
-  error_code: 404_1202
+  error_code: 400_1203
   error_message: license already assigned to member
 
 
