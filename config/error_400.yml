@@ -523,5 +523,8 @@ already_assigned:
 license_reach_limit:
   error_code: 400_1204
   error_message: license already reach assign limit
+root_not_removable:
+  error_code: 400_1205
+  error_message: group root can't be removed from group
 
 
