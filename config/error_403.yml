@@ -87,6 +87,9 @@ member_no_group:
 task_was_expired:
   error_code: 403_055
   error_message: task was expired
+group_not_accessible:
+  error_code: 403_056
+  error_message: group is not accessible
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member

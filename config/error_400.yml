@@ -175,6 +175,9 @@ stages_too_much:
 invalid_encoding:
   error_code: 400_078
   error_message: invalid encoding
+group_decline_option_over_limit:
+  error_code: 400_079
+  error_message: decline options of group is over limit
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
