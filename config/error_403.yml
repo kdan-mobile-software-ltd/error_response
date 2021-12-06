@@ -90,6 +90,9 @@ task_was_expired:
 group_not_accessible:
   error_code: 403_056
   error_message: group is not accessible
+group_resource_not_accessible:
+  error_code: 403_057
+  error_message: resource is not accessible for group
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
