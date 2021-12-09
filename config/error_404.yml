@@ -40,6 +40,9 @@ taggable_not_found:
 decline_option_not_found:
   error_code: 404_042
   error_message: decline option not found
+form_not_found:
+  error_code: 404_043
+  error_message: public form not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found

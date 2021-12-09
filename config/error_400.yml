@@ -505,6 +505,27 @@ template_display_name_too_long:
 not_match_stages_length:
   error_code: 400_910
   error_message: input stages length not match template's stages
+stage_not_form:
+  error_code: 400_911
+  error_message: stage not belongs to form signer
+stage_still_initial:
+  error_code: 400_912
+  error_message: stage is still initial status
+task_not_form:
+  error_code: 400_913
+  error_message: task not from public form
+invalid_form_info:
+  error_code: 400_914
+  error_message: public form info invalid
+form_is_deleted:
+  error_code: 400_915
+  error_message: public form is deleted
+form_not_publish:
+  error_code: 400_916
+  error_message: public form is unpublish
+invalid_verify_type:
+  error_code: 400_917
+  error_message: verify type is invalid
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
