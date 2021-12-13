@@ -522,10 +522,13 @@ form_is_deleted:
   error_message: public form is deleted
 form_not_publish:
   error_code: 400_916
-  error_message: public form is unpublish
+  error_message: public form has not been published yet
 invalid_verify_type:
   error_code: 400_917
   error_message: verify type is invalid
+form_should_unpublish:
+  error_code: 400_918
+  error_message: public form should be unpublish
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
