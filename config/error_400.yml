@@ -529,6 +529,9 @@ invalid_verify_type:
 form_should_unpublish:
   error_code: 400_918
   error_message: public form should be unpublish
+invalid_form_status:
+  error_code: 400_919
+  error_message: public form status invalid
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
