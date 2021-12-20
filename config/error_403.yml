@@ -93,6 +93,9 @@ group_not_accessible:
 group_resource_not_accessible:
   error_code: 403_057
   error_message: resource is not accessible for group
+over_form_usage:
+  error_code: 403_058
+  error_message: over public form usage
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
