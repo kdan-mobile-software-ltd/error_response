@@ -34,6 +34,9 @@ update_form_failed:
 copy_form_failed:
   error_code: 406_031
   error_message: copy form failed
+delete_form_failed:
+  error_code: 406_032
+  error_message: delete form failed
 create_voucher_failed:
   error_code: 406_100
   error_message: create voucher failed
