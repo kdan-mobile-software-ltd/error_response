@@ -129,6 +129,9 @@ message_not_found:
 kiosk_not_allowed:
   error_code: 403_900
   error_message: not allowed to use kiosk feature
+form_not_owned:
+  error_code: 403_901
+  error_message: member not owner of public form
 forbidden_license:
   error_code: 403_1201
   error_message: provided licence forbidden to call this api
