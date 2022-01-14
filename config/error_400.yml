@@ -322,6 +322,9 @@ group_not_expired:
 enterprise_app_forbidden:
   error_code: 400_234
   error_message: enterprise app forbidden
+ds_user_change_email_forbidden:
+  error_code: 400_235
+  error_message: dottedsign user not allow to change email.
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
