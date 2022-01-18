@@ -29,13 +29,13 @@ app_not_support:
   error_code: 406_038
   error_message: app not support
 update_form_failed:
-  error_code: 406_030
+  error_code: 406_039
   error_message: update form failed
 copy_form_failed:
-  error_code: 406_031
+  error_code: 406_040
   error_message: copy form failed
 delete_form_failed:
-  error_code: 406_032
+  error_code: 406_041
   error_message: delete form failed
 create_voucher_failed:
   error_code: 406_100
