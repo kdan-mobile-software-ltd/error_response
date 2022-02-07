@@ -574,3 +574,6 @@ already_in_group:
 already_in_other_group:
   error_code: 400_1302
   error_message: member already in other group
+member_not_invited_yet:
+  error_code: 400_1303
+  error_message: member hasn't been invited to group
