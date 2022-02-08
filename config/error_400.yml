@@ -577,3 +577,12 @@ already_in_other_group:
 member_not_invited_yet:
   error_code: 400_1303
   error_message: member hasn't been invited to group
+invite_already_accept:
+  error_code: 400_1304
+  error_message: invite has already been accepted
+invite_not_acceptable:
+  error_code: 400_1305
+  error_message: invite isn't acceptable
+need_register_info:
+  error_code: 400_1306
+  error_message: need member register info

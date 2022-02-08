@@ -148,3 +148,6 @@ credit_mission_not_found:
 license_not_found:
   error_code: 404_1201
   error_message: license not found
+invite_not_found:
+  error_code: 404_1301
+  error_message: invite not found
