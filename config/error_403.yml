@@ -141,3 +141,6 @@ not_group_member:
 action_forbidden:
   error_code: 403_1203
   error_message: member not allowed to do action
+only_for_developer:
+  error_code: 403_1301
+  error_message: only developer can access
