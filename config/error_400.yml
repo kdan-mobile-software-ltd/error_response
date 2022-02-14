@@ -589,3 +589,6 @@ need_register_info:
 invalid_invite_token:
   error_code: 400_1307
   error_message: invalid invite token
+over_group_limit:
+  error_code: 400_1308
+  error_message: group members count over group limit
