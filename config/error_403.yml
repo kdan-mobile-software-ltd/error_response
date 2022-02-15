@@ -144,3 +144,6 @@ action_forbidden:
 only_for_developer:
   error_code: 403_1301
   error_message: only developer can access
+admin_only_self_changeable:
+  error_code: 403_1302
+  error_message: admin can only change by self
