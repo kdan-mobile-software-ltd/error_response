@@ -592,3 +592,6 @@ invalid_invite_token:
 over_group_limit:
   error_code: 400_1308
   error_message: group members count over group limit
+group_need_one_admin:
+  error_code: 400_1309
+  error_message: group need at least one admin
