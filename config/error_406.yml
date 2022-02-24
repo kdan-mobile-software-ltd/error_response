@@ -122,3 +122,9 @@ klaviyo_register_failed:
 klaviyo_track_failed:
   error_code: 406_801
   error_message: track event to klaviyo failed
+upload_icon_failed:
+  error_code: 406_1301
+  error_message: upload icon failed
+delete_icon_failed:
+  error_code: 406_1302
+  error_message: delete icon failed
