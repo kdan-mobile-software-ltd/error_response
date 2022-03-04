@@ -147,3 +147,6 @@ only_for_developer:
 admin_only_self_changeable:
   error_code: 403_1302
   error_message: admin can only change by self
+export_platform_not_activate:
+  error_code: 403_1401
+  error_message: export platform not activate yet
