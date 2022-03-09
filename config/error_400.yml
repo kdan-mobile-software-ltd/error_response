@@ -544,6 +544,9 @@ form_template_not_usable:
 form_reach_limit:
   error_code: 400_921
   error_message: public form already reach limit
+not_verify_stage:
+  error_code: 400_922
+  error_message: stage no need to be verified
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
