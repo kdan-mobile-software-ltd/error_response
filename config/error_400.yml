@@ -547,6 +547,9 @@ form_reach_limit:
 not_verify_stage:
   error_code: 400_922
   error_message: stage no need to be verified
+already_binding_other_cert:
+  error_code: 400_923
+  error_message: signer already bind to different type cert
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
