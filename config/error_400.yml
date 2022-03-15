@@ -550,6 +550,12 @@ not_verify_stage:
 already_binding_other_cert:
   error_code: 400_923
   error_message: signer already bind to different type cert
+not_exportable:
+  error_code: 400_924
+  error_message: member not exportable now, please connect to at least one third party storage
+export_platform_not_active:
+  error_code: 400_925
+  error_message: export platform not active now
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed

@@ -96,6 +96,9 @@ group_resource_not_accessible:
 over_form_usage:
   error_code: 403_058
   error_message: over public form usage
+need_grant_first:
+  error_code: 403_059
+  error_message: need third party grant first
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member

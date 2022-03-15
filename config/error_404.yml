@@ -43,6 +43,9 @@ decline_option_not_found:
 form_not_found:
   error_code: 404_043
   error_message: public form not found
+google_folder_not_found:
+  error_code: 404_044
+  error_message: google folder not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
