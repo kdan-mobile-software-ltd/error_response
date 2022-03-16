@@ -555,7 +555,10 @@ not_exportable:
   error_message: member not exportable now, please connect to at least one third party storage
 export_platform_not_active:
   error_code: 400_925
-  error_message: export platform not active now
+  error_message: export platform not connectet yet
+platform_already_connected:
+  error_code: 400_926
+  error_message: export platform already connected
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
