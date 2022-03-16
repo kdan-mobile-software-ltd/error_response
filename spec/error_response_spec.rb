@@ -32,7 +32,8 @@ RSpec.describe ErrorResponse do
         status: 500,
         json: {
           'error_code' => 500_000,
-          'error_message' => 'something went wrong'
+          'error_message' => 'internal_error: something went wrong',
+          'error_key' => 'internal_error'
         }
       }
       result = ErrorResponse.to_api(:internal_error, 'something went wrong')
