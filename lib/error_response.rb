@@ -14,13 +14,8 @@ class ErrorResponse
   end
 
   def self.to_api(key, message=nil)
-    default_result = {
-      status: 500,
-      json: { 'error_code' => 500_000, 'error_message' => message }
-    }
-    return default_result unless yaml_hash.key?(key.to_s)
-
-    json = yaml_hash[key.to_s].merge({ 'error_key' => key.to_s })
+    json = yaml_hash[key.to_s] || { 'error_code' => 500_000, 'error_message' => key.to_s }
+    json['error_key'] = key.to_s
     json['error_message'] += ": #{message}" unless message.nil?
     {
       status: parse_status(json['error_code']),
