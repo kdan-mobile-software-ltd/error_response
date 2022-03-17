@@ -43,6 +43,9 @@ request_ca_failed:
 apply_ca_failed:
   error_code: 406_043
   error_message: apply cht ca failed
+set_group_setting_failed:
+  error_code: 406_044
+  error_message: failed to set the group setting
 create_voucher_failed:
   error_code: 406_100
   error_message: create voucher failed
