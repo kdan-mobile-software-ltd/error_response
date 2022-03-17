@@ -559,6 +559,9 @@ export_platform_not_active:
 platform_already_connected:
   error_code: 400_926
   error_message: export platform already connected
+export_still_processing:
+  error_code: 400_927
+  error_message: export mission still processing
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
