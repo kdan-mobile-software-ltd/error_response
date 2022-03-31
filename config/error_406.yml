@@ -46,6 +46,9 @@ apply_ca_failed:
 set_group_setting_failed:
   error_code: 406_044
   error_message: failed to set the group setting
+google_client_error:
+  error_code: 406_045
+  error_message: google drive api error
 create_voucher_failed:
   error_code: 406_100
   error_message: create voucher failed
@@ -137,6 +140,3 @@ upload_icon_failed:
 delete_icon_failed:
   error_code: 406_1302
   error_message: delete icon failed
-google_client_error:
-  error_code: 406_1401
-  error_message: google drive api error
