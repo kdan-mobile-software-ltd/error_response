@@ -49,6 +49,9 @@ google_folder_not_found:
 feature_not_found:
   error_code: 404_045
   error_message: group feature not found
+google_drive_grant_url_not_found:
+  error_code: 404_046
+  error_message: google drive permission granting page url not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
