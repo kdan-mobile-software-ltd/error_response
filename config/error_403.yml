@@ -99,6 +99,9 @@ over_form_usage:
 platform_not_granted:
   error_code: 403_059
   error_message: need third party grant first
+permission_interlocking:
+  error_code: 403_060
+  error_message: permission interlocking.
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
