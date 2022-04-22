@@ -133,6 +133,9 @@ bundle_id_not_found:
 default_message_not_found:
   error_code: 404_502
   error_message: default message is not found or not accessible
+push_message_not_found:
+  error_code: 404_502
+  error_message: push message is not found or not accessible
 video_not_found:
   error_code: 404_601
   error_message: video not found
