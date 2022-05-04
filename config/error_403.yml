@@ -102,6 +102,9 @@ platform_not_granted:
 permission_interlocking:
   error_code: 403_060
   error_message: permission interlocking.
+task_owner_forbidden:
+  error_code: 403_061
+  error_message: task owner can not do this action.
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
