@@ -141,5 +141,5 @@ delete_icon_failed:
   error_code: 406_1302
   error_message: delete icon failed
 create_invitation_failed:
-  error_code: 406_1401
+  error_code: 406_1501
   error_message: create invitation failed.
