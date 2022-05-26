@@ -160,5 +160,5 @@ admin_only_self_changeable:
   error_code: 403_1302
   error_message: admin can only change by self
 user_already_invited:
-  error_code: 403_1501
+  error_code: 403_1401
   error_message: receiver already invited.
