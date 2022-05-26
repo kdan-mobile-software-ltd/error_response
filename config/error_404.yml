@@ -166,3 +166,6 @@ service_not_found:
 invite_not_found:
   error_code: 404_1301
   error_message: invite not found
+invitation_not_found:
+  error_code: 404_209
+  error_message: invitation not found

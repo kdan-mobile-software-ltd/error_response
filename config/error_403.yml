@@ -162,3 +162,6 @@ admin_only_self_changeable:
 export_platform_not_activate:
   error_code: 403_1401
   error_message: export platform not activate yet
+user_already_invited:
+  error_code: 403_1501
+  error_message: receiver already invited.
