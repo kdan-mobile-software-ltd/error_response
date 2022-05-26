@@ -143,3 +143,6 @@ delete_icon_failed:
 create_invitation_failed:
   error_code: 406_1401
   error_message: create invitation failed.
+register_member_failed:
+  error_code: 406_1402
+  error_message: register member failed.
