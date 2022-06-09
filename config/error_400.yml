@@ -613,3 +613,6 @@ over_group_limit:
 group_need_one_admin:
   error_code: 400_1309
   error_message: group need at least one admin
+license_not_belong:
+  error_code: 400_1310
+  error_message: license not belongs to group
