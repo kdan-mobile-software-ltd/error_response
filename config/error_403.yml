@@ -126,6 +126,9 @@ account_suspended:
 require_api_key:
   error_code: 403_202
   error_message: you are not add the header api-key at your request, please check it.
+forbidden_remove_gdpr:
+  error_code: 403_301
+  error_messge: Remove GDPR is not accepted
 no_permission:
   error_code: 403_401
   error_message: User has no permission to do this operation
