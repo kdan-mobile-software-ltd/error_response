@@ -382,6 +382,9 @@ receipt_not_refundable:
 no_available_credit:
   error_code: 400_318
   error_message: no available credit
+mass_purchasing_group_archived:
+  error_code: 400_319
+  error_message: mass purchasing group archived
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
