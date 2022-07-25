@@ -147,9 +147,9 @@ form_not_owned:
 group_feature_not_enable:
   error_code: 403_902
   error_message: group feature not enable
-over_daily_transcribe_usage:
+over_daily_transcribe_quota:
   error_code: 403_1032
-  error_message: over daily transcribe usage
+  error_message: over daily transcribe quota
 forbidden_license:
   error_code: 403_1201
   error_message: provided licence forbidden to call this api
