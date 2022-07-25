@@ -126,9 +126,12 @@ account_suspended:
 require_api_key:
   error_code: 403_202
   error_message: you are not add the header api-key at your request, please check it.
-forbidden_remove_gdpr:
+forbidden_remove_gdpr_mass_subscribe:
   error_code: 403_301
-  error_message: Remove GDPR is not accepted
+  error_message: Remove GDPR is not accepted - has mass subscribe
+forbidden_remove_gdpr_auto_renew_scbscribe:
+  error_code: 403_302
+  error_message: Remove GDPR is not accepted - has auto_renew_scbscribe
 no_permission:
   error_code: 403_401
   error_message: User has no permission to do this operation
