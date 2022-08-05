@@ -567,7 +567,10 @@ export_still_processing:
   error_message: export mission still processing
 task_not_throwable:
   error_code: 400_928
-  error_message: task can not be throw
+  error_message: task can not be throwed
+task_not_restorable:
+  error_code: 400_929
+  error_message: task can not be restored
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
