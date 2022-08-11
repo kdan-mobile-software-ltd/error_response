@@ -134,6 +134,12 @@ klaviyo_register_failed:
 klaviyo_track_failed:
   error_code: 406_801
   error_message: track event to klaviyo failed
+decrypt_failed:
+  error_code: 406_1101
+  error_message: decrypt the data failed
+create_mission_failed:
+  error_code: 406_1102
+  error_message: create mission failed
 upload_icon_failed:
   error_code: 406_1301
   error_message: upload icon failed
