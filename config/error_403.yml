@@ -129,9 +129,12 @@ account_suspended:
 require_api_key:
   error_code: 403_202
   error_message: you are not add the header api-key at your request, please check it.
-forbidden_remove_gdpr:
+forbidden_remove_gdpr_mass_purchasing:
   error_code: 403_301
-  error_message: Remove GDPR is not accepted
+  error_message: Remove GDPR is not accepted - has mass purchasing permission
+forbidden_remove_gdpr_auto_renew_subscribe:
+  error_code: 403_302
+  error_message: Remove GDPR is not accepted - has auto renew subscribe
 no_permission:
   error_code: 403_401
   error_message: User has no permission to do this operation
@@ -150,6 +153,9 @@ form_not_owned:
 group_feature_not_enable:
   error_code: 403_902
   error_message: group feature not enable
+over_daily_transcribe_quota:
+  error_code: 403_1032
+  error_message: over daily transcribe quota
 forbidden_license:
   error_code: 403_1201
   error_message: provided licence forbidden to call this api

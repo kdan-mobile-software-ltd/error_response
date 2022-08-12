@@ -382,6 +382,9 @@ receipt_not_refundable:
 no_available_credit:
   error_code: 400_318
   error_message: no available credit
+mass_purchasing_group_archived:
+  error_code: 400_319
+  error_message: mass purchasing group archived
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
@@ -562,6 +565,12 @@ platform_already_connected:
 export_still_processing:
   error_code: 400_927
   error_message: export mission still processing
+task_not_throwable:
+  error_code: 400_928
+  error_message: task can not be throwed
+task_not_restorable:
+  error_code: 400_929
+  error_message: task can not be restored
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
@@ -571,6 +580,9 @@ add_favorite_failed:
 api_usage_over_limit:
   error_code: 400_1003
   error_message: your api usage already suppress threshold
+transcribe_still_processing:
+  error_code: 400_1004
+  error_message: transcribe mission still processing
 invalid_license:
   error_code: 400_1201
   error_message: provided licence invalid
