@@ -105,6 +105,9 @@ permission_interlocking:
 task_owner_forbidden:
   error_code: 403_061
   error_message: task owner can not do this action.
+task_was_voided:
+  error_code: 403_062
+  error_message: the task has been voided.
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
