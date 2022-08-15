@@ -565,9 +565,9 @@ platform_already_connected:
 export_still_processing:
   error_code: 400_927
   error_message: export mission still processing
-task_not_throwable:
+task_not_discardable:
   error_code: 400_928
-  error_message: task can not be throwed
+  error_message: task can not be discarded
 task_not_restorable:
   error_code: 400_929
   error_message: task can not be restored
