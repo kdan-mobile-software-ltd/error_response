@@ -157,6 +157,9 @@ favorite_not_found:
 credit_mission_not_found:
   error_code: 404_1101
   error_message: credit mission not found
+provider_not_found:
+  error_code: 404_1102
+  error_message: provider not supported
 license_not_found:
   error_code: 404_1201
   error_message: license not found
