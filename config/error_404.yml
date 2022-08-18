@@ -154,6 +154,12 @@ card_not_found:
 favorite_not_found:
   error_code: 404_1003
   error_message: favorite not found
+podcast_not_found:
+  error_code: 404_1004
+  error_message: podcast not found
+episode_not_found:
+  error_code: 404_1005
+  error_message: episode not found
 credit_mission_not_found:
   error_code: 404_1101
   error_message: credit mission not found
