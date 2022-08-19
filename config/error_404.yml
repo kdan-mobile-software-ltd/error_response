@@ -160,6 +160,12 @@ podcast_not_found:
 episode_not_found:
   error_code: 404_1005
   error_message: episode not found
+channel_not_found:
+  error_code: 404_1006
+  error_message: channel not found
+video_not_found:
+  error_code: 404_1007
+  error_message: video not found
 credit_mission_not_found:
   error_code: 404_1101
   error_message: credit mission not found
