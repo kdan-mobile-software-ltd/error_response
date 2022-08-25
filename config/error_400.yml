@@ -571,6 +571,12 @@ task_not_discardable:
 task_not_restorable:
   error_code: 400_929
   error_message: task can not be restored
+task_not_archivable:
+  error_code: 400_930
+  error_message: task can not be archived
+task_not_archived:
+  error_code: 400_931
+  error_message: task has not be archived
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
