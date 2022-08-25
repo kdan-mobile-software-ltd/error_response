@@ -154,9 +154,27 @@ card_not_found:
 favorite_not_found:
   error_code: 404_1003
   error_message: favorite not found
+podcast_not_found:
+  error_code: 404_1004
+  error_message: podcast not found
+episode_not_found:
+  error_code: 404_1005
+  error_message: episode not found
+channel_not_found:
+  error_code: 404_1006
+  error_message: channel not found
+video_not_found:
+  error_code: 404_1007
+  error_message: video not found
+source_type_not_found:
+  error_code: 404_1008
+  error_message: source type not found
 credit_mission_not_found:
   error_code: 404_1101
   error_message: credit mission not found
+provider_not_found:
+  error_code: 404_1102
+  error_message: provider not supported
 license_not_found:
   error_code: 404_1201
   error_message: license not found

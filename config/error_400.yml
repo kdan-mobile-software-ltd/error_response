@@ -589,6 +589,9 @@ api_usage_over_limit:
 transcribe_still_processing:
   error_code: 400_1004
   error_message: transcribe mission still processing
+invalid_tag_list:
+  error_code: 400_1005
+  error_message: invalid tag list
 invalid_license:
   error_code: 400_1201
   error_message: provided licence invalid
