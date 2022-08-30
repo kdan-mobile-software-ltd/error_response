@@ -577,6 +577,9 @@ task_not_archivable:
 task_not_archived:
   error_code: 400_931
   error_message: task has not be archived
+task_already_archived:
+  error_code: 400_932
+  error_message: task already archived
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
