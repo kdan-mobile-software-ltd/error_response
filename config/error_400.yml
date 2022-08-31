@@ -1,0 +1,6 @@
+bad_request:
+  error_code: 400_000
+  error_message: bad request
+bad_requset_1:
+  error_code: 400_001
+  error_message: bad request 1
