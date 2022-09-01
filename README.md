@@ -36,7 +36,7 @@ The `error_response` gem lookups all `yml` files and merge them into a hash.
 
 You can also cusomize you config file path through configuration.
 
-```
+```ruby
 ErrorResponse.configure do |config|
   config.yaml_config_path = 'your/local/config/file.yml'
 end
