@@ -6,13 +6,13 @@
 
 Add `error_response` to your Rails application's `Gemfile`.
 
-```
+```ruby
 gem 'error_response'
 ```
 
 And them install the gem
 
-```
+```bash
 $ bundle install
 ```
 
@@ -20,7 +20,7 @@ $ bundle install
 
 Create your response config in `config/error_response.yml`.
 
-```
+```yaml
 # config/error_response.yml
 
 source:
@@ -123,7 +123,7 @@ return error_response(:bad_request_1, 'no required data', { a: 1, b: 2}) if fail
 
 
 ### RequestError Exception
-If you do not want to handle the response in controller, you can just raise a `ErrorResponse::RequestError` exception. The gem will catach the exception in the controller and render the error_response.
+If you do not want to handle the response in controller, you can just raise a `ErrorResponse::RequestError` exception. The gem will catach the exception in controller and render an error_response.
 
 ```ruby
 # in any business logic file
@@ -142,16 +142,16 @@ ErrorResponse.all
 Return to hash only
 
 ```ruby
-ErrorResponse.to_hash(:reset_password_failed)
+ErrorResponse.to_hash(:bad_request_1)
 ```
 
 gives you
 
-```
+```json
 {
-  error_code: 400005,
-  error_message: 'reset password failed',
-  error_key: 'reset_password_failed'
+  "error_code": 400001,
+  "error_message": "bad request 1",
+  "error_key": "bad_request_1"
 }
 ```
 
