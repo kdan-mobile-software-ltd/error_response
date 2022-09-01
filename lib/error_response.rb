@@ -3,9 +3,9 @@
 require 'yaml'
 require 'open-uri'
 
-require_relative 'error_response/configuration'
-require_relative 'error_response/helper'
-require_relative 'error_response/request_error'
+require 'error_response/configuration'
+require 'error_response/helper'
+require 'error_response/request_error'
 
 module ErrorResponse
 

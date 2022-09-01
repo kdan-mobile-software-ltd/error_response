@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-require 'active_support/concern'
-require_relative 'request_error'
+require 'active_support'
 
 module ErrorResponse
   module Helper
-    extend ::ActiveSupport::Concern
+    extend ActiveSupport::Concern
 
     included do
-      rescue_from ErrorResponse::RequestError do |e|
+      rescue_from RequestError do |e|
         error_response(e.key, e.error_message, e.error_data)
       end
     end

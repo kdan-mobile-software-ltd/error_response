@@ -2,7 +2,6 @@
 
 module ErrorResponse
   class Configuration
-
     attr_accessor :yaml_config_path
 
     def initialize
