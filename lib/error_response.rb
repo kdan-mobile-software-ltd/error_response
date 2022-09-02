@@ -58,6 +58,9 @@ module ErrorResponse
     def build_yaml(url)
       content = URI.open(url){|f| f.read}
       YAML.load(content)
+    rescue
+      puts "Load yaml from URL (#{url}) failed."
+      {}
     end
 
     def parse_status(error_code)

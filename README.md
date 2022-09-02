@@ -1,6 +1,6 @@
 # Error Response
 
-`Error Response` is a json response gem to help you easily mange all your custom error status in your Rails application.
+`Error Response` is a json response gem to help you easily manage all your custom error statuses in your Rails application.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add `error_response` to your Rails application's `Gemfile`.
 gem 'error_response'
 ```
 
-And them install the gem
+And then install the gem.
 
 ```bash
 $ bundle install
@@ -32,9 +32,9 @@ source:
     - https://your_remote_file_2.yml
 ```
 
-The `error_response` gem lookups all `yml` files and merge them into a hash.
+The `error_response` gem looks up all `yml` files and merge them into a hash.
 
-You can also cusomize you config file path through configuration.
+You can also customize your config file path through configuration.
 
 ```ruby
 ErrorResponse.configure do |config|
@@ -48,7 +48,7 @@ end
 Include helpers in your base application controller.
 ```ruby
 # in controller
-class Api::ApplicationController
+class Api::ApplicationController < ActionController::Base
   include ErrorResponse::Helper
 
   ...
@@ -57,11 +57,11 @@ end
 
 ### Success Response
 
-Success response used when the request is success.
+The success response is used when the request is success.
 
 ```ruby
 # in controller actions
-data = { a: 1, b: 2}
+data = { a: 1, b: 2 }
 return success_response(data) if success?
 ```
 
@@ -79,7 +79,7 @@ return success_response(data) if success?
 
 ### Error Response
 
-Error response used when the request is not valid. You need to provide the `error_key` defined in the config files.
+The error response is used when the request is not valid. Therefore, you need to provide the `error_key` defined in the config files.
 
 ```ruby
 # in controller actions
@@ -100,7 +100,7 @@ return error_response(:bad_request_1) if failed?
 }
 ```
 
-You can also provide custom error message and error data. If error data is a hash, it will merge into the json response; if it is an array, it will merge into the json response with a `error_data` key.
+You can also provide your custom error message and error data. If error data is a hash, it will be merged into the json response; if it is an array, it will be merged into the json response with an `error_data` key.
 
 ```ruby
 # in controller actions
@@ -123,7 +123,7 @@ return error_response(:bad_request_1, 'no required data', { a: 1, b: 2}) if fail
 
 
 ### RequestError Exception
-If you do not want to handle the response in controller, you can just raise a `ErrorResponse::RequestError` exception. The gem will catach the exception in controller and render an error_response.
+If you do not want to handle the response in controllers, you can just raise an `ErrorResponse::RequestError` exception. The gem will catach the exception in the base application controller and render an error_response.
 
 ```ruby
 # in any business logic file
@@ -133,7 +133,7 @@ raise ErrorResponse::RequestError.new(:bad_request_1)
 
 ## Others
 
-See all avaliable error_code & error_message
+See all available error_code & error_message
 
 ```ruby
 ErrorResponse.all
