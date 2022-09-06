@@ -1,3 +1,6 @@
-happy_tree_friend:
-  error_code: 418_003
-  error_message: happy tree friend
+bad_request_1:
+  error_code: 400_001
+  error_message: bad request 1
+bad_request_2:
+  error_code: 400_002
+  error_message: bad request 2

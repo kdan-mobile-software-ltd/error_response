@@ -1,10 +1,25 @@
+# frozen_string_literal: true
+
 require 'yaml'
 require 'open-uri'
 
-class ErrorResponse
-  SETTING_PATH = 'config/error_response.yml'
+require 'error_response/configuration'
+require 'error_response/helper'
+require 'error_response/request_error'
+
+module ErrorResponse
 
   class << self
+    attr_accessor :configuration
+
+    def configuration
+      @configuration ||= Configuration.new
+    end
+
+    def configure(&block)
+      yield(configuration)
+    end
+
     def all
       yaml_hash
     end
@@ -30,7 +45,7 @@ class ErrorResponse
     def yaml_hash
       return @hash unless @hash.nil?
 
-      settings = YAML.load(File.read(SETTING_PATH))
+      settings = YAML.load(File.read(configuration.yaml_config_path))
       local_array = settings['source']['local']
       local_hash = local_array.nil? ? {} : local_array.map { |path| YAML.load_file(path) }.inject(&:merge)
 
@@ -43,6 +58,9 @@ class ErrorResponse
     def build_yaml(url)
       content = URI.open(url){|f| f.read}
       YAML.load(content)
+    rescue
+      puts "Load yaml from URL (#{url}) failed."
+      {}
     end
 
     def parse_status(error_code)

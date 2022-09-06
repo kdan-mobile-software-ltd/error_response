@@ -1,75 +1,160 @@
 # Error Response
 
-### Getting started
+`Error Response` is a json response gem to help you easily manage all your custom error statuses in your Rails application.
 
-```
+## Installation
+
+Add `error_response` to your Rails application's `Gemfile`.
+
+```ruby
 gem 'error_response'
 ```
 
-Run `bundle install`
+And then install the gem.
 
-create  `config/error_response.yml`
-
+```bash
+$ bundle install
 ```
+
+## Configuration
+
+Create your response config in `config/error_response.yml`.
+
+```yaml
 # config/error_response.yml
 
 source:
   local:
-    - ENV['YOUR_LOCAL_FILE_PATH']
+    - your/local/file_1.yml
+    - your/local/file_2.yml
   remote:
-    - https://your_remote_file.yml
+    - https://your_remote_file_1.yml
+    - https://your_remote_file_2.yml
 ```
 
-define a error_response method in Api::ApplicationController
+The `error_response` gem looks up all `yml` files and merge them into a hash.
 
-```
-  #  app/controller/api/v1/application_controller.rb
+You can also customize your config file path through configuration.
 
-  def error_response(error_key, error_message=nil)
-    render_content = ErrorResponse.to_api(error_key, error_message).deep_dup
-    render_content[:json].delete('app_code')
-    render(render_content)
-  end
+```ruby
+ErrorResponse.configure do |config|
+  config.yaml_config_path = 'your/local/config/file.yml'
+end
 ```
 
 
-### Ready to Go
-simeply use it where you want
+## Usage
 
-```
-return error_reponse(:happy_tree_friend_key) if @user.nil
+Include helpers in your base application controller.
+```ruby
+# in controller
+class Api::ApplicationController < ActionController::Base
+  include ErrorResponse::Helper
+
+  ...
+end
 ```
 
-the response will look like this
+### Success Response
 
+The success response is used when the request is success.
+
+```ruby
+# in controller actions
+data = { a: 1, b: 2 }
+return success_response(data) if success?
 ```
+
+```json
 {
-  status: 418,
-  json:
+  "status": 200,
+  "json": {
+    "data": {
+      "a": 1,
+      "b": 2
+    }
+  } 
+}
+```
+
+### Error Response
+
+The error response is used when the request is not valid. Therefore, you need to provide the `error_key` defined in the config files.
+
+```ruby
+# in controller actions
+return error_response(:bad_request_1) if failed?
+```
+
+```json
+{
+  "status": 400,
+  "json":
     {
-      error_code: 418003,
-      error_message: 'happy tree friend',
-      error_key: 'happy_tree_friend_key'
+      "error_code": 400001,
+      "error_message": "bad request 1",
+      "error_key": "bad_request_1",
+      "a": 1,
+      "b": 2
     }
 }
 ```
 
-### Others
+You can also provide your custom error message and error data. If error data is a hash, it will be merged into the json response; if it is an array, it will be merged into the json response with an `error_data` key.
 
-See all avaliable error_code & error_message
+```ruby
+# in controller actions
+return error_response(:bad_request_1, 'no required data', { a: 1, b: 2}) if failed?
+```
 
-`ErrorResponse.all`
+```json
+{
+  "status": 400,
+  "json":
+    {
+      "error_code": 400001,
+      "error_message": "bad request 1",
+      "error_key": "bad_request_1",
+      "a": 1,
+      "b": 2
+    }
+}
+```
+
+
+### RequestError Exception
+If you do not want to handle the response in controllers, you can just raise an `ErrorResponse::RequestError` exception. The gem will catach the exception in the base application controller and render an error_response.
+
+```ruby
+# in any business logic file
+raise ErrorResponse::RequestError.new(:bad_request_1)
+```
+
+
+## Others
+
+See all available error_code & error_message
+
+```ruby
+ErrorResponse.all
+```
 
 Return to hash only
 
-`ErrorResponse.to_hash(:reset_password_failed)`
+```ruby
+ErrorResponse.to_hash(:bad_request_1)
+```
 
 gives you
 
-```
+```json
 {
-  error_code: 400005,
-  error_message: 'reset password failed',
-  error_key: 'reset_password_failed'
+  "error_code": 400001,
+  "error_message": "bad request 1",
+  "error_key": "bad_request_1"
 }
 ```
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

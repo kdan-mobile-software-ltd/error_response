@@ -2,4 +2,4 @@ source:
   local:
     - config/error_4xx.yml
   remote:
-    - https://raw.githubusercontent.com/kdan-mobile-software-ltd/error_response/yaml/config/error_404.yml
+    - https://raw.githubusercontent.com/kdan-mobile-software-ltd/error_response/master/config/error_4xx.yml
