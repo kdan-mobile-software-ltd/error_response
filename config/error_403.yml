@@ -108,6 +108,9 @@ task_owner_forbidden:
 task_was_voided:
   error_code: 403_062
   error_message: the task has been voided.
+over_flow_usage:
+  error_code: 403_063
+  error_message: over auto flow usage
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
