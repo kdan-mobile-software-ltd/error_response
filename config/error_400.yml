@@ -580,6 +580,9 @@ task_not_archived:
 task_already_archived:
   error_code: 400_932
   error_message: task already archived
+flow_conflict:
+  error_code: 400_933
+  error_message: flow conflict with existed flows
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed

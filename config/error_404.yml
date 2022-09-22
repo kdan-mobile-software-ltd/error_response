@@ -52,6 +52,9 @@ feature_not_found:
 google_drive_grant_url_not_found:
   error_code: 404_046
   error_message: google drive permission granting page url not found
+flow_not_found:
+  error_code: 404_047
+  error_message: auto flow not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
