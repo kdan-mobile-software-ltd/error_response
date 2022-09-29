@@ -111,6 +111,9 @@ task_was_voided:
 over_flow_usage:
   error_code: 403_063
   error_message: over auto flow usage
+combination_not_accessible:
+  error_code: 403_064
+  error_message: combination is not accessible
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member

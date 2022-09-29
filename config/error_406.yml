@@ -52,6 +52,12 @@ google_client_error:
 flow_setup_failed:
   error_code: 406_046
   error_message: auto flow setup failed
+delete_combination_failed:
+  error_code: 406_047
+  error_message: delete combination failed
+share_combination_failed:
+  error_code: 406_048
+  error_message: share combination failed
 create_voucher_failed:
   error_code: 406_100
   error_message: create voucher failed
