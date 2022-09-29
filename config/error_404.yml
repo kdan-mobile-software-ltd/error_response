@@ -55,6 +55,9 @@ google_drive_grant_url_not_found:
 flow_not_found:
   error_code: 404_047
   error_message: auto flow not found
+combination_not_found:
+  error_code: 404_048
+  error_message: combination not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
