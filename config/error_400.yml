@@ -181,8 +181,11 @@ invalid_encoding:
 group_decline_option_over_limit:
   error_code: 400_079
   error_message: decline options of group is over limit
-seal_not_deletable:
+seal_not_active:
   error_code: 400_080
+  error_message: seal is not active
+seal_not_deletable:
+  error_code: 400_081
   error_message: seal is not deletable
 coupon_is_used:
   error_code: 400_100
