@@ -58,6 +58,9 @@ flow_not_found:
 combination_not_found:
   error_code: 404_048
   error_message: combination not found
+seal_not_found:
+  error_code: 404_049
+  error_message: seal not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
