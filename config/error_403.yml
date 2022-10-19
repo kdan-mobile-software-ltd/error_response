@@ -114,6 +114,9 @@ over_flow_usage:
 combination_not_accessible:
   error_code: 403_064
   error_message: combination is not accessible
+seal_not_accessible:
+  error_code: 403_065
+  error_message: seal is not accessible
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member

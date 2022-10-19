@@ -61,6 +61,9 @@ combination_not_found:
 seal_not_found:
   error_code: 404_049
   error_message: seal not found
+grantee_not_found:
+  error_code: 404_050
+  error_message: grantee not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
