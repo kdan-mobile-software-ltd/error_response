@@ -138,6 +138,9 @@ account_suspended:
 require_api_key:
   error_code: 403_202
   error_message: you are not add the header api-key at your request, please check it.
+member_already_registered:
+  error_code: 403_203
+  error_message:  Email address is already registered.
 forbidden_remove_gdpr_mass_purchasing:
   error_code: 403_301
   error_message: Remove GDPR is not accepted - has mass purchasing permission
