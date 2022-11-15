@@ -157,6 +157,9 @@ user_not_found:
 report_not_found:
   error_code: 404_604
   error_message: report not found
+recipient_not_found:
+  error_code: 404_801
+  error_message: recipient not found
 note_not_found:
   error_code: 404_1001
   error_message: note not found

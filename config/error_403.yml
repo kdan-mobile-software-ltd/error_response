@@ -153,6 +153,9 @@ share_link_file_only:
 message_not_found:
   error_code: 403_501
   error_message: message not found
+recipient_hard_bounced:
+  error_code: 403_801
+  error_message: recipient is hard bounced
 kiosk_not_allowed:
   error_code: 403_900
   error_message: not allowed to use kiosk feature

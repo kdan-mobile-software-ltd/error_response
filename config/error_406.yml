@@ -143,6 +143,9 @@ klaviyo_register_failed:
 klaviyo_track_failed:
   error_code: 406_801
   error_message: track event to klaviyo failed
+sendy_register_failed:
+  error_code: 406_802
+  error_message: register to sendy failed
 decrypt_failed:
   error_code: 406_1101
   error_message: decrypt the data failed
