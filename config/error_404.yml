@@ -36,7 +36,7 @@ mission_not_found:
   error_message: mission not found
 taggable_not_found:
   error_code: 404_041
-  error_message: taggable type not found
+  error_message: taggable not found
 decline_option_not_found:
   error_code: 404_042
   error_message: decline option not found
