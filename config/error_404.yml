@@ -202,3 +202,6 @@ invite_not_found:
 invitation_not_found:
   error_code: 404_1401
   error_message: invitation not found
+document_not_found:
+  error_code: 404_1501
+  error_message: document not found
