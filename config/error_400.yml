@@ -589,6 +589,9 @@ task_already_archived:
 flow_conflict:
   error_code: 400_933
   error_message: flow conflict with existed flows
+template_need_sms_verify:
+  error_code: 400_934
+  error_message: template needs sms otp verify, signer's phone should be provided
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
