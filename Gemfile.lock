@@ -6,20 +6,20 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.6.1)
+    activesupport (6.1.7.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.0)
     diff-lcs (1.5.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
-    minitest (5.16.3)
+    minitest (5.15.0)
     reline (0.3.1)
       io-console (~> 0.5)
     rspec (3.11.0)
@@ -35,9 +35,9 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    zeitwerk (2.6.0)
+    zeitwerk (2.6.6)
 
 PLATFORMS
   ruby
