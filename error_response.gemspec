@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.require_path     = ["lib"]
   s.required_ruby_version = '>= 2.5.1'
 
-  s.add_development_dependency 'activesupport', '~> 6.1.4'
+  s.add_development_dependency 'activesupport', '~> 6.1.7.2'
 end
