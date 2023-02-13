@@ -592,6 +592,9 @@ flow_conflict:
 template_need_sms_verify:
   error_code: 400_934
   error_message: template needs sms otp verify, signer's phone should be provided
+form_is_still_compressing:
+  error_code: 400_935
+  error_message: form is still compressing
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
