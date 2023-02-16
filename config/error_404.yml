@@ -205,3 +205,6 @@ invitation_not_found:
 document_not_found:
   error_code: 404_1501
   error_message: document not found
+annotation_not_found:
+  error_code: 404_1502
+  error_message: annotation not found
