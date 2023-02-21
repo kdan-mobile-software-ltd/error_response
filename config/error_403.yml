@@ -186,3 +186,6 @@ admin_only_self_changeable:
 user_already_invited:
   error_code: 403_1401
   error_message: receiver already invited.
+over_document_usage:
+  error_code: 403_1501
+  error_message: over document limitation
