@@ -164,3 +164,6 @@ create_invitation_failed:
 register_member_failed:
   error_code: 406_1402
   error_message: register member failed.
+download_document_failed:
+  error_code: 406_1501
+  error_message: download document pdf failed
