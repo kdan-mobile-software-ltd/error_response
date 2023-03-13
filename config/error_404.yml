@@ -64,6 +64,12 @@ seal_not_found:
 grantee_not_found:
   error_code: 404_050
   error_message: grantee not found
+drive_folder_not_found:
+  error_code: 404_051
+  error_message: drive folder not found
+drive_grant_url_not_found:
+  error_code: 404_052
+  error_message: drive permission granting page url not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
