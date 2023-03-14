@@ -58,6 +58,9 @@ delete_combination_failed:
 share_combination_failed:
   error_code: 406_048
   error_message: share combination failed
+drive_client_error:
+  error_code: 406_049
+  error_message: drive api error
 create_voucher_failed:
   error_code: 406_100
   error_message: create voucher failed
