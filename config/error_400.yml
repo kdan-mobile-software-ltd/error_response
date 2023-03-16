@@ -187,6 +187,12 @@ seal_not_active:
 seal_not_deletable:
   error_code: 400_081
   error_message: seal is not deletable
+watermark_not_active:
+  error_code: 400_082
+  error_message: watermark is not active
+group_watermark_over_limit:
+  error_code: 400_038
+  error_message: watermarks of group is over limit
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used

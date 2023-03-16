@@ -70,6 +70,9 @@ drive_folder_not_found:
 drive_grant_url_not_found:
   error_code: 404_052
   error_message: drive permission granting page url not found
+watermark_not_found:
+  error_code: 404_053
+  error_message: watermark not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
