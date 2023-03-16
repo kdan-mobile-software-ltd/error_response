@@ -655,3 +655,9 @@ group_need_one_admin:
 license_not_belong:
   error_code: 400_1310
   error_message: license not belongs to group
+invalid_organize_type:
+  error_code: 400_1501
+  error_message: organize type is invalid
+invalid_organize_info:
+  error_code: 400_1502
+  error_message: organize info is invalid
