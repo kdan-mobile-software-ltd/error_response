@@ -10,7 +10,11 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.files       = Dir["lib/**/*"]
   s.require_path     = ["lib"]
-  s.required_ruby_version = '>= 2.5.1'
+  s.required_ruby_version = '>= 2.7'
+  s.metadata = {
+    "source_code_uri" => "https://github.com/kdan-mobile-software-ltd/error_response",
+    "changelog_uri" => "https://github.com/kdan-mobile-software-ltd/error_response/blob/master/CHANGELOG.md"
+  }
 
-  s.add_development_dependency 'activesupport', '~> 6.1.7.2'
+  s.add_development_dependency 'activesupport', '~> 6.1.7.3'
 end
