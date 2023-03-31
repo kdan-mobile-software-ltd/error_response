@@ -193,6 +193,9 @@ watermark_not_active:
 group_watermark_over_limit:
   error_code: 400_038
   error_message: watermarks of group is over limit
+invalid_object_id:
+  error_code: 400_084
+  error_message: invalid object id
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
