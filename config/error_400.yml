@@ -601,6 +601,9 @@ template_need_sms_verify:
 form_is_still_compressing:
   error_code: 400_935
   error_message: form is still compressing
+bulk_send_reach_limit:
+  error_code: 400_936
+  error_message: bulk send tasks already reach limit
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
