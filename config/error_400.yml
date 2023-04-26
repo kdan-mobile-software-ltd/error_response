@@ -241,6 +241,9 @@ invalid_payment_status:
 invalid_type_value:
   error_code: 400_114
   error_message: only allow redeem or coupon.
+stripe_error:
+  error_code: 400_115
+  error_message: stripe error
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
