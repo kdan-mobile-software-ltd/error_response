@@ -196,6 +196,9 @@ group_watermark_over_limit:
 invalid_object_id:
   error_code: 400_084
   error_message: invalid object id
+invalid_file_name:
+  error_code: 400_085
+  error_message: invalid file name
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
