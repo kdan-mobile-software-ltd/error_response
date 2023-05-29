@@ -169,6 +169,9 @@ report_not_found:
 recipient_not_found:
   error_code: 404_801
   error_message: recipient not found
+sms_record_not_found:
+  error_code: 404_802
+  error_message: sms record not found
 note_not_found:
   error_code: 404_1001
   error_message: note not found
