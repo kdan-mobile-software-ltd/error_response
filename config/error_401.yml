@@ -35,6 +35,9 @@ auth_code_invalid:
 login_code_invalid:
   error_code: 401_210
   error_message: login_code is invalid
+account_suspended_401:
+  error_code: 401_211
+  error_message: account suspended
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
