@@ -73,6 +73,18 @@ gdpr_kill_failed:
 payment_change_failed:
   error_code: 406_104
   error_message: failed to update payment status
+create_payment_failed:
+  error_code: 406_105
+  error_message: failed to create payment
+cancel_payment_failed:
+  error_code: 406_106
+  error_message: failed to cancel payment
+create_invoice_failed:
+  error_code: 406_107
+  error_message: create third party invoice failed
+send_invoice_failed:
+  error_code: 406_108
+  error_message: send third party invoice failed
 confirm_callback_failed:
   error_code: 406_200
   error_message: confirm success but callback failed
