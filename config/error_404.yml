@@ -124,6 +124,12 @@ client_not_found:
 info_not_found:
   error_code: 404_209
   error_message: info not found
+edm_settings_not_found:
+  error_code: 404_210
+  error_message: edm settings not found
+edm_type_not_found:
+  error_code: 404_211
+  error_message: edm type not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
