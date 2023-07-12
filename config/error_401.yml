@@ -38,6 +38,9 @@ login_code_invalid:
 account_suspended_401:
   error_code: 401_211
   error_message: account suspended
+account_suspended:
+  error_code: 401_211
+  error_message: account suspended
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed

@@ -361,6 +361,9 @@ enterprise_app_forbidden:
 ds_user_change_email_forbidden:
   error_code: 400_235
   error_message: dottedsign user not allow to change email.
+password_too_short:
+  error_code: 400_236
+  error_message: password is too short.
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
