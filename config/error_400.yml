@@ -256,6 +256,9 @@ invalid_payment_info:
 need_token_id:
   error_code: 400_118
   error_message: need stripe card token id
+payment_cancel:
+  error_code: 400_119
+  error_message: payment has already been canceled
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
