@@ -262,6 +262,9 @@ payment_cancel:
 payment_not_paid:
   error_code: 400_120
   error_message: payment has not been paid yet
+payment_not_belongs:
+  error_code: 400_121
+  error_message: payment not belongs to member
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
