@@ -217,6 +217,9 @@ service_not_found:
 license_pack_not_found:
   error_code: 404_1203
   error_message: license pack not found
+license_group_not_found:
+  error_code: 404_1204
+  error_message: license group not found
 invite_not_found:
   error_code: 404_1301
   error_message: invite not found
