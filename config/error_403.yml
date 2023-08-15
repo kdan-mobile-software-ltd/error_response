@@ -186,3 +186,6 @@ user_already_invited:
 over_document_usage:
   error_code: 403_1501
   error_message: over document limitation
+document_not_accessible:
+  error_code: 403_1502
+  error_message: document not accessible
