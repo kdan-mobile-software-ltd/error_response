@@ -667,6 +667,9 @@ root_not_removable:
 split_over_limit:
   error_code: 400_1206
   error_message: split license group quantity over limit
+already_group_manager:
+  error_code: 400_1207
+  error_message: member already license group manager
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
