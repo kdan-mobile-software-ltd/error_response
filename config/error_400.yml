@@ -664,12 +664,6 @@ license_reach_limit:
 root_not_removable:
   error_code: 400_1205
   error_message: group root can't be removed from group
-split_over_limit:
-  error_code: 400_1206
-  error_message: split license group quantity over limit
-already_group_manager:
-  error_code: 400_1207
-  error_message: member already license group manager
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
@@ -706,3 +700,9 @@ invalid_organize_type:
 invalid_organize_info:
   error_code: 400_1502
   error_message: organize info is invalid
+split_over_limit:
+  error_code: 400_1601
+  error_message: split license group quantity over limit
+already_group_manager:
+  error_code: 400_1602
+  error_message: member already license group manager

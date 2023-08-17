@@ -214,12 +214,6 @@ license_not_found:
 service_not_found:
   error_code: 404_1202
   error_message: service not found
-license_pack_not_found:
-  error_code: 404_1203
-  error_message: license pack not found
-license_group_not_found:
-  error_code: 404_1204
-  error_message: license group not found
 invite_not_found:
   error_code: 404_1301
   error_message: invite not found
@@ -232,3 +226,9 @@ document_not_found:
 annotation_not_found:
   error_code: 404_1502
   error_message: annotation not found
+license_pack_not_found:
+  error_code: 404_1601
+  error_message: license pack not found
+license_group_not_found:
+  error_code: 404_1602
+  error_message: license group not found

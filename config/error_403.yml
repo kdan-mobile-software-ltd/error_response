@@ -189,3 +189,6 @@ over_document_usage:
 document_not_accessible:
   error_code: 403_1502
   error_message: document not accessible
+license_not_belongs:
+  error_code: 403_1601
+  error_message: license not belongs to member
