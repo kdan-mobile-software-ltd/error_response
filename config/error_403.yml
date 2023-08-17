@@ -192,3 +192,12 @@ document_not_accessible:
 license_not_belongs:
   error_code: 403_1601
   error_message: license not belongs to member
+license_revoked:
+  error_code: 403_1602
+  error_message: license is revoked
+license_expired:
+  error_code: 403_1603
+  error_message: license is expired
+wrong_license_device:
+  error_code: 403_1604
+  error_message: license not binding to the device
