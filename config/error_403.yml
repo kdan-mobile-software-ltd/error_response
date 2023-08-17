@@ -201,3 +201,6 @@ license_expired:
 wrong_license_device:
   error_code: 403_1604
   error_message: license not binding to the device
+license_not_managed:
+  error_code: 403_1605
+  error_message: license not managed by member
