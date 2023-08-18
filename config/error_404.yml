@@ -97,6 +97,9 @@ invoice_not_found:
 payment_not_found:
   error_code: 404_108
   error_message: payment not found
+paypal_not_found:
+  error_code: 404_109
+  error_message: PayPal resource not found
 member_not_found:
   error_code: 404_201
   error_message: member not found

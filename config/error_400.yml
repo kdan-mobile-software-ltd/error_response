@@ -265,6 +265,120 @@ payment_not_paid:
 payment_not_belongs:
   error_code: 400_121
   error_message: payment not belongs to member
+paypal_cannot_cancel_draft_invoice:
+  error_code: 400_122
+  error_message: paypal_cannot_cancel_draft_invoice
+paypal_invoice_canceled_already:
+  error_code: 400_123
+  error_message: paypal_invoice_canceled_already
+paypal_cannot_send_invoice:
+  error_code: 400_124
+  error_message: paypal_cannot_send_invoice
+paypal_invoice_already_sent:
+  error_code: 400_125
+  error_message: paypal_invoice_already_sent
+paypal_fixed_price_not_supported:
+  error_code: 400_126
+  error_message: paypal_fixed_price_not_supported
+paypal_duplicate_resource_identifier:
+  error_code: 400_127
+  error_message: paypal_duplicate_resource_identifier
+paypal_subscription_cannot_have_quantity:
+  error_code: 400_128
+  error_message: paypal_subscription_cannot_have_quantity
+paypal_amount_greater_than_outstanding_balance:
+  error_code: 400_129
+  error_message: paypal_amount_greater_than_outstanding_balance
+paypal_subscription_status_invalid:
+  error_code: 400_130
+  error_message: paypal_subscription_status_invalid
+paypal_session_state_not_valid:
+  error_code: 400_131
+  error_message: paypal_session_state_not_valid
+paypal_unprocessable_entity:
+  error_code: 400_132
+  error_message: paypal_unprocessable_entity
+paypal_error:
+  error_code: 400_133
+  error_message: paypal error occurred
+stripe_authentication_required:
+  error_code: 400_134
+  error_message: authentication_required
+stripe_approved_with_id:
+  error_code: 400_135
+  error_message: approved_with_id
+stripe_call_issuer:
+  error_code: 400_136
+  error_message: call_issuer
+stripe_card_not_supported:
+  error_code: 400_137
+  error_message: card_not_supported
+stripe_card_velocity_exceeded:
+  error_code: 400_138
+  error_message: card_velocity_exceeded
+stripe_currency_not_supported:
+  error_code: 400_139
+  error_message: currency_not_supported
+stripe_do_not_honor:
+  error_code: 400_140
+  error_message: do_not_honor
+stripe_do_not_try_again:
+  error_code: 400_141
+  error_message: do_not_try_again
+stripe_duplicate_transaction:
+  error_code: 400_142
+  error_message: duplicate_transaction
+stripe_expired_card:
+  error_code: 400_143
+  error_message: expired_card
+stripe_fraudulent:
+  error_code: 400_144
+  error_message: fraudulent
+stripe_issuer_not_available:
+  error_code: 400_145
+  error_message: issuer_not_available
+stripe_lost_card:
+  error_code: 400_146
+  error_message: lost_card
+stripe_merchant_blacklist:
+  error_code: 400_147
+  error_message: merchant_blacklist
+stripe_new_account_information_available:
+  error_code: 400_148
+  error_message: new_account_information_available
+stripe_no_action_taken:
+  error_code: 400_149
+  error_message: no_action_taken
+stripe_not_permitted:
+  error_code: 400_150
+  error_message: not_permitted
+stripe_pickup_card:
+  error_code: 400_151
+  error_message: pickup_card
+stripe_processing_error:
+  error_code: 400_152
+  error_message: processing_error
+stripe_reenter_transaction:
+  error_code: 400_153
+  error_message: reenter_transaction
+stripe_restricted_card:
+  error_code: 400_154
+  error_message: restricted_card
+stripe_stolen_card:
+  error_code: 400_155
+  error_message: stolen_card
+paypal_missing_required_parameter:
+  error_code: 400_156
+  error_message: missing required parameter
+paypal_invalid_parameter_syntax:
+  error_code: 400_157
+  error_message: invalid parameter syntax
+paypal_invalid_parameter_value:
+  error_code: 400_158
+  error_message: invalid parameter value
+paypal_invalid_request:
+  error_code: 400_159
+  error_message: invalid request
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
