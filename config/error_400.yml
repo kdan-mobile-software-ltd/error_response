@@ -219,7 +219,7 @@ voucher_over_limit:
   error_message: voucher is over limit
 card_error:
   error_code: 400_106
-  error_message: card has some problems
+  error_message: The card has been declined. Please contact your bank for more information.
 invalid_interval:
   error_code: 400_107
   error_message: plan interval is invalid
@@ -303,70 +303,70 @@ paypal_error:
   error_message: paypal error occurred
 stripe_authentication_required:
   error_code: 400_134
-  error_message: authentication_required
+  error_message: The card was declined as the transaction requires authentication.
 stripe_approved_with_id:
   error_code: 400_135
-  error_message: approved_with_id
+  error_message: The payment can’t be authorized.
 stripe_call_issuer:
   error_code: 400_136
-  error_message: call_issuer
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_card_not_supported:
   error_code: 400_137
-  error_message: card_not_supported
+  error_message: The card does not support this type of purchase.
 stripe_card_velocity_exceeded:
   error_code: 400_138
-  error_message: card_velocity_exceeded
+  error_message: The customer has exceeded the balance or credit limit available on their card.
 stripe_currency_not_supported:
   error_code: 400_139
-  error_message: currency_not_supported
+  error_message: The card does not support this currency.
 stripe_do_not_honor:
   error_code: 400_140
-  error_message: do_not_honor
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_do_not_try_again:
   error_code: 400_141
-  error_message: do_not_try_again
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_duplicate_transaction:
   error_code: 400_142
-  error_message: duplicate_transaction
+  error_message: A transaction with identical amount and credit card information was submitted very recently.
 stripe_expired_card:
   error_code: 400_143
-  error_message: expired_card
+  error_message: The card has expired.
 stripe_fraudulent:
   error_code: 400_144
-  error_message: fraudulent
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_issuer_not_available:
   error_code: 400_145
-  error_message: issuer_not_available
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_lost_card:
   error_code: 400_146
-  error_message: lost_card
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_merchant_blacklist:
   error_code: 400_147
-  error_message: merchant_blacklist
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_new_account_information_available:
   error_code: 400_148
-  error_message: new_account_information_available
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_no_action_taken:
   error_code: 400_149
-  error_message: no_action_taken
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_not_permitted:
   error_code: 400_150
-  error_message: not_permitted
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_pickup_card:
   error_code: 400_151
-  error_message: pickup_card
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_processing_error:
   error_code: 400_152
-  error_message: processing_error
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_reenter_transaction:
   error_code: 400_153
-  error_message: reenter_transaction
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_restricted_card:
   error_code: 400_154
-  error_message: restricted_card
+  error_message: The card has been declined. Please contact your bank for more information.
 stripe_stolen_card:
   error_code: 400_155
-  error_message: stolen_card
+  error_message: The card has been declined. Please contact your bank for more information.
 paypal_missing_required_parameter:
   error_code: 400_156
   error_message: missing required parameter
@@ -385,7 +385,6 @@ stripe_invalid_request_error:
 stripe_idempotency_error:
   error_code: 400_161
   error_message: idempotency error
-
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
