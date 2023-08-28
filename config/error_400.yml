@@ -217,7 +217,7 @@ voucher_is_expired:
 voucher_over_limit:
   error_code: 400_105
   error_message: voucher is over limit
-card_error:
+card_error_400:
   error_code: 400_106
   error_message: The card has been declined. Please contact your bank for more information.
 invalid_interval:
