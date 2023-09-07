@@ -117,6 +117,12 @@ combination_not_accessible:
 seal_not_accessible:
   error_code: 403_065
   error_message: seal is not accessible
+file_merge_mission_not_owned:
+  error_code: 403_066
+  error_message: file merge mission not owned by member
+file_merge_mission_not_accessible:
+  error_code: 403_067
+  error_message: file merge mission not accessible
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
