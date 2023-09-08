@@ -133,6 +133,9 @@ edm_settings_not_found:
 edm_type_not_found:
   error_code: 404_211
   error_message: edm type not found
+permission_not_found:
+  error_code: 404_212
+  error_message: permission not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
