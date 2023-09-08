@@ -182,3 +182,15 @@ register_member_failed:
 download_document_failed:
   error_code: 406_1501
   error_message: download document pdf failed
+create_product_failed:
+  error_code: 406_1601
+  error_message: create license product failed
+update_license_group_failed:
+  error_code: 406_1602
+  error_message: update license group failed
+revoke_manager_failed:
+  error_code: 406_1603
+  error_message: revoke license group manager failed
+hancom_ems_failed:
+  error_code: 406_1604
+  error_message: deliver hancom license failed

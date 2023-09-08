@@ -38,6 +38,9 @@ login_code_invalid:
 account_suspended:
   error_code: 401_211
   error_message: account suspended
+invalid_session:
+  error_code: 401_212
+  error_message: session is blank or undefined
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed

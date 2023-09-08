@@ -217,9 +217,9 @@ voucher_is_expired:
 voucher_over_limit:
   error_code: 400_105
   error_message: voucher is over limit
-card_error:
+card_error_400:
   error_code: 400_106
-  error_message: card has some problems
+  error_message: The card has been declined. Please contact your bank for more information.
 invalid_interval:
   error_code: 400_107
   error_message: plan interval is invalid
@@ -265,6 +265,126 @@ payment_not_paid:
 payment_not_belongs:
   error_code: 400_121
   error_message: payment not belongs to member
+paypal_cannot_cancel_draft_invoice:
+  error_code: 400_122
+  error_message: paypal_cannot_cancel_draft_invoice
+paypal_invoice_canceled_already:
+  error_code: 400_123
+  error_message: paypal_invoice_canceled_already
+paypal_cannot_send_invoice:
+  error_code: 400_124
+  error_message: paypal_cannot_send_invoice
+paypal_invoice_already_sent:
+  error_code: 400_125
+  error_message: paypal_invoice_already_sent
+paypal_fixed_price_not_supported:
+  error_code: 400_126
+  error_message: paypal_fixed_price_not_supported
+paypal_duplicate_resource_identifier:
+  error_code: 400_127
+  error_message: paypal_duplicate_resource_identifier
+paypal_subscription_cannot_have_quantity:
+  error_code: 400_128
+  error_message: paypal_subscription_cannot_have_quantity
+paypal_amount_greater_than_outstanding_balance:
+  error_code: 400_129
+  error_message: paypal_amount_greater_than_outstanding_balance
+paypal_subscription_status_invalid:
+  error_code: 400_130
+  error_message: paypal_subscription_status_invalid
+paypal_session_state_not_valid:
+  error_code: 400_131
+  error_message: paypal_session_state_not_valid
+paypal_unprocessable_entity:
+  error_code: 400_132
+  error_message: paypal_unprocessable_entity
+paypal_error:
+  error_code: 400_133
+  error_message: paypal error occurred
+stripe_authentication_required:
+  error_code: 400_134
+  error_message: The card was declined as the transaction requires authentication.
+stripe_approved_with_id:
+  error_code: 400_135
+  error_message: The payment can’t be authorized.
+stripe_call_issuer:
+  error_code: 400_136
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_card_not_supported:
+  error_code: 400_137
+  error_message: The card does not support this type of purchase.
+stripe_card_velocity_exceeded:
+  error_code: 400_138
+  error_message: The customer has exceeded the balance or credit limit available on their card.
+stripe_currency_not_supported:
+  error_code: 400_139
+  error_message: The card does not support this currency.
+stripe_do_not_honor:
+  error_code: 400_140
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_do_not_try_again:
+  error_code: 400_141
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_duplicate_transaction:
+  error_code: 400_142
+  error_message: A transaction with identical amount and credit card information was submitted very recently.
+stripe_expired_card:
+  error_code: 400_143
+  error_message: The card has expired.
+stripe_fraudulent:
+  error_code: 400_144
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_issuer_not_available:
+  error_code: 400_145
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_lost_card:
+  error_code: 400_146
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_merchant_blacklist:
+  error_code: 400_147
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_new_account_information_available:
+  error_code: 400_148
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_no_action_taken:
+  error_code: 400_149
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_not_permitted:
+  error_code: 400_150
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_pickup_card:
+  error_code: 400_151
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_processing_error:
+  error_code: 400_152
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_reenter_transaction:
+  error_code: 400_153
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_restricted_card:
+  error_code: 400_154
+  error_message: The card has been declined. Please contact your bank for more information.
+stripe_stolen_card:
+  error_code: 400_155
+  error_message: The card has been declined. Please contact your bank for more information.
+paypal_missing_required_parameter:
+  error_code: 400_156
+  error_message: missing required parameter
+paypal_invalid_parameter_syntax:
+  error_code: 400_157
+  error_message: invalid parameter syntax
+paypal_invalid_parameter_value:
+  error_code: 400_158
+  error_message: invalid parameter value
+paypal_invalid_request:
+  error_code: 400_159
+  error_message: invalid request
+stripe_invalid_request_error:
+  error_code: 400_160
+  error_message: stripe invalid request error
+stripe_idempotency_error:
+  error_code: 400_161
+  error_message: idempotency error
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
@@ -700,3 +820,9 @@ invalid_organize_type:
 invalid_organize_info:
   error_code: 400_1502
   error_message: organize info is invalid
+split_over_limit:
+  error_code: 400_1601
+  error_message: split license group quantity over limit
+already_group_manager:
+  error_code: 400_1602
+  error_message: member already license group manager

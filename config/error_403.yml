@@ -186,3 +186,21 @@ user_already_invited:
 over_document_usage:
   error_code: 403_1501
   error_message: over document limitation
+document_not_accessible:
+  error_code: 403_1502
+  error_message: document not accessible
+license_not_belongs:
+  error_code: 403_1601
+  error_message: license not belongs to member
+license_revoked:
+  error_code: 403_1602
+  error_message: license is revoked
+license_expired:
+  error_code: 403_1603
+  error_message: license is expired
+wrong_license_device:
+  error_code: 403_1604
+  error_message: license not binding to the device
+license_not_managed:
+  error_code: 403_1605
+  error_message: license not managed by member

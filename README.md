@@ -99,3 +99,5 @@ gives you
 |  control_center   |   xxx_12xx |
 | jackrabbit_server |   xxx_13xx |
 | reseller_center   |   xxx_14xx |
+|    pdf_center     |   xxx_15xx |
+|  license_center   |   xxx_16xx |

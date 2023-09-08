@@ -97,6 +97,9 @@ invoice_not_found:
 payment_not_found:
   error_code: 404_108
   error_message: payment not found
+paypal_not_found:
+  error_code: 404_109
+  error_message: PayPal resource not found
 member_not_found:
   error_code: 404_201
   error_message: member not found
@@ -226,3 +229,9 @@ document_not_found:
 annotation_not_found:
   error_code: 404_1502
   error_message: annotation not found
+license_pack_not_found:
+  error_code: 404_1601
+  error_message: license pack not found
+license_group_not_found:
+  error_code: 404_1602
+  error_message: license group not found
