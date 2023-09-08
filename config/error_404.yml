@@ -142,6 +142,9 @@ edm_type_not_found:
 permission_not_found:
   error_code: 404_212
   error_message: permission not found
+campaign_not_found:
+  error_code: 404_213
+  error_message: campaign not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
