@@ -499,6 +499,9 @@ ds_user_change_email_forbidden:
 password_too_short:
   error_code: 400_236
   error_message: password is too short.
+campaign_not_joinable:
+  error_code: 400_237
+  error_message: campaign can not be joined
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.

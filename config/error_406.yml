@@ -128,6 +128,9 @@ invite_accept_failed:
 invite_callback_failed:
   error_code: 406_212
   error_message: invite accept success but callback failed
+campaign_participate_failed:
+  error_code: 406_213
+  error_message: failed to participate campaign
 mail_not_valid:
   error_code: 406_301
   error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
