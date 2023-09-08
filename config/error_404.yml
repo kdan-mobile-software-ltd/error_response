@@ -73,6 +73,12 @@ drive_grant_url_not_found:
 watermark_not_found:
   error_code: 404_053
   error_message: watermark not found
+file_merge_mission_not_found:
+  error_code: 404_054
+  error_message: file merge mission not found
+target_not_found:
+  error_code: 404_055
+  error_message: (file merge mission) target not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
