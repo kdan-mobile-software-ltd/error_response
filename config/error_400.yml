@@ -208,6 +208,9 @@ file_merge_mission_not_processing:
 target_type_not_supported:
   error_code: 400_088
   error_message: (file merge mission) target type not supported
+file_merge_mission_created_failed:
+  error_code: 400_089
+  error_message: file merge mission created failed
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
