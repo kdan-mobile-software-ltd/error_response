@@ -85,6 +85,9 @@ create_invoice_failed:
 send_invoice_failed:
   error_code: 406_108
   error_message: send third party invoice failed
+paid_failed:
+  error_code: 406_109
+  error_message: failed to paid
 confirm_callback_failed:
   error_code: 406_200
   error_message: confirm success but callback failed
