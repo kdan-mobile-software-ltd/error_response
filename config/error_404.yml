@@ -106,6 +106,9 @@ payment_not_found:
 paypal_not_found:
   error_code: 404_109
   error_message: PayPal resource not found
+order_not_found:
+  error_code: 404_110
+  error_message: order not found
 member_not_found:
   error_code: 404_201
   error_message: member not found
