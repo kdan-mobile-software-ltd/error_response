@@ -203,4 +203,6 @@ hancom_ems_failed:
 create_license_group_failed:
   error_code: 406_1605
   error_message: create license group failed
-
+delete_license_group_failed:
+  error_code: 406_1606
+  error_message: delete license group failed

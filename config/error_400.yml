@@ -844,3 +844,6 @@ already_group_manager:
 license_group_over_limit:
   error_code: 400_1603
   error_message: no license group quota
+license_group_not_deletable:
+  error_code: 400_1604
+  error_message: license group not deletable
