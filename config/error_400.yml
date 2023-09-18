@@ -841,3 +841,6 @@ split_over_limit:
 already_group_manager:
   error_code: 400_1602
   error_message: member already license group manager
+license_group_over_limit:
+  error_code: 400_1603
+  error_message: no license group quota
