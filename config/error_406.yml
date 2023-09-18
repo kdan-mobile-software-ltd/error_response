@@ -200,3 +200,7 @@ revoke_manager_failed:
 hancom_ems_failed:
   error_code: 406_1604
   error_message: deliver hancom license failed
+create_license_group_failed:
+  error_code: 406_1605
+  error_message: create license group failed
+
