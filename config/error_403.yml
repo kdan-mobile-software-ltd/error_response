@@ -210,3 +210,6 @@ wrong_license_device:
 license_not_managed:
   error_code: 403_1605
   error_message: license not managed by member
+license_group_not_accessible:
+  error_code: 403_1606
+  error_message: license group not accessible
