@@ -850,3 +850,7 @@ license_group_not_deletable:
 admin_not_revokable:
   error_code: 400_1605
   error_message: admin not revokable
+not_license_group_manager:
+  error_code: 400_1606
+  error_message: not license group manager
+
