@@ -847,3 +847,6 @@ license_group_over_limit:
 license_group_not_deletable:
   error_code: 400_1604
   error_message: license group not deletable
+admin_not_revokable:
+  error_code: 400_1605
+  error_message: admin not revokable
