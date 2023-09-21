@@ -853,4 +853,7 @@ admin_not_revokable:
 not_license_group_manager:
   error_code: 400_1606
   error_message: not license group manager
+no_bindable_license:
+  error_code: 400_1607
+  error_message: no any license is bindable
 
