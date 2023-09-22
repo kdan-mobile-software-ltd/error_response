@@ -34,6 +34,9 @@ invalid_headers:
 invalid_application_type:
   error_code: 400_010
   error_message: invalid application type
+app_reach_limit:
+  error_code: 400_011
+  error_message: application already reach limit
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
