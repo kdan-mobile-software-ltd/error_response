@@ -31,6 +31,9 @@ invalid_scope:
 invalid_headers:
   error_code: 400_009
   error_message: invalid headers
+invalid_application_type:
+  error_code: 400_010
+  error_message: invalid application type
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
