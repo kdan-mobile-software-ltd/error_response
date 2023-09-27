@@ -778,6 +778,9 @@ form_is_still_compressing:
 bulk_send_reach_limit:
   error_code: 400_936
   error_message: bulk send tasks already reach limit
+stage_not_acting:
+  error_code: 400_937
+  error_message: stage is not acting
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
