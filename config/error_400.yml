@@ -31,6 +31,15 @@ invalid_scope:
 invalid_headers:
   error_code: 400_009
   error_message: invalid headers
+invalid_application_type:
+  error_code: 400_010
+  error_message: invalid application type
+app_reach_limit:
+  error_code: 400_011
+  error_message: application already reach limit
+invalid_webhook_url:
+  error_code: 400_012
+  error_message: invalid webhook url, the endpoint should be POST method and return 200
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
@@ -199,6 +208,18 @@ invalid_object_id:
 invalid_name:
   error_code: 400_085
   error_message: invalid file name
+file_merge_mission_not_ready:
+  error_code: 400_086
+  error_message: file merge mission not ready
+file_merge_mission_not_processing:
+  error_code: 400_087
+  error_message: file merge mission not processing
+target_type_not_supported:
+  error_code: 400_088
+  error_message: (file merge mission) target type not supported
+file_merge_mission_created_failed:
+  error_code: 400_089
+  error_message: file merge mission created failed
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
@@ -490,6 +511,9 @@ ds_user_change_email_forbidden:
 password_too_short:
   error_code: 400_236
   error_message: password is too short.
+campaign_not_joinable:
+  error_code: 400_237
+  error_message: campaign can not be joined
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
@@ -826,3 +850,19 @@ split_over_limit:
 already_group_manager:
   error_code: 400_1602
   error_message: member already license group manager
+license_group_over_limit:
+  error_code: 400_1603
+  error_message: no license group quota
+license_group_not_deletable:
+  error_code: 400_1604
+  error_message: license group not deletable
+admin_not_revokable:
+  error_code: 400_1605
+  error_message: admin not revokable
+not_license_group_manager:
+  error_code: 400_1606
+  error_message: not license group manager
+no_bindable_license:
+  error_code: 400_1607
+  error_message: no any license is bindable
+

@@ -73,6 +73,12 @@ drive_grant_url_not_found:
 watermark_not_found:
   error_code: 404_053
   error_message: watermark not found
+file_merge_mission_not_found:
+  error_code: 404_054
+  error_message: file merge mission not found
+target_not_found:
+  error_code: 404_055
+  error_message: (file merge mission) target not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
@@ -100,6 +106,9 @@ payment_not_found:
 paypal_not_found:
   error_code: 404_109
   error_message: PayPal resource not found
+order_not_found:
+  error_code: 404_110
+  error_message: order not found
 member_not_found:
   error_code: 404_201
   error_message: member not found
@@ -136,6 +145,12 @@ edm_type_not_found:
 permission_not_found:
   error_code: 404_212
   error_message: permission not found
+campaign_not_found:
+  error_code: 404_213
+  error_message: campaign not found
+app_not_found:
+  error_code: 404_214
+  error_message: application not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
