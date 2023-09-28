@@ -148,6 +148,9 @@ permission_not_found:
 campaign_not_found:
   error_code: 404_213
   error_message: campaign not found
+app_not_found:
+  error_code: 404_214
+  error_message: application not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
