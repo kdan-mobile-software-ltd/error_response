@@ -206,3 +206,6 @@ create_license_group_failed:
 delete_license_group_failed:
   error_code: 406_1606
   error_message: delete license group failed
+create_license_pack_failed:
+  error_code: 406_1607
+  error_message: create license pack failed
