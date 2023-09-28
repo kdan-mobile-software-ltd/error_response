@@ -868,4 +868,7 @@ not_license_group_manager:
 no_bindable_license:
   error_code: 400_1607
   error_message: no any license is bindable
+owner_not_revokable:
+  error_code: 400_1608
+  error_message: owner not revokable
 
