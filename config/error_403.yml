@@ -213,3 +213,12 @@ license_not_managed:
 license_group_not_accessible:
   error_code: 403_1606
   error_message: license group not accessible
+not_license_group_owner:
+  error_code: 403_1607
+  error_message: not license group owner
+not_license_group_admin:
+  error_code: 403_1608
+  error_message: not license group admin
+not_license_group_manager:
+  error_code: 403_1609
+  error_message: not license group manager
