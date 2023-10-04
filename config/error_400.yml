@@ -135,7 +135,7 @@ member_already_secured:
   error_message: member has finished security check
 invalid_file_type:
   error_code: 400_057
-  error_message: signature file type is invalid
+  error_message: file type is invalid
 no_task_info:
   error_code: 400_058
   error_message: no task info for mission
