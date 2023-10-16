@@ -211,6 +211,9 @@ target_type_not_supported:
 file_merge_mission_created_failed:
   error_code: 400_089
   error_message: file merge mission created failed
+file_merge_mission_backup_failed:
+  error_code: 400_090
+  error_message: (file merge mission) backup failed
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
