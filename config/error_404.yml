@@ -112,6 +112,9 @@ payment_not_found:
 paypal_not_found:
   error_code: 404_109
   error_message: PayPal resource not found
+order_not_found:
+  error_code: 404_110
+  error_message: order not found
 member_not_found:
   error_code: 404_201
   error_message: member not found
@@ -145,6 +148,15 @@ edm_settings_not_found:
 edm_type_not_found:
   error_code: 404_211
   error_message: edm type not found
+permission_not_found:
+  error_code: 404_212
+  error_message: permission not found
+campaign_not_found:
+  error_code: 404_213
+  error_message: campaign not found
+app_not_found:
+  error_code: 404_214
+  error_message: application not found
 product_not_found:
   error_code: 404_301
   error_message: product not found

@@ -31,6 +31,15 @@ invalid_scope:
 invalid_headers:
   error_code: 400_009
   error_message: invalid headers
+invalid_application_type:
+  error_code: 400_010
+  error_message: invalid application type
+app_reach_limit:
+  error_code: 400_011
+  error_message: application already reach limit
+invalid_webhook_url:
+  error_code: 400_012
+  error_message: invalid webhook url, the endpoint should be POST method and return 200
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
@@ -126,7 +135,7 @@ member_already_secured:
   error_message: member has finished security check
 invalid_file_type:
   error_code: 400_057
-  error_message: signature file type is invalid
+  error_message: file type is invalid
 no_task_info:
   error_code: 400_058
   error_message: no task info for mission
@@ -505,6 +514,9 @@ ds_user_change_email_forbidden:
 password_too_short:
   error_code: 400_236
   error_message: password is too short.
+campaign_not_joinable:
+  error_code: 400_237
+  error_message: campaign can not be joined
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
@@ -562,6 +574,9 @@ no_available_credit:
 mass_purchasing_group_archived:
   error_code: 400_319
   error_message: mass purchasing group archived
+receipt_not_expirable:
+  error_code: 400_320
+  error_message: receipt can not be expired
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
@@ -769,6 +784,9 @@ form_is_still_compressing:
 bulk_send_reach_limit:
   error_code: 400_936
   error_message: bulk send tasks already reach limit
+stage_not_acting:
+  error_code: 400_937
+  error_message: stage is not acting
 get_credential_failed:
   error_code: 400_1001
   error_message: get credential failed
@@ -841,3 +859,22 @@ split_over_limit:
 already_group_manager:
   error_code: 400_1602
   error_message: member already license group manager
+license_group_over_limit:
+  error_code: 400_1603
+  error_message: no license group quota
+license_group_not_deletable:
+  error_code: 400_1604
+  error_message: license group not deletable
+admin_not_revokable:
+  error_code: 400_1605
+  error_message: admin not revokable
+not_group_auth_member:
+  error_code: 400_1606
+  error_message: not license group manager
+no_bindable_license:
+  error_code: 400_1607
+  error_message: no any license is bindable
+owner_not_revokable:
+  error_code: 400_1608
+  error_message: owner not revokable
+

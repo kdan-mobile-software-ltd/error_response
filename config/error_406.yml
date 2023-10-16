@@ -85,6 +85,9 @@ create_invoice_failed:
 send_invoice_failed:
   error_code: 406_108
   error_message: send third party invoice failed
+paid_failed:
+  error_code: 406_109
+  error_message: failed to paid
 confirm_callback_failed:
   error_code: 406_200
   error_message: confirm success but callback failed
@@ -128,6 +131,9 @@ invite_accept_failed:
 invite_callback_failed:
   error_code: 406_212
   error_message: invite accept success but callback failed
+campaign_participate_failed:
+  error_code: 406_213
+  error_message: failed to participate campaign
 mail_not_valid:
   error_code: 406_301
   error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
@@ -194,3 +200,12 @@ revoke_manager_failed:
 hancom_ems_failed:
   error_code: 406_1604
   error_message: deliver hancom license failed
+create_license_group_failed:
+  error_code: 406_1605
+  error_message: create license group failed
+delete_license_group_failed:
+  error_code: 406_1606
+  error_message: delete license group failed
+create_license_pack_failed:
+  error_code: 406_1607
+  error_message: create license pack failed
