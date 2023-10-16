@@ -571,6 +571,9 @@ no_available_credit:
 mass_purchasing_group_archived:
   error_code: 400_319
   error_message: mass purchasing group archived
+receipt_not_expirable:
+  error_code: 400_320
+  error_message: receipt can not be expired
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
