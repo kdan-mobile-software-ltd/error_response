@@ -79,6 +79,12 @@ file_merge_mission_not_found:
 target_not_found:
   error_code: 404_055
   error_message: (file merge mission) target not found
+file_merge_mission_source_file_not_found:
+  error_code: 404_056
+  error_message: (file merge mission) source file not found
+file_merge_mission_file_page_count_required:
+  error_code: 404_057
+  error_message: (file merge mission) file page count required
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
