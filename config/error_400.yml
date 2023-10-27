@@ -200,7 +200,7 @@ watermark_not_active:
   error_code: 400_082
   error_message: watermark is not active
 group_watermark_over_limit:
-  error_code: 400_038
+  error_code: 400_083
   error_message: watermarks of group is over limit
 invalid_object_id:
   error_code: 400_084
@@ -226,6 +226,9 @@ file_merge_mission_backup_failed:
 file_merge_mission_file_page_count_required:
   error_code: 400_091
   error_message: (file merge mission) file page count required
+sign_failed:
+  error_code: 400_092
+  error_message: sign failed
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
