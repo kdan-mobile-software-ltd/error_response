@@ -41,6 +41,9 @@ account_suspended:
 invalid_session:
   error_code: 401_212
   error_message: session is blank or undefined
+session_expired:
+  error_code: 401_213
+  error_message: session that generated the access_token has already expired
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
