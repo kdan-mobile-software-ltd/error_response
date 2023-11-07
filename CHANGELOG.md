@@ -1,3 +1,5 @@
+## [1.1.4] - 2023-11-06
+- Update Gemfile.lock, fix Active Support security issue [CVE-2023-38037](https://github.com/advisories/GHSA-cr5q-6q9f-rq6q).
 ## [1.1.3] - 2023-05-18
 - Add gitlab templates.
 ## [1.1.2] - 2023-03-30
