@@ -220,15 +220,18 @@ target_type_not_supported:
 file_merge_mission_created_failed:
   error_code: 400_089
   error_message: file merge mission created failed
-file_merge_mission_backup_failed:
+target_raw_file_not_found:
   error_code: 400_090
-  error_message: (file merge mission) backup failed
+  error_message: (file merge mission) target raw file not found
 file_merge_mission_file_page_count_required:
   error_code: 400_091
   error_message: (file merge mission) file page count required
 sign_failed:
   error_code: 400_092
   error_message: sign failed
+incorrect_pdf_file:
+  error_code: 400_093
+  error_message: (pdf read failed) incorrect pdf file
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
