@@ -222,3 +222,6 @@ not_license_group_admin:
 not_license_group_manager:
   error_code: 403_1609
   error_message: not license group manager
+not_batch_owner:
+  error_code: 403_1610
+  error_message: not batch owner
