@@ -889,4 +889,7 @@ no_bindable_license:
 owner_not_revokable:
   error_code: 400_1608
   error_message: owner not revokable
+invalid_license_csv:
+  error_code: 400_1609
+  error_message: invalid license csv
 
