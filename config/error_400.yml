@@ -892,4 +892,7 @@ owner_not_revokable:
 invalid_license_csv:
   error_code: 400_1609
   error_message: invalid license csv
+license_not_bind:
+  error_code: 400_1610
+  error_message: license not bind
 
