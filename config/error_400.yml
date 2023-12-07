@@ -685,6 +685,9 @@ duplicate_video_id:
 no_available_email:
   error_code: 400_800
   error_message: No available mail
+hubspot_conflict_error:
+  error_code: 400_081
+  error_message: hubspot contact already exists
 flow_is_pending:
   error_code: 400_900
   error_message: some groups of flow related members are expire or inactive
