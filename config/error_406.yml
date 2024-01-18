@@ -209,3 +209,9 @@ delete_license_group_failed:
 create_license_pack_failed:
   error_code: 406_1607
   error_message: create license pack failed
+pack_setup_failed:
+  error_code: 406_1608
+  error_message: setup license pack failed
+auth_group_manager_failed:
+  error_code: 406_1609
+  error_message: auth group manager failed

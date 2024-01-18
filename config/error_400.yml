@@ -200,7 +200,7 @@ watermark_not_active:
   error_code: 400_082
   error_message: watermark is not active
 group_watermark_over_limit:
-  error_code: 400_038
+  error_code: 400_083
   error_message: watermarks of group is over limit
 invalid_object_id:
   error_code: 400_084
@@ -220,15 +220,21 @@ target_type_not_supported:
 file_merge_mission_created_failed:
   error_code: 400_089
   error_message: file merge mission created failed
-file_merge_mission_backup_failed:
+target_raw_file_not_found:
   error_code: 400_090
-  error_message: (file merge mission) backup failed
+  error_message: (file merge mission) target raw file not found
 file_merge_mission_file_page_count_required:
   error_code: 400_091
   error_message: (file merge mission) file page count required
 sign_failed:
   error_code: 400_092
   error_message: sign failed
+incorrect_pdf_file:
+  error_code: 400_093
+  error_message: (pdf read failed) incorrect pdf file
+file_merge_mission_target_already_assigned:
+  error_code: 400_094
+  error_message: (file merge mission) target already assigned
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
@@ -679,6 +685,9 @@ duplicate_video_id:
 no_available_email:
   error_code: 400_800
   error_message: No available mail
+hubspot_conflict_error:
+  error_code: 400_081
+  error_message: hubspot contact already exists
 flow_is_pending:
   error_code: 400_900
   error_message: some groups of flow related members are expire or inactive
@@ -883,4 +892,10 @@ no_bindable_license:
 owner_not_revokable:
   error_code: 400_1608
   error_message: owner not revokable
+invalid_license_csv:
+  error_code: 400_1609
+  error_message: invalid license csv
+license_not_bind:
+  error_code: 400_1610
+  error_message: license not bind
 
