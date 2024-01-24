@@ -529,6 +529,9 @@ password_too_short:
 campaign_not_joinable:
   error_code: 400_237
   error_message: campaign can not be joined
+weak_password_strength:
+  error_code: 400_238
+  error_message: the password is too weak
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
@@ -898,7 +901,3 @@ invalid_license_csv:
 license_not_bind:
   error_code: 400_1610
   error_message: license not bind
-weak_password_strength:
-  error_code: 400_1611
-  error_message: the password is too weak
-
