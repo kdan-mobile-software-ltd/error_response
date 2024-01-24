@@ -898,4 +898,7 @@ invalid_license_csv:
 license_not_bind:
   error_code: 400_1610
   error_message: license not bind
+weak_password_strength:
+  error_code: 400_1611
+  error_message: the password is too weak
 
