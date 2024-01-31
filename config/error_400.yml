@@ -532,9 +532,9 @@ campaign_not_joinable:
 weak_password_strength:
   error_code: 400_238
   error_message: the password is too weak
-too_many_request:
+too_many_requests:
   error_code: 400_239
-  error_message: too many request, please try again later
+  error_message: too many requests, please try again later
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
