@@ -904,3 +904,6 @@ invalid_license_csv:
 license_not_bind:
   error_code: 400_1610
   error_message: license not bind
+group_not_archivable:
+  error_code: 400_1701
+  error_message: group is not archivable
