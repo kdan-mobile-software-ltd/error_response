@@ -908,5 +908,5 @@ group_not_archivable:
   error_code: 400_1701
   error_message: group is not archivable
 invalid_group_type:
-  error_code: 400_1701
+  error_code: 400_1702
   error_message: invalid group type
