@@ -907,3 +907,6 @@ license_not_bind:
 group_not_archivable:
   error_code: 400_1701
   error_message: group is not archivable
+invalid_group_type:
+  error_code: 400_1701
+  error_message: invalid group type
