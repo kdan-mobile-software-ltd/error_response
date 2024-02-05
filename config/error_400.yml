@@ -913,3 +913,6 @@ invalid_group_type:
 group_need_one_admin:
   error_code: 400_1703
   error_message: group need at least one admin
+invalid_group_setting:
+  error_code: 400_1704
+  error_message: invalid group setting
