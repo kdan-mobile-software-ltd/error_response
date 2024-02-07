@@ -39,7 +39,7 @@ app_reach_limit:
   error_message: application already reach limit
 invalid_webhook_url:
   error_code: 400_012
-  error_message: invalid webhook url, the endpoint should be POST method and return 200
+  error_message: invalid webhook url, the endpoint should be POST method and return 2xx
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
