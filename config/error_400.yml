@@ -919,3 +919,6 @@ invalid_group_setting:
 invalid_login_platform:
   error_code: 400_1705
   error_message: invalid login platform
+invalid_date_range:
+  error_code: 400_1706
+  error_message: invalid date range
