@@ -916,3 +916,6 @@ group_need_one_admin:
 invalid_group_setting:
   error_code: 400_1704
   error_message: invalid group setting
+invalid_login_platform:
+  error_code: 400_1705
+  error_message: invalid login platform

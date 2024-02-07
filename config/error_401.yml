@@ -47,3 +47,6 @@ session_expired:
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
+google_login_failed:
+  error_code: 401_1701
+  error_message: google login failed
