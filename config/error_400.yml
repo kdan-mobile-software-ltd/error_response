@@ -922,3 +922,9 @@ invalid_login_platform:
 invalid_date_range:
   error_code: 400_1706
   error_message: invalid date range
+no_valid_dataset:
+  error_code: 400_1707
+  error_message: no valid dataset
+no_valid_table:
+  error_code: 400_1708
+  error_message: no valid table
