@@ -595,6 +595,9 @@ mass_purchasing_group_archived:
 receipt_not_expirable:
   error_code: 400_320
   error_message: receipt can not be expired
+mass_purchasing_not_transferable:
+  error_code: 400_321
+  error_message: mass purchasing not transferable
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
