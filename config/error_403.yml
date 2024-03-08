@@ -228,3 +228,6 @@ not_license_group_manager:
 not_batch_owner:
   error_code: 403_1610
   error_message: not batch owner
+permission_denied:
+  error_code: 403_1701
+  error_message: permission denied

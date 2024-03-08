@@ -39,7 +39,7 @@ app_reach_limit:
   error_message: application already reach limit
 invalid_webhook_url:
   error_code: 400_012
-  error_message: invalid webhook url, the endpoint should be POST method and return 200
+  error_message: invalid webhook url, the endpoint should be POST method and return 2xx
 task_is_not_draft:
   app_code: 4005
   error_code: 400_030
@@ -529,6 +529,12 @@ password_too_short:
 campaign_not_joinable:
   error_code: 400_237
   error_message: campaign can not be joined
+weak_password_strength:
+  error_code: 400_238
+  error_message: the password is too weak
+too_many_requests:
+  error_code: 400_239
+  error_message: too many requests, please try again later
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
@@ -589,6 +595,9 @@ mass_purchasing_group_archived:
 receipt_not_expirable:
   error_code: 400_320
   error_message: receipt can not be expired
+mass_purchasing_not_transferable:
+  error_code: 400_321
+  error_message: mass purchasing not transferable
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
@@ -898,4 +907,27 @@ invalid_license_csv:
 license_not_bind:
   error_code: 400_1610
   error_message: license not bind
-
+group_not_archivable:
+  error_code: 400_1701
+  error_message: group is not archivable
+invalid_group_type:
+  error_code: 400_1702
+  error_message: invalid group type
+group_need_one_admin:
+  error_code: 400_1703
+  error_message: group need at least one admin
+invalid_group_setting:
+  error_code: 400_1704
+  error_message: invalid group setting
+invalid_login_platform:
+  error_code: 400_1705
+  error_message: invalid login platform
+invalid_date_range:
+  error_code: 400_1706
+  error_message: invalid date range
+no_valid_dataset:
+  error_code: 400_1707
+  error_message: no valid dataset
+no_valid_table:
+  error_code: 400_1708
+  error_message: no valid table
