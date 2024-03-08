@@ -934,3 +934,6 @@ no_valid_dataset:
 no_valid_table:
   error_code: 400_1708
   error_message: no valid table
+budget_exist:
+  error_code: 400_1709
+  error_message: budget already exist

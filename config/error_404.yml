@@ -256,3 +256,6 @@ license_pack_not_found:
 license_group_not_found:
   error_code: 404_1602
   error_message: license group not found
+budget_not_found:
+  error_code: 404_1701
+  error_message: budget not found
