@@ -1,3 +1,6 @@
+gateway_internal_error:
+  error_code: 500_999
+  error_message: gateway internal error
 missing_public_rsa:
   error_code: 500_1201
   error_message: server missing public rsa for on-premise license
