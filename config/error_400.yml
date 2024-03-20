@@ -535,6 +535,9 @@ weak_password_strength:
 too_many_requests:
   error_code: 400_239
   error_message: too many requests, please try again later
+transfer_roles_failed:
+  error_code: 400_240
+  error_message: transfer roles failed
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
