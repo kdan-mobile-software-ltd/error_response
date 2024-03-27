@@ -215,3 +215,6 @@ pack_setup_failed:
 auth_group_manager_failed:
   error_code: 406_1609
   error_message: auth group manager failed
+update_group_failed:
+  error_code: 406_1610
+  error_message: update group failed

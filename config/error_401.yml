@@ -50,3 +50,6 @@ authorize_failed:
 google_login_failed:
   error_code: 401_1701
   error_message: google login failed
+google_auth_failed:
+  error_code: 401_1702
+  error_message: google auth failed
