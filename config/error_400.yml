@@ -541,6 +541,9 @@ too_many_requests:
 transfer_roles_failed:
   error_code: 400_240
   error_message: transfer roles failed
+password_pwned:
+  error_code: 400_241
+  error_message: the password is pwned
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
