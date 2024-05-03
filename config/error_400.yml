@@ -940,3 +940,6 @@ budget_exist:
 invalid_platform:
   error_code: 400_1710
   error_message: invalid platform
+no_valid_data_source:
+  error_code: 400_1711
+  error_message: no valid data source
