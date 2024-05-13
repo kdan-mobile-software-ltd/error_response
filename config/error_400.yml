@@ -714,7 +714,7 @@ signer_info_not_ready:
   error_message: signer info not ready yet
 template_need_order:
   error_code: 400_902
-  error_message: kiosk template should has order
+  error_message: template should have order
 kiosk_repeat_access:
   error_code: 400_903
   error_message: kiosk can not access same stage over 1 time
