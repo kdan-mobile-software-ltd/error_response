@@ -949,3 +949,6 @@ invalid_platform:
 no_valid_data_source:
   error_code: 400_1711
   error_message: no valid data source
+invalid_filter_for:
+  error_code: 400_1712
+  error_message: invalid filter for
