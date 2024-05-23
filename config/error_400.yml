@@ -547,6 +547,12 @@ transfer_roles_failed:
 password_pwned:
   error_code: 400_241
   error_message: the password is pwned
+group_already_archived:
+  error_code: 400_242
+  error_message: group already archived
+invalid_group_status:
+  error_code: 400_243
+  error_message: invalid group status
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
