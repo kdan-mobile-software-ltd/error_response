@@ -691,6 +691,12 @@ file_or_folder_toggle_star_failed:
 file_copy_failed:
   error_code: 400_425
   error_message: File copy failed
+invalid_bucket:
+  error_code: 400_426
+  error_message: Invalid bucket
+invalid_object_key:
+  error_code: 400_427
+  error_message: Invalid object key
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
