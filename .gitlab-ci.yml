@@ -12,6 +12,7 @@ stages:
 rspec:
   stage: rspec
   image: ruby:3.2.2
+  RUNNER_TAG: "arm64"
   script:
     - bundle install
     - rspec spec
@@ -21,6 +22,7 @@ rspec:
 to_gem:
   stage: publish
   image: ruby:3.2.2
+  RUNNER_TAG: "arm64"
   script:
     - mkdir -p ~/.gem
     - touch ~/.gem/credentials
