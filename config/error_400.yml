@@ -898,6 +898,9 @@ group_need_one_admin:
 license_not_belong:
   error_code: 400_1310
   error_message: license not belongs to group
+license_not_assigned:
+  error_code: 400_1311
+  error_message: license not assigned to member
 invalid_organize_type:
   error_code: 400_1501
   error_message: organize type is invalid
