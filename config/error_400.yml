@@ -868,6 +868,9 @@ license_reach_limit:
 root_not_removable:
   error_code: 400_1205
   error_message: group root can't be removed from group
+already_group_member:
+  error_code: 400_1206
+  error_message: member already in group
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
