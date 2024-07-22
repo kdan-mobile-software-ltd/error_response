@@ -238,6 +238,9 @@ incorrect_pdf_file:
 file_merge_mission_target_already_assigned:
   error_code: 400_094
   error_message: (file merge mission) target already assigned
+file_objects_size_exceed:
+  error_code: 400_095
+  error_message: (file merge mission) exceed the maximum size (10) of file objects
 coupon_is_used:
   error_code: 400_100
   error_message: coupon is used
