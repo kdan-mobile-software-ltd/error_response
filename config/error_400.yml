@@ -871,6 +871,9 @@ root_not_removable:
 already_group_member:
   error_code: 400_1206
   error_message: member already in group
+invalid_batch_csv:
+  error_code: 400_1207
+  error_message: invalid batch csv
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
