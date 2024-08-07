@@ -430,6 +430,9 @@ stripe_idempotency_error:
 already_purchased:
   error_code: 400_162
   error_message: already purchased
+payment_unavailable:
+  error_code: 400_163
+  error_message: payment unavailable
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
