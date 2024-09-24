@@ -916,6 +916,15 @@ license_not_belong:
 license_not_assigned:
   error_code: 400_1311
   error_message: license not assigned to member
+not_main_invitation:
+  error_code: 400_1401
+  error_message: not main invitation
+invitation_not_redeemed:
+  error_code: 400_1402
+  error_message: invitation not redeemed yet
+invitation_not_active:
+  error_code: 400_1403
+  error_message: invitation not active
 invalid_organize_type:
   error_code: 400_1501
   error_message: organize type is invalid
