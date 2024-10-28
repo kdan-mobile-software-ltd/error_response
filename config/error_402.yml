@@ -7,3 +7,6 @@ card_error:
 credit_withhold_error:
   error_code: 402_1100
   error_message: credit withhold error
+already_assignment_wrong:
+  error_code: 402_1201
+  error_message: license already assignment wrong

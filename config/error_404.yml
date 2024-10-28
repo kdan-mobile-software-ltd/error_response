@@ -238,6 +238,9 @@ license_not_found:
 service_not_found:
   error_code: 404_1202
   error_message: service not found
+receipt_info_not_found:
+  error_code: 404_1203
+  error_message: receipt info not found
 invite_not_found:
   error_code: 404_1301
   error_message: invite not found

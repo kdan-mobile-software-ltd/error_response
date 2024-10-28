@@ -176,6 +176,33 @@ decrypt_failed:
 create_mission_failed:
   error_code: 406_1102
   error_message: create mission failed
+accept_invite_failed:
+  error_code: 406_1201
+  error_message: accept invite failed
+add_group_member_failed:
+  error_code: 406_1202
+  error_message: add group member failed
+assign_license_failed:
+  error_code: 406_1203
+  error_message: assign license failed
+group_member_setup_failed:
+  error_code: 406_1204
+  error_message: group member setup failed
+batch_remove_license_failed:
+  error_code: 406_1205
+  error_message: batch remove license failed
+expire_mass_receipts_failed:
+  error_code: 406_1206
+  error_message: expire mass receipts failed
+archive_license_failed:
+  error_code: 406_1207
+  error_message: archive license failed
+assign_role_failed:
+  error_code: 406_1208
+  error_message: assign role failed
+remove_license_failed:
+  error_code: 406_1209
+  error_message: remove license failed
 upload_icon_failed:
   error_code: 406_1301
   error_message: upload icon failed

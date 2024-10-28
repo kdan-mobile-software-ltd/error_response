@@ -883,6 +883,15 @@ already_group_member:
 invalid_batch_csv:
   error_code: 400_1207
   error_message: invalid batch csv
+not_valid_license_member:
+  error_code: 400_1208
+  error_message: not valid license member
+license_not_started:
+  error_code: 400_1209
+  error_message: license not started
+license_already_expired:
+  error_code: 400_1210
+  error_message: license already expired
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
