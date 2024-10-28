@@ -203,6 +203,12 @@ assign_role_failed:
 remove_license_failed:
   error_code: 406_1209
   error_message: remove license failed
+add_member_failed:
+  error_code: 406_1210
+  error_message: add member failed
+sync_failed:
+  error_code: 406_1211
+  error_message: sync failed
 upload_icon_failed:
   error_code: 406_1301
   error_message: upload icon failed

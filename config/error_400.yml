@@ -892,6 +892,9 @@ license_not_started:
 license_already_expired:
   error_code: 400_1210
   error_message: license already expired
+invalid_active_period:
+  error_code: 400_1211
+  error_message: invalid active period
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
