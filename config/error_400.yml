@@ -430,6 +430,9 @@ stripe_idempotency_error:
 already_purchased:
   error_code: 400_162
   error_message: already purchased
+payment_unavailable:
+  error_code: 400_163
+  error_message: payment unavailable
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
@@ -619,6 +622,9 @@ receipt_not_expirable:
 mass_purchasing_not_transferable:
   error_code: 400_321
   error_message: mass purchasing not transferable
+mass_purchasing_not_start:
+  error_code: 400_322
+  error_message: mass purchasing not start
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
@@ -877,6 +883,21 @@ root_not_removable:
 already_group_member:
   error_code: 400_1206
   error_message: member already in group
+invalid_batch_csv:
+  error_code: 400_1207
+  error_message: invalid batch csv
+not_valid_license_member:
+  error_code: 400_1208
+  error_message: not valid license member
+license_not_started:
+  error_code: 400_1209
+  error_message: license not started
+license_already_expired:
+  error_code: 400_1210
+  error_message: license already expired
+invalid_active_period:
+  error_code: 400_1211
+  error_message: invalid active period
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
@@ -910,6 +931,15 @@ license_not_belong:
 license_not_assigned:
   error_code: 400_1311
   error_message: license not assigned to member
+not_main_invitation:
+  error_code: 400_1401
+  error_message: not main invitation
+invitation_not_redeemed:
+  error_code: 400_1402
+  error_message: invitation not redeemed yet
+invitation_not_active:
+  error_code: 400_1403
+  error_message: invitation not active
 invalid_organize_type:
   error_code: 400_1501
   error_message: organize type is invalid
