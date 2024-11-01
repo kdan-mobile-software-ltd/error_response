@@ -844,6 +844,9 @@ bulk_send_reach_limit:
 stage_not_acting:
   error_code: 400_937
   error_message: stage is not acting
+template_contains_edit_stages:
+  error_code: 400_938
+  error_message: template contains edit stages
 invalid_gateway_request:
   error_code: 400_999
   error_message: invalid gateway request
