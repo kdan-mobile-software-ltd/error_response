@@ -625,6 +625,9 @@ mass_purchasing_not_transferable:
 mass_purchasing_not_start:
   error_code: 400_322
   error_message: mass purchasing not start
+addon_not_available:
+  error_code: 400_323
+  error_message: addon not available
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
