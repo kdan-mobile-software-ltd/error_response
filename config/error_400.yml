@@ -1012,3 +1012,6 @@ no_valid_data_source:
 invalid_filter_for:
   error_code: 400_1712
   error_message: invalid filter for
+invalid_permission_setting:
+  error_code: 400_1713
+  error_message: invalid permission setting
