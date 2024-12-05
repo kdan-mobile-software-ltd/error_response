@@ -433,6 +433,9 @@ already_purchased:
 payment_unavailable:
   error_code: 400_163
   error_message: payment unavailable
+subscription_canceled:
+  error_code: 400_164
+  error_message: subscription canceled
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
