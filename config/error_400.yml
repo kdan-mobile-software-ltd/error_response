@@ -100,6 +100,9 @@ no_ongoing_stage:
 not_signer_turn:
   error_code: 400_044
   error_message: task is not signer turn
+not_recipient_turn:
+  error_code: 400_044
+  error_message: task is not recipient turn
 code_not_match:
   error_code: 400_045
   error_message: code not match to params
