@@ -209,6 +209,9 @@ add_member_failed:
 sync_failed:
   error_code: 406_1211
   error_message: sync failed
+transfer_license_failed:
+  error_code: 406_1212
+  error_message: transfer license failed
 upload_icon_failed:
   error_code: 406_1301
   error_message: upload icon failed
