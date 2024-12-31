@@ -212,6 +212,9 @@ sync_failed:
 transfer_license_failed:
   error_code: 406_1212
   error_message: transfer license failed
+setup_group_failed:
+  error_code: 406_1213
+  error_message: setup group failed
 upload_icon_failed:
   error_code: 406_1301
   error_message: upload icon failed
