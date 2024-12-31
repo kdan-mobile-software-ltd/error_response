@@ -126,9 +126,9 @@ file_merge_mission_not_owned:
 file_merge_mission_not_accessible:
   error_code: 403_067
   error_message: file merge mission not accessible
-over_otp_usage:
+over_verify_method_usage:
   error_code: 403_068
-  error_message: over otp usage
+  error_message: over verify method usage
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
