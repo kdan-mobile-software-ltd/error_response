@@ -910,6 +910,12 @@ license_already_expired:
 invalid_active_period:
   error_code: 400_1211
   error_message: invalid active period
+license_still_active:
+  error_code: 400_1212
+  error_message: license still active
+license_is_archived:
+  error_code: 400_1213
+  error_message: license is archived
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
