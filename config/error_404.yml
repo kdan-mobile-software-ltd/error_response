@@ -160,6 +160,12 @@ product_not_found:
 credit_record_not_found:
   error_code: 404_302
   error_message: credit record not found
+receipt_not_found:
+  error_code: 404_303
+  error_message: receipt not found
+no_receipt_contract:
+  error_code: 404_304
+  error_message: no receipt contract
 request_link_not_found:
   error_code: 404_401
   error_message: Request link not found or expired
