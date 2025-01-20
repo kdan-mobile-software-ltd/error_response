@@ -16,9 +16,6 @@ over_task_usage:
   app_code: 4013
   error_code: 403_032
   error_message: over task usage
-over_monthly_task_usage:  # deprecated
-  error_code: 403_032_1
-  error_message: over monthly task usage
 task_not_owned:
   app_code: 4030
   error_code: 403_033
