@@ -439,6 +439,9 @@ payment_unavailable:
 subscription_canceled:
   error_code: 400_164
   error_message: subscription canceled
+not_yet_purchasee:
+  error_code: 400_165
+  error_message: not yet purchasee
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
