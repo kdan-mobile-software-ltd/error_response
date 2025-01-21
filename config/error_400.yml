@@ -916,6 +916,9 @@ license_still_active:
 license_is_archived:
   error_code: 400_1213
   error_message: license is archived
+license_need_one_admin:
+  error_code: 400_1214
+  error_message: license need at least one admin
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
