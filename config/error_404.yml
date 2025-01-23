@@ -82,6 +82,9 @@ target_not_found:
 file_merge_mission_source_file_not_found:
   error_code: 404_056
   error_message: (file merge mission) source file not found
+certificate_not_found:
+  error_code: 404_057
+  error_message: certificate not found
 coupon_not_found:
   error_code: 404_100
   error_message: coupon not found
