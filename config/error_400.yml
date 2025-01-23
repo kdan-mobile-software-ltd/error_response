@@ -442,6 +442,9 @@ subscription_canceled:
 not_yet_purchasee:
   error_code: 400_165
   error_message: not yet purchasee
+invalid_plan:
+  error_code: 400_166
+  error_message: invalid plan
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
