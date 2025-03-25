@@ -439,9 +439,9 @@ payment_unavailable:
 subscription_canceled:
   error_code: 400_164
   error_message: subscription canceled
-not_yet_purchasee:
+not_yet_purchase:
   error_code: 400_165
-  error_message: not yet purchasee
+  error_message: not yet purchase
 invalid_plan:
   error_code: 400_166
   error_message: invalid plan
