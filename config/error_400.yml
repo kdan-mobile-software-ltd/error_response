@@ -727,6 +727,9 @@ invalid_bucket:
 invalid_object_key:
   error_code: 400_427
   error_message: Invalid object key
+invalid_verify_params:
+  error_code: 400_428
+  error_message: Invalid verify params
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
