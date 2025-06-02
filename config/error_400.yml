@@ -733,6 +733,9 @@ invalid_object_key:
 invalid_verify_params:
   error_code: 400_428
   error_message: Invalid verify params
+thumbnail_callback_failed:
+  error_code: 400_429
+  error_message: Process thumbnail callback failed
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
