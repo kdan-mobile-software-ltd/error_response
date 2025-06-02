@@ -208,6 +208,9 @@ recipient_not_found:
 sms_record_not_found:
   error_code: 404_802
   error_message: sms record not found
+job_not_found:
+  error_code: 404_803
+  error_message: job not found
 note_not_found:
   error_code: 404_1001
   error_message: note not found

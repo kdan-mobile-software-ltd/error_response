@@ -451,6 +451,9 @@ coupon_already_exists:
 coupon_create_failed:
   error_code: 400_168
   error_message: coupon create failed
+invalid_transition:
+  error_code: 400_169
+  error_message: invalid transition
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
@@ -874,6 +877,9 @@ template_contains_edit_stages:
 verify_not_ready:
   error_code: 400_939
   error_message: verify not triggered or incomplete verify data
+bulk_send_suspended:
+  error_code: 400_940
+  error_message: bulk send suspended
 invalid_gateway_request:
   error_code: 400_999
   error_message: invalid gateway request
