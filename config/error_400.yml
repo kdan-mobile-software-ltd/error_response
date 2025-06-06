@@ -883,6 +883,12 @@ verify_not_ready:
 bulk_send_suspended:
   error_code: 400_940
   error_message: bulk send suspended
+task_not_viewed:
+  error_code: 400_941
+  error_message: should view the task first
+file_not_read:
+  error_code: 400_942
+  error_message: should read the file first
 invalid_gateway_request:
   error_code: 400_999
   error_message: invalid gateway request
