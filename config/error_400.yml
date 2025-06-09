@@ -886,9 +886,9 @@ bulk_send_suspended:
 task_not_viewed:
   error_code: 400_941
   error_message: should view the task first
-file_not_read:
+file_content_not_match:
   error_code: 400_942
-  error_message: should read the file first
+  error_message: should read the file first and match the original content
 invalid_gateway_request:
   error_code: 400_999
   error_message: invalid gateway request
