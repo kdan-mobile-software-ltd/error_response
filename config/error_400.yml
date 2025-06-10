@@ -454,6 +454,9 @@ coupon_create_failed:
 invalid_transition:
   error_code: 400_169
   error_message: invalid transition
+invalid_referral_code:
+  error_code: 400_170
+  error_message: invalid referral code
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
