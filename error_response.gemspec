@@ -16,5 +16,6 @@ Gem::Specification.new do |s|
     "changelog_uri" => "https://github.com/kdan-mobile-software-ltd/error_response/blob/master/CHANGELOG.md"
   }
 
-  s.add_development_dependency 'activesupport', '~> 6.1.7.6'
+  s.add_development_dependency 'activesupport', '~> 7.1.5.1'
+  s.add_development_dependency 'rspec', '~> 3.0'
 end

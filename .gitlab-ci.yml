@@ -11,18 +11,18 @@ stages:
 
 rspec:
   stage: rspec
-  image: ruby:3.2.2
+  image: ruby:3.4.5
   tags:
     - arm64
   script:
-    - bundle install
+    - bundle install    
     - rspec spec
   only:
     - master
 
 to_gem:
   stage: publish
-  image: ruby:3.2.2
+  image: ruby:3.4.5
   tags:
     - arm64
   script:
@@ -35,4 +35,4 @@ to_gem:
     - gem build error_response.gemspec
     - gem push $GEM_NAME
   only:
-    - master
+    - /release-\d+\.\d+\.\d+(\.\d+)?/
