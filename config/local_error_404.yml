@@ -1,0 +1,3 @@
+resource_not_found:
+  error_code: 404_001
+  error_message: resource not found

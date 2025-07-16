@@ -45,9 +45,9 @@ module ErrorResponse
     def yaml_hash
       return @hash unless @hash.nil?
 
-      settings = YAML.load(File.read(configuration.yaml_config_path))
+      settings = YAML.safe_load(File.read(configuration.yaml_config_path), permitted_classes: permitted_classes, aliases: true)
       local_array = settings['source']['local']
-      local_hash = local_array.nil? ? {} : local_array.map { |path| YAML.load_file(path) }.inject(&:merge)
+      local_hash = local_array.nil? ? {} : local_array.map { |path| YAML.safe_load_file(path, permitted_classes: permitted_classes, aliases: true) }.inject(&:merge)
 
       remote_array = settings['source']['remote']
       remote_hash = remote_array.nil? ? {} : remote_array.map { |url| build_yaml(url) }.inject(&:merge)
@@ -57,7 +57,7 @@ module ErrorResponse
 
     def build_yaml(url)
       content = URI.open(url){|f| f.read}
-      YAML.load(content)
+      YAML.safe_load(content, permitted_classes: permitted_classes, aliases: true)
     rescue
       puts "Load yaml from URL (#{url}) failed."
       {}
@@ -75,6 +75,20 @@ module ErrorResponse
           v.dup rescue v
         end
       ]}]
+    end
+
+    def permitted_classes
+      [
+        Date,
+        Time,
+        Symbol,
+        Integer,
+        Float,
+        String,
+        TrueClass,
+        FalseClass,
+        NilClass
+      ]
     end
   end
 

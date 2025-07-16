@@ -3,13 +3,15 @@ require './lib/error_response'
 RSpec.describe ErrorResponse do
   describe '#yaml_hash' do
     it 'should fetch data from local' do
-      result = ErrorResponse.to_api(:bad_request_1)
-      expect(result[:json]['error_message']).to eq 'bad request 1'
+      result = ErrorResponse.to_api(:resource_not_found)
+      expect(result[:json]['error_message']).to eq 'resource not found'
+      expect(result[:json]['error_code']).to eq 404_001
     end
 
     it 'should fetch data from remote' do
       result = ErrorResponse.to_api(:bad_request_2)
       expect(result[:json]['error_message']).to eq 'bad request 2'
+      expect(result[:json]['error_code']).to eq 400_002
     end
   end
 
