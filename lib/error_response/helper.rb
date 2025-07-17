@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'active_support'
+require 'active_support/concern'
 
 module ErrorResponse
   module Helper
@@ -18,8 +18,11 @@ module ErrorResponse
 
     def error_response(key, error_message = nil, error_data = {})
       render_content = ErrorResponse.to_api(key, error_message).deep_dup
-      render_content[:json].merge!(error_data) if error_data.present? && error_data.is_a?(Hash)
-      render_content[:json].merge!(error_data: error_data) if error_data.present? && error_data.is_a?(Array)
+      if error_data.is_a?(Hash) && !error_data.empty?
+        render_content[:json] = render_content[:json].merge(error_data)
+      elsif error_data.is_a?(Array) && !error_data.empty?
+        render_content[:json] = render_content[:json].merge(error_data: error_data)
+      end
       render(render_content)
     end
   end
