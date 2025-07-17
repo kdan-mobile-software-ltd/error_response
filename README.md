@@ -57,7 +57,7 @@ end
 
 ### Success Response
 
-The success response is used when the request is success.
+The success response is used when the request is success. The response body is a hash with a `data` key.
 
 ```ruby
 # in controller actions
@@ -65,9 +65,10 @@ data = { a: 1, b: 2 }
 return success_response(data) if success?
 ```
 
+> response status: 200
+> response body:
+
 ```json
-// response status: 200
-// response body:
 {
   "data": {
     "a": 1,
@@ -85,9 +86,10 @@ The error response is used when the request is not valid. Therefore, you need to
 return error_response(:bad_request_1) if failed?
 ```
 
+> response status: 400
+> response body:
+
 ```json
-// response status: 400
-// response body:
 {
   "error_code": 400_001,
   "error_message": "bad request 1",
@@ -102,9 +104,10 @@ You can also provide your custom error message and error data. If error data is 
 return error_response(:bad_request_1, 'no required data', { a: 1, b: 2 }) if failed?
 ```
 
+> response status: 400
+> response body:
+
 ```json
-// response status: 400
-// response body:
 {
   "error_code": 400_001,
   "error_message": "bad request 1: no required data",
@@ -140,9 +143,10 @@ ErrorResponse.to_hash(:bad_request_1)
 
 gives you
 
+> response status: 400
+> response body: 
+
 ```json
-// response status: 400
-// response body: 
 {
   "error_code": 400_001,
   "error_message": "bad request 1",
