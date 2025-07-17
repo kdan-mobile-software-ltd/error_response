@@ -66,14 +66,13 @@ return success_response(data) if success?
 ```
 
 ```json
+// response status: 200
+// response body:
 {
-  "status": 200,
-  "json": {
-    "data": {
-      "a": 1,
-      "b": 2
-    }
-  } 
+  "data": {
+    "a": 1,
+    "b": 2
+  }
 }
 ```
 
@@ -87,37 +86,31 @@ return error_response(:bad_request_1) if failed?
 ```
 
 ```json
+// response status: 400
+// response body:
 {
-  "status": 400,
-  "json":
-    {
-      "error_code": 400001,
-      "error_message": "bad request 1",
-      "error_key": "bad_request_1",
-      "a": 1,
-      "b": 2
-    }
+  "error_code": 400_001,
+  "error_message": "bad request 1",
+  "error_key": "bad_request_1"
 }
 ```
 
-You can also provide your custom error message and error data. If error data is a hash, it will be merged into the json response; if it is an array, it will be merged into the json response with an `error_data` key.
+You can also provide your custom error message and error data. If error data is a hash, it will be merged into the json response; If it is an array, it will be merged into the json response with an `error_data` key.
 
 ```ruby
 # in controller actions
-return error_response(:bad_request_1, 'no required data', { a: 1, b: 2}) if failed?
+return error_response(:bad_request_1, 'no required data', { a: 1, b: 2 }) if failed?
 ```
 
 ```json
+// response status: 400
+// response body:
 {
-  "status": 400,
-  "json":
-    {
-      "error_code": 400001,
-      "error_message": "bad request 1",
-      "error_key": "bad_request_1",
-      "a": 1,
-      "b": 2
-    }
+  "error_code": 400_001,
+  "error_message": "bad request 1: no required data",
+  "error_key": "bad_request_1",
+  "a": 1,
+  "b": 2
 }
 ```
 
@@ -148,8 +141,10 @@ ErrorResponse.to_hash(:bad_request_1)
 gives you
 
 ```json
+// response status: 400
+// response body: 
 {
-  "error_code": 400001,
+  "error_code": 400_001,
   "error_message": "bad request 1",
   "error_key": "bad_request_1"
 }
