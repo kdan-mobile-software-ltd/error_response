@@ -15,7 +15,7 @@ rspec:
   tags:
     - arm64
   script:
-    - bundle install    
+    - bundle install
     - rspec spec
   only:
     - master
