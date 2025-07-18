@@ -1,3 +1,5 @@
+## [1.1.6] - 2025-07-18
+- Fix readme typo.
 ## [1.1.5] - 2025-07-16
 - Update development_dependency.
 - Update require `active_support/concern` instead of `active_support/all`.
