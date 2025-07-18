@@ -66,6 +66,7 @@ return success_response(data) if success?
 ```
 
 > response status: 200
+> 
 > response body:
 
 ```json
@@ -87,11 +88,12 @@ return error_response(:bad_request_1) if failed?
 ```
 
 > response status: 400
+> 
 > response body:
 
 ```json
 {
-  "error_code": 400_001,
+  "error_code": 400001,
   "error_message": "bad request 1",
   "error_key": "bad_request_1"
 }
@@ -105,11 +107,12 @@ return error_response(:bad_request_1, 'no required data', { a: 1, b: 2 }) if fai
 ```
 
 > response status: 400
+> 
 > response body:
 
 ```json
 {
-  "error_code": 400_001,
+  "error_code": 400001,
   "error_message": "bad request 1: no required data",
   "error_key": "bad_request_1",
   "a": 1,
@@ -144,11 +147,12 @@ ErrorResponse.to_hash(:bad_request_1)
 gives you
 
 > response status: 400
+> 
 > response body: 
 
 ```json
 {
-  "error_code": 400_001,
+  "error_code": 400001,
   "error_message": "bad request 1",
   "error_key": "bad_request_1"
 }

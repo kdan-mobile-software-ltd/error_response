@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    error_response (1.1.5)
+    error_response (1.1.6)
 
 GEM
   remote: https://rubygems.org/
