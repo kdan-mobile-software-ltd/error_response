@@ -44,6 +44,9 @@ invalid_session:
 session_expired:
   error_code: 401_213
   error_message: session that generated the access_token has already expired
+account_inactive:
+  error_code: 401_214
+  error_message: account is inactive
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
