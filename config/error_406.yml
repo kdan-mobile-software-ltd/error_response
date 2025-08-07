@@ -106,6 +106,9 @@ already_bind:
   app_code: 4006
   error_code: 406_204
   error_message: already bind with other email
+confirmation_failed:
+  error_code: 406_205
+  error_message: confirmation failed
 need_action_type:
   app_code: 403_035
   error_code: 406_205
