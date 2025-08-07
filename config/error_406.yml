@@ -109,6 +109,9 @@ already_bind:
 confirmation_failed:
   error_code: 406_205
   error_message: confirmation failed
+member_unlock_failed:
+  error_code: 406_206
+  error_message: member unlock failed
 need_action_type:
   app_code: 403_035
   error_code: 406_205
