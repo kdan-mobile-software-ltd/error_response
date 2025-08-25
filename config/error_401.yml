@@ -56,3 +56,6 @@ google_login_failed:
 google_auth_failed:
   error_code: 401_1702
   error_message: google auth failed
+recaptcha_failed:
+  error_code: 401_1703
+  error_message: recaptcha failed
