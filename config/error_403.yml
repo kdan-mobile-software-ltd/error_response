@@ -36,9 +36,6 @@ quick_sign_not_accepted:
 forward_not_allowed:
   error_code: 403_038
   error_message: member not allowed to forward this stage
-need_to_setup_inperson:
-  error_code: 403_039
-  error_message: need to setup inperson first
 task_was_forwarded:
   error_code: 403_040
   error_message: task has forwarded to others
