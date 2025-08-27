@@ -126,6 +126,9 @@ file_merge_mission_not_accessible:
 over_verify_method_usage:
   error_code: 403_068
   error_message: over verify method usage
+reference_file_not_consented:
+  error_code: 403_069
+  error_message: reference file not consented
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
