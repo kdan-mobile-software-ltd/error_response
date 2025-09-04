@@ -140,6 +140,12 @@ invite_callback_failed:
 campaign_participate_failed:
   error_code: 406_213
   error_message: failed to participate campaign
+reactive_mail_already_sent:
+  error_code: 406_214
+  error_message: The reactive instruction email has already been sent.
+reactive_mail_send_failed:
+  error_code: 406_215
+  error_message: Send reactive instruction email failed.
 mail_not_valid:
   error_code: 406_301
   error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
