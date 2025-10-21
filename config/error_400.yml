@@ -583,6 +583,9 @@ group_already_archived:
 invalid_group_status:
   error_code: 400_243
   error_message: invalid group status
+member_name_invalid:
+  error_code: 400_244
+  error_message: member name is invalid
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
