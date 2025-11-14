@@ -742,6 +742,9 @@ invalid_verify_params:
 thumbnail_callback_failed:
   error_code: 400_429
   error_message: Process thumbnail callback failed
+file_type_not_allowed:
+  error_code: 400_430
+  error_message: File type is not allowed for public sharing
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
