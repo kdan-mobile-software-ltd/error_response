@@ -586,6 +586,9 @@ invalid_group_status:
 member_name_invalid:
   error_code: 400_244
   error_message: member name is invalid
+invalid_mfa_type:
+  error_code: 400_245
+  error_message: invalid mfa type
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
