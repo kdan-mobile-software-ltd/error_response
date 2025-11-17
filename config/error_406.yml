@@ -146,6 +146,9 @@ reactive_mail_already_sent:
 reactive_mail_send_failed:
   error_code: 406_215
   error_message: Send reactive instruction email failed.
+mfa_setting_set_default_failed:
+  error_code: 406_216
+  error_message: mfa setting set default failed
 mail_not_valid:
   error_code: 406_301
   error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
