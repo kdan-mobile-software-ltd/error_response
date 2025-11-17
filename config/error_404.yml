@@ -157,6 +157,9 @@ campaign_not_found:
 app_not_found:
   error_code: 404_214
   error_message: application not found
+mfa_setting_not_found:
+  error_code: 404_215
+  error_message: mfa setting not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
