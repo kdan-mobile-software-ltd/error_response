@@ -589,6 +589,9 @@ member_name_invalid:
 invalid_mfa_type:
   error_code: 400_245
   error_message: invalid mfa type
+invalid_binding_code:
+  error_code: 400_246
+  error_message: invalid binding code
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
