@@ -592,6 +592,9 @@ invalid_mfa_type:
 invalid_binding_code:
   error_code: 400_246
   error_message: invalid binding code
+need_recovery_email:
+  error_code: 400_247
+  error_message: need recovery email
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
