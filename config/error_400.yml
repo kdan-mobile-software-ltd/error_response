@@ -595,6 +595,9 @@ invalid_binding_code:
 need_recovery_email:
   error_code: 400_247
   error_message: need recovery email
+same_password:
+  error_code: 400_248
+  error_message: same password
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
