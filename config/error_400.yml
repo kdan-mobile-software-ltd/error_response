@@ -760,6 +760,9 @@ thumbnail_callback_failed:
 file_type_not_allowed:
   error_code: 400_430
   error_message: File type is not allowed for public sharing
+invalid_file:
+  error_code: 400_431
+  error_message: Invalid file
 send_to_fcm_failed:
   error_code: 400_501
   error_message: send to fcm server failed
