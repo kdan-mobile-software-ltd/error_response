@@ -47,6 +47,9 @@ session_expired:
 account_inactive:
   error_code: 401_214
   error_message: account is inactive
+invalid_sso_token:
+  error_code: 401_215
+  error_message: SSO token is invalid or expired
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
