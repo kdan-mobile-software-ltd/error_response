@@ -601,6 +601,9 @@ need_recovery_email:
 same_password:
   error_code: 400_248
   error_message: same password
+mfa_settings_exist:
+  error_code: 400_249
+  error_message: mfa settings already exist
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
