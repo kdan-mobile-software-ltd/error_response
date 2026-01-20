@@ -50,6 +50,12 @@ account_inactive:
 invalid_sso_token:
   error_code: 401_215
   error_message: SSO token is invalid or expired
+need_mfa:
+  error_code: 401_216
+  error_message: need mfa
+invalid_mfa_code:
+  error_code: 401_217
+  error_message: invalid mfa code
 authorize_failed:
   error_code: 401_401
   error_message: Authorize failed
