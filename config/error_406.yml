@@ -13,9 +13,6 @@ deliver_otp_failed:
 tag_move_failed:
   error_code: 406_033
   error_message: tag move failed
-upchain_failed:
-  error_code: 406_034
-  error_message: upchain failed
 get_trial_pdf_failed:
   error_code: 406_035
   error_message: get trail pdf failed
