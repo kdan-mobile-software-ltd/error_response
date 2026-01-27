@@ -152,6 +152,9 @@ mfa_setting_switch_failed:
 remove_recovery_email_failed:
   error_code: 406_218
   error_message: remove recovery email failed
+mfa_setting_setup_failed:
+  error_code: 406_219
+  error_message: mfa setting setup failed
 mail_not_valid:
   error_code: 406_301
   error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
