@@ -1,3 +1,12 @@
+bigquery_not_configured:
+  error_code: 500_201
+  error_message: bigquery not configured
+bigquery_query_failed:
+  error_code: 500_202
+  error_message: bigquery query failed
+bigquery_write_failed:
+  error_code: 500_203
+  error_message: bigquery write failed
 gateway_internal_error:
   error_code: 500_999
   error_message: gateway internal error

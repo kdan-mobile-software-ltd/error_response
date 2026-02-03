@@ -160,6 +160,9 @@ app_not_found:
 mfa_setting_not_found:
   error_code: 404_215
   error_message: mfa setting not found
+device_not_found:
+  error_code: 404_216
+  error_message: device fingerprint not found
 product_not_found:
   error_code: 404_301
   error_message: product not found
