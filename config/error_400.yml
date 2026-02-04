@@ -1,7 +1,13 @@
 rescue_error:
   error_code: 400_000
   error_message: customize
+# Typo
 need_more_infomation:
+  app_code: 4008
+  error_code: 400_001
+  error_message: some columns should not be null
+# correct one
+need_more_information:
   app_code: 4008
   error_code: 400_001
   error_message: some columns should not be null
