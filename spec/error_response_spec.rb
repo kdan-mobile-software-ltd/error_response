@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './lib/error_response'
 
 RSpec.describe ErrorResponse do
@@ -16,7 +18,7 @@ RSpec.describe ErrorResponse do
   end
 
   describe '#to_api' do
-    it "should return correspond hash when key existed" do
+    it 'should return correspond hash when key existed' do
       hash = {
         status: 400,
         json: {
@@ -29,7 +31,7 @@ RSpec.describe ErrorResponse do
       expect(result).to eq hash
     end
 
-    it "should return personalized hash when key not existed" do
+    it 'should return personalized hash when key not existed' do
       hash = {
         status: 500,
         json: {
@@ -44,7 +46,7 @@ RSpec.describe ErrorResponse do
   end
 
   describe '#to_hash' do
-    it "should return hash when key existed" do
+    it 'should return hash when key existed' do
       hash = {
         'error_code' => 400_001,
         'error_message' => 'bad request 1',
@@ -54,7 +56,17 @@ RSpec.describe ErrorResponse do
       expect(result).to eq hash
     end
 
-    it "should return {} when key not existed" do
+    it 'should return hash when key existed in remote source' do
+      hash = {
+        'error_code' => 400_002,
+        'error_message' => 'bad request 2',
+        'error_key' => 'bad_request_2'
+      }
+      result = ErrorResponse.to_hash(:bad_request_2)
+      expect(result).to eq hash
+    end
+
+    it 'should return {} when key not existed' do
       result = ErrorResponse.to_hash(:some_error)
       empty_hash = {}
       expect(result).to eq empty_hash

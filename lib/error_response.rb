@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
 require 'yaml'
-require 'open-uri'
+require 'net/http'
+require 'uri'
 
 require 'error_response/configuration'
 require 'error_response/helper'
 require 'error_response/request_error'
 
 module ErrorResponse
-
   class << self
-    attr_accessor :configuration
+    attr_writer :configuration
 
     def configuration
       @configuration ||= Configuration.new
     end
 
-    def configure(&block)
+    def configure
       yield(configuration)
     end
 
@@ -26,10 +26,11 @@ module ErrorResponse
 
     def to_hash(key)
       return {} unless yaml_hash.key?(key.to_s)
+
       yaml_hash[key.to_s].merge({ 'error_key' => key.to_s })
     end
 
-    def to_api(key, message=nil)
+    def to_api(key, message = nil)
       json = deep_dup(yaml_hash)
       json = json[key.to_s] || { 'error_code' => 500_000, 'error_message' => key.to_s }
       json['error_key'] = key.to_s
@@ -45,7 +46,7 @@ module ErrorResponse
     def yaml_hash
       return @hash unless @hash.nil?
 
-      settings = YAML.safe_load(File.read(configuration.yaml_config_path), permitted_classes: permitted_classes, aliases: true)
+      settings = YAML.safe_load_file(configuration.yaml_config_path, permitted_classes: permitted_classes, aliases: true)
       local_array = settings['source']['local']
       local_hash = local_array.nil? ? {} : local_array.map { |path| YAML.safe_load_file(path, permitted_classes: permitted_classes, aliases: true) }.inject(&:merge)
 
@@ -56,9 +57,12 @@ module ErrorResponse
     end
 
     def build_yaml(url)
-      content = URI.open(url){|f| f.read}
+      uri = URI.parse(url)
+      response = Net::HTTP.get_response(uri)
+      response.value
+      content = response.body
       YAML.safe_load(content, permitted_classes: permitted_classes, aliases: true)
-    rescue
+    rescue StandardError
       puts "Load yaml from URL (#{url}) failed."
       {}
     end
@@ -67,14 +71,21 @@ module ErrorResponse
       error_code.to_s[0..2].to_i
     end
 
-    def deep_dup(h)
-      Hash[h.map{|k, v| [k,
-        if v.is_a?(Hash)
-          deep_dup(v)
-        else
-          v.dup rescue v
-        end
-      ]}]
+    def deep_dup(hash)
+      hash.to_h do |key, value|
+        [
+          key,
+          if value.is_a?(Hash)
+            deep_dup(value)
+          else
+            begin
+              value.dup
+            rescue StandardError
+              value
+            end
+          end
+        ]
+      end
     end
 
     def permitted_classes
@@ -91,5 +102,4 @@ module ErrorResponse
       ]
     end
   end
-
 end

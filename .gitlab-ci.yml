@@ -11,7 +11,7 @@ stages:
 
 rspec:
   stage: rspec
-  image: ruby:3.4.5
+  image: ruby:3.4.8
   tags:
     - arm64
   script:
@@ -22,7 +22,7 @@ rspec:
 
 to_gem:
   stage: publish
-  image: ruby:3.4.5
+  image: ruby:3.4.8
   tags:
     - arm64
   script:
@@ -34,5 +34,5 @@ to_gem:
     - GEM_NAME=error_response-$RELEASE_VERSION.gem
     - gem build error_response.gemspec
     - gem push $GEM_NAME
-  only:
-    - /release-\d+\.\d+\.\d+(\.\d+)?/
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^release-\d+\.\d+\.\d+(\.\d+)?$/'

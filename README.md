@@ -158,6 +158,10 @@ gives you
 }
 ```
 
+## Security
+
+If you would like to report a security issue, please review the [Security Policy](SECURITY.md).
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
