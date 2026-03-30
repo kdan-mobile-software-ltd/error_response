@@ -1,5 +1,7 @@
 # Error Response
 
+[![Gem Version](https://badge.fury.io/rb/error_response.svg?icon=si%3Arubygems)](https://badge.fury.io/rb/error_response)
+
 `Error Response` is a json response gem to help you easily manage all your custom error statuses in your Rails application.
 
 ## Installation
