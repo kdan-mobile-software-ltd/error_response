@@ -1,0 +1,42 @@
+plugins:
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+  Exclude:
+    - 'bin/**/*'
+    - 'pkg/**/*'
+    - 'vendor/**/*'
+
+Layout/LineLength:
+  Max: 200
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Metrics/MethodLength:
+  Max: 25
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/ParameterLists:
+  Max: 10
+
+Naming/VariableNumber:
+  Enabled: false

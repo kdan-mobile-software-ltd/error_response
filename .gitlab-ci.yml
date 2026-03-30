@@ -6,23 +6,37 @@ include:
 stages:
   - test
   - sast_upload
+  - lint
   - rspec
   - publish
 
+rubocop:
+  stage: lint
+  image: ruby:3.4.8
+  tags:
+    - arm64
+  script:
+    - bundle install
+    - bundle exec rubocop
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == "master"
+
 rspec:
   stage: rspec
-  image: ruby:3.4.5
+  image: ruby:3.4.8
   tags:
     - arm64
   script:
     - bundle install
     - rspec spec
-  only:
-    - master
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == "master"
 
 to_gem:
   stage: publish
-  image: ruby:3.4.5
+  image: ruby:3.4.8
   tags:
     - arm64
   script:
@@ -34,5 +48,5 @@ to_gem:
     - GEM_NAME=error_response-$RELEASE_VERSION.gem
     - gem build error_response.gemspec
     - gem push $GEM_NAME
-  only:
-    - /release-\d+\.\d+\.\d+(\.\d+)?/
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^release-\d+\.\d+\.\d+(\.\d+)?$/'

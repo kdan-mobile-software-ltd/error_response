@@ -1,3 +1,12 @@
+## [1.2.0] - 2026-03-24
+- Patch activesupport to 7.2.3.1.
+  - Fix possible ReDoS vulnerability in `number_to_delimited`.
+  - Fix possible XSS vulnerability in `ActiveSupport::SafeBuffer#%`.
+- Add SECURITY.md.
+- Add README.md link to the security policy.
+- Add RSpec coverage for loading remote error definitions.
+- Add RuboCop configuration and clean up lint issues.
+- Improve remote YAML loading safety.
 ## [1.1.6] - 2025-07-18
 - Fix readme typo.
 ## [1.1.5] - 2025-07-16

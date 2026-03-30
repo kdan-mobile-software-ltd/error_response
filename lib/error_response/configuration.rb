@@ -5,7 +5,7 @@ module ErrorResponse
     attr_accessor :yaml_config_path
 
     def initialize
-      @yaml_config_path = ENV['YAML_CONFIG_PATH'] || 'config/error_response.yml'
+      @yaml_config_path = ENV["YAML_CONFIG_PATH"] || "config/error_response.yml"
     end
   end
 end
