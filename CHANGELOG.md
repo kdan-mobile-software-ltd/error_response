@@ -1,3 +1,7 @@
+## [1.2.1] - 2026-04-08
+- Patch addressable to 2.9.0.
+  - Fix Regular Expression Denial of Service in Addressable templates.
+- Raise the minimum supported Ruby version to 3.1.
 ## [1.2.0] - 2026-03-24
 - Patch activesupport to 7.2.3.1.
   - Fix possible ReDoS vulnerability in `number_to_delimited`.

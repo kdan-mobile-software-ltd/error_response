@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
   s.files       = Dir["lib/**/*"]
   s.require_path = ["lib"]
-  s.required_ruby_version = ">= 3.0"
+  s.required_ruby_version = ">= 3.1"
   s.metadata = {
     "source_code_uri" => "https://github.com/kdan-mobile-software-ltd/error_response",
     "changelog_uri" => "https://github.com/kdan-mobile-software-ltd/error_response/blob/master/CHANGELOG.md",
