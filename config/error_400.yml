@@ -793,6 +793,12 @@ duplicate_video_id:
 no_available_email:
   error_code: 400_800
   error_message: No available mail
+too_many_attachments:
+  error_code: 400_801
+  error_message: too many attachments
+attachment_too_large:
+  error_code: 400_802
+  error_message: attachment too large
 hubspot_conflict_error:
   error_code: 400_081
   error_message: hubspot contact already exists
