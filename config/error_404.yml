@@ -280,3 +280,6 @@ budget_not_found:
 agent_not_found:
   error_code: 404_2001
   error_message: agent not 
+summary_not_found:
+  error_code: 404_2002
+  error_message: summary not found
