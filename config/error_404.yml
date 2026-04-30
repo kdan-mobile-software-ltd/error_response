@@ -277,3 +277,6 @@ license_group_not_found:
 budget_not_found:
   error_code: 404_1701
   error_message: budget not found
+agent_not_found:
+  error_code: 404_2001
+  error_message: agent not 

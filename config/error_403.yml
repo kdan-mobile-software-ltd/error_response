@@ -231,3 +231,6 @@ not_batch_owner:
 permission_denied:
   error_code: 403_1701
   error_message: permission denied
+agent_not_accessible:
+  error_code: 403_2001
+  error_message: agent not accessible
