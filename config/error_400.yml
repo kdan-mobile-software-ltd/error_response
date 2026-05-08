@@ -679,6 +679,12 @@ mass_purchasing_not_start:
 addon_not_available:
   error_code: 400_323
   error_message: addon not available
+invalid_upsell_setting:
+  error_code: 400_324
+  error_message: invalid upsell setting
+upsell_setting_not_saved:
+  error_code: 400_325
+  error_message: upsell setting not saved
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
