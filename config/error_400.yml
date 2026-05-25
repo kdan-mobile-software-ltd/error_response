@@ -1111,3 +1111,6 @@ invalid_filter_for:
 invalid_permission_setting:
   error_code: 400_1713
   error_message: invalid permission setting
+file_too_large:
+  error_code: 400_2001
+  error_message: file too large
