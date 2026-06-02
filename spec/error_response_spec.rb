@@ -3,6 +3,12 @@
 require "./lib/error_response"
 
 RSpec.describe ErrorResponse do
+  after do
+    ErrorResponse.configure do |config|
+      config.error_message_resolver = nil
+    end
+  end
+
   describe "#yaml_hash" do
     it "should fetch data from local" do
       result = ErrorResponse.to_api(:resource_not_found)
@@ -70,6 +76,62 @@ RSpec.describe ErrorResponse do
       result = ErrorResponse.to_hash(:some_error)
       empty_hash = {}
       expect(result).to eq empty_hash
+    end
+  end
+
+  describe "#resolve_error_message" do
+    it "returns original message when resolver is not configured" do
+      result = ErrorResponse.resolve_error_message(
+        key: :bad_request_1,
+        error_message: "original message",
+        error_data: {}
+      )
+      expect(result).to eq "original message"
+    end
+
+    it "supports keyword style resolver" do
+      ErrorResponse.configure do |config|
+        config.error_message_resolver = lambda do |key:, error_message:, error_data:, context:|
+          "#{key}|#{error_message}|#{error_data[:foo]}|#{context.nil?}"
+        end
+      end
+
+      result = ErrorResponse.resolve_error_message(
+        key: :bad_request_1,
+        error_message: "original message",
+        error_data: { foo: "bar" }
+      )
+      expect(result).to eq "bad_request_1|original message|bar|true"
+    end
+
+    it "supports positional style resolver for backward compatibility" do
+      ErrorResponse.configure do |config|
+        config.error_message_resolver = lambda do |key, error_message, error_data, context|
+          "#{key}|#{error_message}|#{error_data[:foo]}|#{context.nil?}"
+        end
+      end
+
+      result = ErrorResponse.resolve_error_message(
+        key: :bad_request_1,
+        error_message: "original message",
+        error_data: { foo: "bar" }
+      )
+      expect(result).to eq "bad_request_1|original message|bar|true"
+    end
+
+    it "falls back to original message when resolver raises exception" do
+      ErrorResponse.configure do |config|
+        config.error_message_resolver = lambda do |_key:, _error_message:, _error_data:, _context:|
+          raise "resolver error"
+        end
+      end
+
+      result = ErrorResponse.resolve_error_message(
+        key: :bad_request_1,
+        error_message: "original message",
+        error_data: {}
+      )
+      expect(result).to eq "original message"
     end
   end
 end

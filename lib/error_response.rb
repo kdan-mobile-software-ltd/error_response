@@ -9,6 +9,8 @@ require "error_response/helper"
 require "error_response/request_error"
 
 module ErrorResponse
+  RESOLVER_KEYWORD_PARAMETER_TYPES = %i[key keyreq].freeze
+
   class << self
     attr_writer :configuration
 
@@ -41,7 +43,24 @@ module ErrorResponse
       }
     end
 
+    def resolve_error_message(key:, error_message: nil, error_data: {}, context: nil)
+      resolver = configuration.error_message_resolver
+      return error_message unless resolver.respond_to?(:call)
+
+      call_resolver(resolver, key, error_message, error_data, context)
+    rescue StandardError
+      error_message
+    end
+
     private
+
+    def call_resolver(resolver, key, error_message, error_data, context)
+      if resolver.parameters.any? { |parameter| RESOLVER_KEYWORD_PARAMETER_TYPES.include?(parameter[0]) }
+        resolver.call(key: key, error_message: error_message, error_data: error_data, context: context)
+      else
+        resolver.call(key, error_message, error_data, context)
+      end
+    end
 
     def yaml_hash
       return @hash unless @hash.nil?

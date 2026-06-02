@@ -44,6 +44,20 @@ ErrorResponse.configure do |config|
 end
 ```
 
+You can also provide an extension hook to customize the message passed into `ErrorResponse::Helper#error_response`.
+
+```ruby
+ErrorResponse.configure do |config|
+  config.error_message_resolver = lambda do |key:, error_message:, error_data:, context:|
+    # Return a string message, nil, or any value accepted by `to_api`.
+    # context is the current controller instance when called from helper.
+    "customized message for #{key}"
+  end
+end
+```
+
+> Backward compatibility: positional arguments are still supported (`|key, error_message, error_data, context|`).
+
 
 ## Usage
 
