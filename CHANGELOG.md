@@ -1,4 +1,4 @@
-## [Unreleased]
+## [1.3.0] - 2026-06-02
 - Add `config.error_message_resolver` extension hook to customize `ErrorResponse::Helper#error_response` without monkey patching.
 - Add compatibility support for both keyword and positional resolver signatures.
 - Add RSpec coverage for resolver behavior and fallback handling.
