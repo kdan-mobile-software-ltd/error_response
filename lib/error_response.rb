@@ -9,7 +9,7 @@ require "error_response/helper"
 require "error_response/request_error"
 
 module ErrorResponse
-  RESOLVER_KEYWORD_PARAMETER_TYPES = %i[key keyreq].freeze
+  RESOLVER_KEYWORD_PARAMETER_TYPES = %i[key keyreq keyrest].freeze
 
   class << self
     attr_writer :configuration
@@ -55,7 +55,7 @@ module ErrorResponse
     private
 
     def call_resolver(resolver, key, error_message, error_data, context)
-      if resolver.parameters.any? { |parameter| RESOLVER_KEYWORD_PARAMETER_TYPES.include?(parameter[0]) }
+      if resolver.method(:call).parameters.any? { |parameter| RESOLVER_KEYWORD_PARAMETER_TYPES.include?(parameter[0]) }
         resolver.call(key: key, error_message: error_message, error_data: error_data, context: context)
       else
         resolver.call(key, error_message, error_data, context)
