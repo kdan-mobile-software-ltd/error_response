@@ -46,6 +46,7 @@ module ErrorResponse
     def resolve_error_message(key:, error_message: nil, error_data: {}, context: nil)
       resolver = configuration.error_message_resolver
       return error_message unless resolver.respond_to?(:call)
+
       call_resolver(resolver, key, error_message, error_data, context)
     rescue StandardError
       error_message
@@ -121,11 +122,9 @@ module ErrorResponse
     end
 
     def resolver_parameters(resolver)
-      begin
-        resolver.parameters
-      rescue StandardError
-        resolver.method(:call).parameters
-      end
+      resolver.parameters
+    rescue StandardError
+      resolver.method(:call).parameters
     end
   end
 end

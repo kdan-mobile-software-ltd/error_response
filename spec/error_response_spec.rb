@@ -171,7 +171,7 @@ RSpec.describe ErrorResponse do
       captured_context = nil
 
       ErrorResponse.configure do |config|
-        config.error_message_resolver = lambda do |key:, error_message:, error_data:, context:|
+        config.error_message_resolver = lambda do |_key:, error_message:, _error_data:, context:|
           captured_context = context
           error_message
         end
@@ -191,7 +191,6 @@ RSpec.describe ErrorResponse do
     it "returns nil when resolver returns nil" do
       ErrorResponse.configure do |config|
         config.error_message_resolver = lambda do |**_kwargs|
-          nil
         end
       end
 
