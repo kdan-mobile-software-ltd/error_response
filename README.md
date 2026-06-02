@@ -122,7 +122,8 @@ Given this resolver:
 ```ruby
 ErrorResponse.configure do |config|
   config.error_message_resolver = lambda do |key:, error_message:, error_data:, context:|
-    I18n.t("errors.#{key}", default: error_message, **error_data)
+    data = error_data.is_a?(Hash) ? error_data : {}
+    I18n.t("errors.#{key}", default: error_message, **data)
   end
 end
 ```
@@ -164,7 +165,7 @@ return success_response(data) if success?
 ```
 
 > response status: 200
-> 
+>
 > response body:
 
 ```json
@@ -186,7 +187,7 @@ return error_response(:bad_request_1) if failed?
 ```
 
 > response status: 400
-> 
+>
 > response body:
 
 ```json
@@ -207,7 +208,7 @@ return error_response(:bad_request_1, 'no required data', { a: 1, b: 2 }) if fai
 ```
 
 > response status: 400
-> 
+>
 > response body:
 
 ```json
