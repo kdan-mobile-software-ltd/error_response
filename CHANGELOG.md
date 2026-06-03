@@ -1,4 +1,4 @@
-## [1.3.1] - 2026-06-03
+## [1.3.1-beta] - 2026-06-03
 - Prevent `ErrorResponse::RequestError` from being swallowed by broad handlers such as `rescue_from Exception`.
 - Handle `RequestError` through `ErrorResponse::Helper#rescue_with_handler` before falling back to generic rescue flow.
 - Add RSpec coverage for rescue order behavior with both `RequestError` and non-`RequestError` exceptions.
