@@ -225,7 +225,19 @@ return error_response(:bad_request_1, 'no required data', { a: 1, b: 2 }) if fai
 ### RequestError Exception
 If you do not want to handle the response in controllers, you can just raise an `ErrorResponse::RequestError` exception. The gem catches the exception in the base application controller and renders `error_response`.
 
-`ErrorResponse::Helper` handles `RequestError` with a dedicated `rescue_with_handler` path before falling back to generic handlers. This prevents `RequestError` from being swallowed by broad handlers such as `rescue_from Exception`.
+`ErrorResponse::Helper` handles `RequestError` through `rescue_with_handler` before falling back to Rails generic rescue handlers. This guarantees that `ErrorResponse::RequestError` is rendered by `error_response`, even when the controller defines broad handlers such as `rescue_from Exception`.
+
+Because of this priority guarantee, controller-level handlers such as `rescue_from ErrorResponse::RequestError` will not override the gem's `RequestError` handling after `ErrorResponse::Helper` is included. If you need custom messages or payloads, use `ErrorResponse::RequestError` arguments or configure `config.error_message_resolver` to customize the response.
+
+```mermaid
+flowchart TD
+  A[Raise ErrorResponse::RequestError] --> B[ErrorResponse::Helper#rescue_with_handler]
+  B --> C{Exception is RequestError?}
+  C -->|Yes| D[Build payload via error_response]
+  D --> E[Render structured error JSON]
+  C -->|No| F[Fallback to controller rescue_from handlers]
+  F --> G[Render controller-defined error response]
+```
 
 ```ruby
 # in controller
@@ -244,6 +256,7 @@ end
 # in any business logic file
 raise ErrorResponse::RequestError.new(:bad_request_1)
 ```
+
 
 
 ## Others
