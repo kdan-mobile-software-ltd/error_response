@@ -18,6 +18,5 @@ Gem::Specification.new do |s|
     "rubygems_mfa_required" => "true"
   }
 
-  # s.add_dependency "activesupport", "~> 7.2.3.1" # 待專案弱掃升版完後再調整回來
   s.add_dependency "activesupport", "~> 7.1.6"
 end
