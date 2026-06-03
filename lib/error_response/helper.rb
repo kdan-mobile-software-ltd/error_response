@@ -8,7 +8,7 @@ module ErrorResponse
 
     # Ensure RequestError is always handled by this helper, even when
     # controllers define broad handlers like rescue_from Exception later.
-    def rescue_with_handler(exception, *args, **kwargs, &block)
+    def rescue_with_handler(exception, *args, **kwargs, &)
       if exception.is_a?(RequestError)
         error_response(exception.key, exception.error_message, exception.error_data)
         return exception
