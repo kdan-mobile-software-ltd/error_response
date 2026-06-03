@@ -223,7 +223,22 @@ return error_response(:bad_request_1, 'no required data', { a: 1, b: 2 }) if fai
 
 
 ### RequestError Exception
-If you do not want to handle the response in controllers, you can just raise an `ErrorResponse::RequestError` exception. The gem will catach the exception in the base application controller and render an error_response.
+If you do not want to handle the response in controllers, you can just raise an `ErrorResponse::RequestError` exception. The gem catches the exception in the base application controller and renders `error_response`.
+
+`ErrorResponse::Helper` handles `RequestError` with a dedicated `rescue_with_handler` path before falling back to generic handlers. This prevents `RequestError` from being swallowed by broad handlers such as `rescue_from Exception`.
+
+```ruby
+# in controller
+class Api::ApplicationController < ActionController::Base
+  include ErrorResponse::Helper
+
+  # Broad handlers are still allowed and continue to work for other exceptions.
+  rescue_from Exception do |e|
+    Rails.logger.error(e.message)
+    render status: 500, json: { error: "unexpected error" }
+  end
+end
+```
 
 ```ruby
 # in any business logic file
