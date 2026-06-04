@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "./lib/error_response"
+require "active_support/rescuable"
 
 RSpec.describe ErrorResponse do
   after do
@@ -230,6 +231,59 @@ RSpec.describe ErrorResponse do
         error_data: {}
       )
       expect(result).to eq "original message"
+    end
+  end
+
+  describe "ErrorResponse::Helper rescue handling" do
+    let(:controller_class) do
+      Class.new do
+        include ActiveSupport::Rescuable
+        include ErrorResponse::Helper
+
+        attr_reader :captured_error, :fallback_error
+
+        rescue_from Exception do |e|
+          @fallback_error = e
+        end
+
+        def error_response(key, error_message, error_data)
+          @captured_error = {
+            key: key,
+            error_message: error_message,
+            error_data: error_data
+          }
+        end
+      end
+    end
+
+    it "handles RequestError before broad exception handlers" do
+      controller = controller_class.new
+      request_error = ErrorResponse::RequestError.new(
+        :bad_request_1,
+        error_message: "invalid payload",
+        error_data: { field: "email" }
+      )
+
+      handled_exception = controller.send(:rescue_with_handler, request_error)
+
+      expect(handled_exception).to be request_error
+      expect(controller.captured_error).to eq(
+        key: :bad_request_1,
+        error_message: "invalid payload",
+        error_data: { field: "email" }
+      )
+      expect(controller.fallback_error).to be_nil
+    end
+
+    it "keeps broad handlers for non RequestError exceptions" do
+      controller = controller_class.new
+      generic_error = RuntimeError.new("boom")
+
+      handled_exception = controller.send(:rescue_with_handler, generic_error)
+
+      expect(handled_exception).to be generic_error
+      expect(controller.captured_error).to be_nil
+      expect(controller.fallback_error).to be generic_error
     end
   end
 end
