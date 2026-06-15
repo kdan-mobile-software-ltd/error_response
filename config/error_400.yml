@@ -685,6 +685,9 @@ invalid_upsell_setting:
 upsell_setting_not_saved:
   error_code: 400_325
   error_message: upsell setting not saved
+invalid_receipt_type:
+  error_code: 400_326
+  error_message: invalid receipt type
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
@@ -1114,6 +1117,3 @@ invalid_permission_setting:
 file_too_large:
   error_code: 400_2001
   error_message: file too large
-invalid_receipt_type:
-  error_code: 400_2002
-  error_message: invalid receipt type
