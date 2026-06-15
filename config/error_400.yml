@@ -688,6 +688,9 @@ upsell_setting_not_saved:
 invalid_receipt_type:
   error_code: 400_326
   error_message: invalid receipt type
+invalid_end_of_date:
+  error_code: 400_327
+  error_message: invalid end of date value
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed

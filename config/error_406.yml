@@ -179,6 +179,9 @@ cancel_receipt_failed:
 enable_autorenew_failed:
   error_code: 406_307
   error_message: enable receipt autorenew failed
+receipt_not_updated:
+  error_code: 406_308
+  error_message: receipt could not be updated
 obtain_presigned_url_failed:
   error_code: 406_401
   error_message: obtain presigned url failed
