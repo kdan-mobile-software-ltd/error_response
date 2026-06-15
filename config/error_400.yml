@@ -1114,3 +1114,6 @@ invalid_permission_setting:
 file_too_large:
   error_code: 400_2001
   error_message: file too large
+invalid_receipt_type:
+  error_code: 400_2002
+  error_message: invalid receipt type
