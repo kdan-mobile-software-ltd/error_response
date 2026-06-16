@@ -1,3 +1,6 @@
+## [1.3.2.beta] - 2026-06-16
+- Relax `activesupport` dependency constraint from `~> 7.1.6` to `>= 7.1.6, < 9.0` to unblock services upgrading to Rails 7.2 / 8.x.
+
 ## [1.3.1.beta] - 2026-06-03
 - Prevent `ErrorResponse::RequestError` from being swallowed by broad handlers such as `rescue_from Exception`.
 - Handle `RequestError` through `ErrorResponse::Helper#rescue_with_handler` before falling back to generic rescue flow.
