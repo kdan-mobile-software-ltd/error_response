@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
     "rubygems_mfa_required" => "true"
   }
 
-  s.add_dependency "activesupport", "~> 7.1.6"
+  s.add_dependency "activesupport", ">= 7.1.6", "< 9.0"
 end
