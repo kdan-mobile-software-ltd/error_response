@@ -1,5 +1,5 @@
 ## [1.4.0] - 2026-06-23
-- Relax `activesupport` dependency constraint from `~> 7.1.6` to `>= 7.1.6, < 9.0` to unblock services upgrading to Rails 7.2 / 8.x.
+- Drop the `activesupport` lower-bound; constraint is now `< 9.0` (was `~> 7.1.6`).
 - Prevent `ErrorResponse::RequestError` from being swallowed by broad handlers such as `rescue_from Exception`.
 - Handle `RequestError` through `ErrorResponse::Helper#rescue_with_handler` before falling back to generic rescue flow.
 - Add RSpec coverage for rescue order behavior with both `RequestError` and non-`RequestError` exceptions.
