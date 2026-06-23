@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     error_response (1.4.0)
-      activesupport (>= 7.1.6, < 9.0)
+      activesupport (< 9.0)
 
 GEM
   remote: https://rubygems.org/
