@@ -1003,6 +1003,9 @@ license_is_archived:
 license_need_one_admin:
   error_code: 400_1214
   error_message: license need at least one admin
+other_assigned:
+  error_code: 400_1215
+  error_message: license already assigned to member by others
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
