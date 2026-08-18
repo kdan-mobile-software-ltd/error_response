@@ -610,6 +610,9 @@ same_password:
 mfa_settings_exist:
   error_code: 400_249
   error_message: mfa settings already exist
+domain_registration_too_short:
+  error_code: 400_250
+  error_message: domain registration is too short
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
