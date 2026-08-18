@@ -126,6 +126,9 @@ over_verify_method_usage:
 reference_file_not_consented:
   error_code: 403_069
   error_message: reference file not consented
+over_daily_task_usage:
+  error_code: 403_070
+  error_message: over daily task usage
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
