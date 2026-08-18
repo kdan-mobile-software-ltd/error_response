@@ -691,6 +691,9 @@ invalid_receipt_type:
 invalid_end_of_date:
   error_code: 400_327
   error_message: invalid end of date value
+no_receipt_contract:
+  error_code: 400_328
+  error_message: current receipt don't have contract
 request_link_upload_initiate_failed:
   error_code: 400_401
   error_message: Initiate uploading via request link failed
