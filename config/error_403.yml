@@ -129,6 +129,9 @@ reference_file_not_consented:
 over_daily_task_usage:
   error_code: 403_070
   error_message: over daily task usage
+over_sign_stage_usage:
+  error_code: 403_071
+  error_message: over sign stage usage
 voucher_not_belongs:
   error_code: 403_100
   error_message: voucher not belongs to member
