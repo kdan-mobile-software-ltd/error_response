@@ -158,6 +158,9 @@ mfa_setting_setup_failed:
 device_revoke_failed:
   error_code: 406_220
   error_message: device revoke failed
+update_member_failed:
+  error_code: 406_221
+  error_message: member update failed
 mail_not_valid:
   error_code: 406_301
   error_message: The email (confirmation_id) is not valid. Or email you imported already exists.
