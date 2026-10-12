@@ -1015,6 +1015,9 @@ license_need_one_admin:
 other_assigned:
   error_code: 400_1215
   error_message: license already assigned to member by others
+personal_subscribed:
+  error_code: 400_1216
+  error_message: member already subscribe personal
 already_in_group:
   error_code: 400_1301
   error_message: member already in group
