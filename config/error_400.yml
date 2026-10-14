@@ -469,6 +469,15 @@ multiple_deduct_plans:
 ecpay_error:
   error_code: 400_172
   error_message: ecpay error occurred
+ecpay_bind_card_failed:
+  error_code: 400_173
+  error_message: ecpay bind card failed
+ecpay_bind_card_not_found:
+  error_code: 400_174
+  error_message: ecpay bind card not found
+ecpay_invalid_return_url:
+  error_code: 400_175
+  error_message: invalid ecpay return url
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
