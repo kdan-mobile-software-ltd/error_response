@@ -484,6 +484,9 @@ plan_not_available_in_currency:
 ecpay_charge_failed:
   error_code: 400_177
   error_message: ecpay charge failed
+subscription_not_updatable:
+  error_code: 400_178
+  error_message: subscription cannot be updated now
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
