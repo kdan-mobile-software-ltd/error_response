@@ -490,6 +490,9 @@ subscription_not_updatable:
 invalid_subscription:
   error_code: 400_179
   error_message: invalid subscription
+ecpay_invalid_invoice_info:
+  error_code: 400_180
+  error_message: invalid ecpay invoice info
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
