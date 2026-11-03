@@ -493,6 +493,9 @@ invalid_subscription:
 ecpay_invalid_invoice_info:
   error_code: 400_180
   error_message: invalid ecpay invoice info
+ecpay_charge_pending:
+  error_code: 400_181
+  error_message: ecpay charge result is being confirmed
 invalid_domain:
   error_code: 400_201
   error_message: invalid domain
