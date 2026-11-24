@@ -643,6 +643,9 @@ mfa_settings_exist:
 domain_registration_too_short:
   error_code: 400_250
   error_message: domain registration is too short
+email_domain_not_allowed:
+  error_code: 400_251
+  error_message: email domain is not allowed
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
