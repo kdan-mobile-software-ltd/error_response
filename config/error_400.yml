@@ -646,6 +646,9 @@ domain_registration_too_short:
 email_domain_not_allowed:
   error_code: 400_251
   error_message: email domain is not allowed
+email_plus_addressing_not_allowed:
+  error_code: 400_252
+  error_message: email with plus addressing is not allowed
 mail_error:
   error_code: 400_301
   error_message: An error occurred while processing your email address.
